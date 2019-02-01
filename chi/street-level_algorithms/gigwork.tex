@@ -1,0 +1,108 @@
+%!TEX root = ./street-level_algorithms.tex
+\documentclass[street-level_algorithms]{subfiles}
+\begin{document}
+
+\subsection{Quality control in crowd work}\label{sec:crowdwork}
+
+\topic{Crowd work
+--- that is, piecework~\cite{pieceworkCrowdworkGigwork} on platforms such as Amazon Mechanical Turk ---
+has become both a crucial source of income for many workers, and a
+major source of annotations for modern machine learning systems.}
+Tasks on crowd work platforms range from the prosaic
+(e.g., transcribing audio)
+to the novel
+(literally, in some cases, writing novels~\cite{Kim2017}).
+Nearly every approach to crowd work requires a strategy for quality control,
+deciding which workers are allowed to continue working on the task,
+or at worst,
+which ones are denied payment~\cite{Bigham2014,Sheng:2008:GLI:1401890.1401965,mitraComparingStrategies,incentivesShaw}.
+These algorithmic approaches variously seek to
+test workers' abilities,
+measure cross-worker agreement, and
+motivate high--effort responses.
+Workers' reputations
+--- and by extension, their prospective abilities to find work ---
+are determined by whether these algorithms decide that workers' submissions are high quality.
+
+\topic{Unfortunately,
+these quality control algorithms have
+--- perhaps unintentionally ---
+resulted in wage theft for many workers, because
+the algorithms deny payment for good-faith work.}
+There are often many correct ways to interpret a task~\cite{kairam2016parting}, and
+often these algorithms only recognize and pay for the most common one.
+Requesters' right to reject work without compensation is
+the second--most common discussion topic about the Mechanical Turk participation agreement~\cite{takingAHITMcInnis}, and
+mass rejection is a persistent, widespread fear~\cite{martin2014being}, and
+% While only a small minority of work is rejected~\cite{hara2018data},
+% \msb{kenji's paper doesn't make that claim, were you thinking of something else?}
+% \ali{maybe; I'm trying to download the paper but wifi at my place is really bad for some reason. I'll try and look again.
+% If I can't find the source, I think we can delete that line and merge the sentence with the previous one.},
+the fear of getting work algorithmically rejected looms large~\cite{takingAHITMcInnis}.
+To manage the concern, workers use back--channels
+to share information about which requesters are reliable and don't reject unnecessarily~\cite{crowdcollab,turkopticon}.
+
+\topic{We can think of the relationship Turkers have with the systems that manage them as
+analogous in some sense to the foremen who manage factory workers.}
+Pieceworkers in
+railroads, car assembly, and many other industries
+historically interacted with foremen as their interface with the company:
+the foreman assigned workers to suitable work given their qualifications,
+responded to workers when they needed assistance, and
+provided feedback on the output of the work.
+This relationship was a crucial boundary between
+managers and workers that foremen had to navigate carefully
+--- neither management nor worker, but decidedly and intentionally in the middle~\cite{10.2307/44135127}.
+
+\topic{The foreman's job was important because
+even the most standardized work sometimes surfaces unique circumstances.}
+As much as managers attempt to routinize work,
+scholarship on the subject tells us that % routinization of work tells us that
+improvisation remains a necessary aspect of even the most carefully routinized work~\cite{american1921problem,doi:10.1287/orsc.10.1.43}.
+
+\begin{quote}
+  When performance is difficult to evaluate,
+  imperfect input measures and a manager's subjective judgment are preferable to defective
+  (simple, observable) output measures. \flushright{--- \citeauthor{10.2307/2555446}~\cite{10.2307/2555446}, as cited in \cite{pieceworkCrowdworkGigwork}}
+\end{quote}
+
+\topic{The challenge is that
+algorithmic review mechanisms are not well--equipped to understand unusual cases.}
+A crowd worker's output is almost never evaluated by humans directly, but
+algorithmically scored either in comparison to the work of other workers or
+a known ``gold standard'' correct response~\cite{le2010ensuring}.
+However,
+often the most popular answer isn't actually the correct one~\cite{prelec2004bayesian}, and
+a gold standard answer may not be the only correct answer~\cite{kairam2016parting}.
+If the task becomes more complex,
+for example writing,
+algorithmic systems fall back to evaluating for syntactic features that,
+paradoxically, both make it easy to game and frustratingly difficult to succeed~\cite{winerip2012facing}.
+This general characterization of an algorithmic agent
+--- one that essentially seeks agreement in some form ---
+is not designed to evaluate entirely novel work.
+With all of the mistakes these systems make, and
+with the additional work that crowd workers have to do to make these systems work~\cite{taskSearch},
+it should come as little surprise that
+crowd workers are hesitant to attempt work from unknown and unreliable requesters~\cite{takingAHITMcInnis}.
+
+The problem is that
+these algorithmic foremen can't distinguish novel answers from wrong answers.
+Rare responses do not necessarily mean that the worker was not paying attention
+--- in fact, we prize experts for unique insights and answers nobody else has produced.
+However, where the foreman would evaluate unusual work relative to its particular constraints,
+the algorithm at best can only ask if this work resembles other work.
+Crowd workers might then receive a mass rejection as a result,
+harming their reputation on the platform.
+Again as in other cases we've discussed, gathering more training data is not a feasible path to fix the problem:
+crowd work is often carried out exactly in situations where such data does not yet exist.
+Machine learning algorithms that evaluate worker effort also require
+substantial data for each new task~\cite{rzeszotarski2011instrumenting}.
+The street--level algorithm is stuck with a cold--start problem where
+it does not have enough data to evaluate work accurately.
+
+\onlyinsubfile{
+  \bibliographystyle{ACM-Reference-Format}
+  \bibliography{references}
+}
+\end{document}

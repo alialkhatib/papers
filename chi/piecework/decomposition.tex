@@ -1,0 +1,199 @@
+\documentclass[pn4226]{subfiles}
+\begin{document}
+
+\subsection[How far can work be decomposed into smaller microtasks]{Decomposing Work}\label{sec:decomposition}
+
+At its core,
+on--demand work has been enabled by decomposition of large goals into many small tasks.
+As such,
+one of the central questions in the literature is how finely--sliced these microtasks can become, and which kinds of tasks are amenable to decomposition.
+In this section,
+we place these questions in the context of piecework's Taylorist evolution.
+
+\begin{comment}
+Outline:
+Crowd work
+	- How do we take work and split it up into smaller work?
+	- How small can we go?
+	- Once we split up, what happens? Marketplace choosing
+Piecework
+	- How do we take work and split it up?
+	[ - how small can we go? ]
+	[- Nothing about how people choose. ]
+Same/different
+	[- task data science ]
+	[- Cognitive barriers, task switching, etc, dominates]
+	[ - Switching is different, marketplace model ]
+\end{comment}
+
+\subsubsection{\crowdworkpers}
+\topic{Many contributions to the design and engineering of crowd work consist of creative methods for decomposing goals.}
+Even when tasks such as writing and editing cannot be reliably performed by individual workers,
+researchers have demonstrated that
+the decomposition of these tasks into workflows can succeed~\cite{crowdForgeKittur,
+bernsteinSoylent,
+writingMicroTasks,
+Nebeling:2016:WCW:2858036.2858169}. 
+These decompositions typically take the form of workflows,
+instantiated as algorithmically managed sequences of tasks that resolve interdependencies~\cite{Bigham2014}. 
+Workflows often utilize a first sequence of tasks to identify an area of focus (e.g.,
+a paragraph topic~\cite{crowdForgeKittur},
+an error~\cite{bernsteinSoylent},
+or a concept~\cite{Yu2016a,Yu2016b}) and a second sequence of tasks to execute work on that area. 
+This decomposition style has been successfully applied across many areas,
+including food labeling~\cite{noronha2011platemate},
+brainstorming~\cite{siangliulue2015toward,Yu2016a},
+and accessibility~\cite{lasecki2013chorus,lasecki2012real,Lasecki2011}.
+
+\topic{If decomposition is key to success in on--demand work, the question arises: what can, and can't, be decomposed?}
+More pointedly,
+how thinly \textit{should} work be sliced and subdivided into smaller and smaller tasks? 
+The general trend has been that smaller is better,
+and the microtask paradigm has emerged as the overwhelming favorite~\cite{selfsourcingTeevan2014,selfsourcingTeevan2016}.
+This work illustrates a broader sentiment in both the study and practice
+of crowd work,
+that microtasks should be designed resiliently against the variability of workers,
+preventing a single errant submission from impacting the agenda of the work as a whole %,
+fully exploiting the abstracted nature of each piece of work
+~\cite{interruptionIqbal,delayAndOrderLasecki,vaish2014low}.
+In this sense,
+finer decompositions are seen as more robust
+--- both to interruptions and errors~\cite{cheng2015break} ---
+even if they incur a fixed time cost.
+At the extreme,
+recent work has demonstrated
+microtasks that take seconds~\cite{Vaish:2014:TCC:2611222.2556996,Cai:2015:WLW:2702123.2702267}
+or even fractions of a second~\cite{embracingErrorKrishna}.
+However,
+workers perform better when similar tasks are strung together~\cite{delayAndOrderLasecki},
+or
+chained and arranged to maximize the attention threshold of workers~\cite{Cai:2016:CRI:2858036.2858237}.
+Despite this,
+we as a community have leaned \textit{into} the peril of
+low--context work, ``embracing error'' in crowdsourcing~\cite{embracingErrorKrishna}.
+
+
+\topic{The general lesson has been that the more micro the task, and the more fine the decomposition, the greater the risk that workers lose context necessary to perform the work well.}
+For example,
+workers edit adjacent paragraphs in inconsistent ways~\cite{bernsteinSoylent,Kim2017},
+interpret tasks in different ways~\cite{kairam2016parting},
+and exhibit lower motivation~\cite{Kinnaird:2012:WTM:2389176.2389219} without sufficient context.
+Research has sought to ameliorate this issue by
+designing workflows to help workers ``act with global understanding when
+each contributor only has access to local views''~\cite{verroios2014context},
+typically by automatically or manually generating higher--level representations
+for the workers to reflect on~\cite{chilton2013cascade,verroios2014context,Kim2017}.
+
+\topic{As the additional context necessary to complete a task diminishes, the invisible labor of \textit{finding} tasks~\cite{martin2014being} has arisen as a major issue.}
+Chilton et al. illustrate the task search challenges on AMT~\cite{taskSearch}.
+Workers seek out good requesters~\cite{martin2014being} and then 
+``streak'' to perform many tasks of that same type~\cite{taskSearch}.
+Researchers have reacted by designing task recommendation systems (e.g.~\cite{Cosley:2007:SUI:1216295.1216309})
+and minimizing the amount of time that people need to spend doing anything other than
+the work for which they are paid~\cite{callison2014crowd}.
+
+\subsubsection{\pieceworkpers}
+
+\begin{comment}
+notes: what info do i assume the reader has seen already?
+- Brown: Task variability matters
+- Airy and his human computers were great:
+  - quickly verifiable
+  - independent tasks (could be checked without the whole product)
+  - narrowly trainable
+\end{comment}
+
+\topic{Four major stages characterize decomposition in the history of piecework.}
+The first stage was decomposition of an expert task such that it could be done by non--experts. 
+This was arguably the main innovation of Airy's human computers.
+Rather than hire expert computers, Airy identified ways to break down astrological calculations into steps that could be completed with only a basic knowledge of mathematics.
+Likewise, Brown argued that piecework arose in industries with homogeneous tasks and low fixed costs of machinery and training~\cite{Brown01041990}.
+
+After decomposing tasks for amateurs, the second major stage was to apply the same methods to domain experts. 
+Unlike Airy's human computers, railway engineers had significant expertise~\cite{Brown01041990}.
+As Brown noted, however, it was still possible to discretize and measure their work.
+Thus, experts such as railway engineers became pieceworkers as well.
+
+Third, decomposition led to quantification and scientific management.
+What can be modularized can be measured, and what can be measured can be optimized.
+With Taylor's formalization of scientific management in \textit{Taylorism}
+(and Henry Ford's eponymously named \textit{Fordism}),
+piecework in the early and mid--\nth{20} century surged, especially in industrial work.
+Scientific management promised that the careful measurement of workers would yield
+higher efficiency and output~\cite{taylor1914principles,towardsGlobalFordism}.
+While Brown points out that
+piecework dramatically advanced the instrumented measurement of workers,
+in Taylor's time highly instrumented,
+automatic measurement of workers was all but impossible~\cite{Brown01041990}.
+Instead, managers conducted ``stop watch time studies''~\cite{nadworny1955scientific},
+using completion times to inform per--task compensation,
+similarly to the efficiency experts hired in the Santa Fe Railway, but
+substantially more precise.
+The distillation of work into smaller units ultimately bottomed out with tasks as small as could be usefully measured~\cite{10.2307/23702539}.
+
+The fourth and final stage was narrow expertise training. 
+Even after work is decomposed and measured, there were not enough qualified workers available to do it. 
+So, as World War II raged and there was a dearth of skilled workers, managers trained women just enough to be able to complete their tasks~\cite{hart2013rise}. 
+Over time, these women could gain proficiency and gain broader expertise.
+
+
+
+\subsubsection{\whatchanged}
+\begin{comment}
+outline
+	- measurement is more precise,
+  so decomposition is deeper
+	- not a single position,
+  but a marketplace
+\end{comment}
+
+\topic{Where measurement and instrumentation were limiting factors for historical piecework, computation has changed the situation so that a dream of scientific management and Taylorism --- to measure every motion at every point throughout the workday and beyond --- is not only doable, but trivial~\cite{waltz2012quantified}.}
+Where Graves directly implicates measurement as
+preventing scientific management from being fully utilized~\cite{10.2307/23702539},
+modern crowd work is measuring and modeling every click,
+scroll,
+and keyboard event~\cite{rzeszotarski2011instrumenting,rzeszotarski2012crowdscape}.
+The result is that on--demand work can articulate and track far more carefully than piecework historically could.
+
+
+\topic{A second shift is the relative ease with which the metaphorical ``assembly line'' can be experimented with and measured.}
+Historical manufacturing equipment could not quickly be assembled,
+edited,
+and redeployed~\cite{hu1961parallel}.
+In contrast,
+today system--designers can share,
+modify,
+and instantiate environments
+like sites of labor in a few lines of code~\cite{lessig2006code,turkitLittle}.
+This opportunity has spurred an entire body of work investigating the effects of
+ordering,
+pacing,
+interruptions,
+and
+other factors accelerating scientific management that would have been
+all but impossible as few as 20 years ago~\cite{dai2015and,Cai:2016:CRI:2858036.2858237,cheng2015break,measuringCrowdsourcingCheng,embracingErrorKrishna}.
+
+
+\subsubsection{\implication}
+If decomposition in piecework progressed in four stages, we have seen three of them in on--demand work so far.
+First, as with piecework, on--demand work began by decomposing tasks so that anyone could complete them, as with data labeling on Amazon Mechanical Turk.
+Second, we began to modularize and measure external expertise (e.g., software engineering, design) so that it could be brought into crowdsourcing systems~\cite{foundry,Chen2016}.
+Third, we used measurement to mathematically optimize workers' behaviors so that we could make the systems more efficient~\cite{weld2010decision}.
+
+The fourth stage, then, appears likely to occur: narrow training of workers for these decomposed expert tasks. 
+There is demand for skilled workers in many crowdsourcing tasks, and systems to help train workers~\cite{suzukiAtelier}. 
+We might expect to see the rise of systems that scaffold workers into extremely narrow areas of expertise,
+for instance using online courses as proof of expertise in a specific domain necessary for a microtask.
+
+Finally, improved measurement and lowered costs of production have made it feasible to apply piecework methods to many domains where it may not have historically been possible.
+The limit is no longer measurement precision, but human cognition. 
+Task switching and other cognitive costs make it difficult
+to work on tasks so far decontextualized from their original intention~\cite{delayAndOrderLasecki}.
+There will of course be tasks that can be decomposed without much context,
+and these will form the most fine--grained of microtasks.
+However, other tasks cannot be freed from context
+--- for example,
+logo design requires a deep understanding of the client and their goals.
+
+
+\end{document}

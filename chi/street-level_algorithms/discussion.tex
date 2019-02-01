@@ -1,0 +1,86 @@
+%!TEX root = ./street-level_algorithms.tex
+\documentclass[street-level_algorithms]{subfiles}
+
+\begin{document}
+
+\section{Discussion}
+
+\topic{Street--level bureaucracies are not a perfect metaphor for the phenomena we've discussed.}
+We didn't address in any capacity the fact that
+street--level bureaucrats sometimes diverge in unexpected ways from the prerogatives of their managers.
+This becomes the source of tension in
+\citeauthor{lipsky1983street}'s treatment of street--level bureaucracies,
+but in our discussion of the relationships between street--level algorithms and their stakeholders,
+we avoided the relationship between engineers and designers and the systems themselves.
+Suffice it to say that while there is a disconnect between intent and outcome,
+the nature of that relationship is so different that it warrants much further discussion.
+We also avoided a unique quality of machines in this nuanced tension:
+algorithmic systems operate at far greater speed than humans can~\cite{Matthias2004},
+precipitating what \citeauthor{doi:10.1177/2053951716679679} characterized as a
+``technical infeasibility of oversight''~\cite{doi:10.1177/2053951716679679}.
+
+
+\topic{Nor are street--level bureaucrats paragons of
+justice, fairness, accountability, transparency, or any particular virtue.} % \ali{this might be a little too ``do you get it yet???''}
+Street--level bureaucrats have historically been agents of immense prejudice and discrimination:
+writing insuring guidelines specifying that racially integrated neighborhoods are
+inherently less safe than white ones~\cite{rothstein2017color}, for instance.
+\citeauthor{whyte2012street}'s ethnography of organized crime in Boston,
+and of a corrupt police force
+that took payoffs to exercise their discretion more favorably toward criminal enterprises~\cite{whyte2012street},
+illustrates in a different way how discretion can be applied contrary to our values.
+Street--level bureaucracies are loci of immense power
+--- and power can be abused by those who have it.
+% The goal is not for algorithms to replicate the failures of bureaucrats.
+
+\topic{Perhaps least certain of all the questions that emerge as a result of
+this discussion of street--level algorithms is that of the relationship between conflicting agents.}
+What happens when street--level bureaucrats collide with street--level algorithms?
+The theory of street--level bureaucracies doesn't offer much to mitigate this tension.
+\citeauthor{Veale:2018:FAD:3173574.3174014,doi:10.1177/2053951717718855} have
+traced the landscape of challenges that may emerge
+and ways to mitigate those conflicts~\cite{Veale:2018:FAD:3173574.3174014,doi:10.1177/2053951717718855}.
+This area in particular needs further study:
+the fault lines are here to stay, and we need to reflect on
+this shifting of discretion from the bureaucrat to the engineer~\cite{eubanks2018automating}.
+A value-sensitive approach~\cite{zhuvalue} would ensure that engineers be careful of
+how the algorithms may support or undermine bureaucrats' authority.
+
+\topic{Algorithms and machine learning may yet introduce new methods that override the observations made here.}
+We are assuming, as is the case currently, that
+algorithms require feedback or additional training to update their learned models.
+Likewise, we are assuming that algorithms will continue to make errors of confidence estimation, and
+will make mistakes by labeling marginal, novel cases with high confidence.
+Nothing about the emerging architectures of modern machine learning techniques challenges these assumptions, but
+should it happen, the situation might improve.
+
+\topic{Despite these limitations, we suspect that
+the lens of ``street--level algorithms'' gives us a starting point on many questions in HCI and computing more broadly.}
+We've discussed the ways that
+street--level bureaucracies can inform how we think about
+YouTube content moderation, judicial bias, and crowdwork,
+but we could take the same framing to task on a number of other cases:
+\begin{itemize}[leftmargin=*]
+  \item \textit{Moderation of forum content: } For many of the same reasons that
+           we see trouble with the application of algorithmic classification systems on YouTube,
+           we should expect to see problems applying algorithmic systems to textual forums.
+  \item \textit{Self-driving cars: } Cars will make algorithmic decisions all the way
+         from Level 1, where vehicles decide to break when we get too close to others,
+           to Level 3, where they will need to decide when to hand control back to drivers,
+           to Level 5, where systems may decide which routes to take
+           and thus how late we should be to our destinations.
+           Self-driving cars are literal ``street--level'' algorithms.
+  \item \textit{Parental controls: } Algorithms that
+          lock children out after a certain amount of screen time elapses will need to learn how to handle unforeseen situations
+          when the device should remain functional, such as a threat or emergency.
+  \item \textit{AI in medicine: } When decisions are life-or-death,
+          how does a patient or doctor handle an algorithm's potentially error-prone recommendations?
+\end{itemize}
+
+
+\onlyinsubfile{
+  \bibliographystyle{ACM-Reference-Format}
+  \bibliography{references}
+}
+
+\end{document}

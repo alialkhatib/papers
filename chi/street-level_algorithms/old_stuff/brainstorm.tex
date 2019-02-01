@@ -1,0 +1,155 @@
+\documentclass[10pt]{article}
+\usepackage{hyperref,microtype,times,nth,textcomp,fontspec}
+\usepackage[a4paper,left=.5in,top=0.5in,right=3.5in]{geometry}
+% \usepackage{lipsum,color}
+
+% \definecolor{Red}{HTML}{FF0000}
+% \definecolor{Blue}{HTML}{0000FF}
+% \newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
+% \newcommand{\topic}[1]{{\color{Blue}#1}} % if you're in a subfile, bold the \topic sentences to 
+
+\usepackage[inline]{enumitem}
+\usepackage[citestyle=numeric,backend=bibtex]{biblatex}
+\bibliography{references}
+\AtBeginBibliography{\tiny}
+
+\setmainfont{Source Serif Pro}[
+ ItalicFont = Source Serif Pro,
+ ItalicFeatures={FakeSlant=0.2}]
+\setmonofont{Source Code Pro}
+
+\pagenumbering{gobble}
+\setlist[itemize]{noitemsep, nolistsep}
+\setlist[enumerate]{noitemsep, nolistsep}
+
+\begin{document}
+% \marginpar{\lipsum[1]}
+
+% \begin{enumerate}
+  
+\section{Some questions}
+\begin{itemize}
+  \item Is AI going to make our lives worse?
+  \item Will AI help us understand people better, or will it be used to oppress people better?
+  \item What circumstances characterize AI systems which \textit{service} people versus those that \textit{trade} in people?
+\end{itemize}
+
+\section{Approaches}
+either or\dots
+\begin{itemize}
+  \item We present a framing for making sense of AI systems
+  --- especially in the context of the above question ---
+  through this lens that answers all these questions in useful ways.
+  We also provide people with a useful foothold to begin ``climbing'' this otherwise unapproachable wall.
+  \item We suggest a way of thinking about AI systems that may provide a useful perspective,
+  specifically by aligning elements of this topic in such a way that
+  certain answers become, or at least intuitive.
+\end{itemize}
+
+
+\section{Problem areas (and solution approaches?)}
+\begin{itemize}
+  \item advertising/surveillance state
+  \begin{itemize}
+    \item what happens? {why do i care?}
+    \begin{enumerate}
+      \item people exist (online)
+      \item online systems make inferences about the people
+      \item these systems put ads in front of people
+    \end{enumerate}
+  \end{itemize}
+  \item justice/racism
+  \begin{itemize}
+    \item bureaucratic orgs do Y
+  \end{itemize}
+  \item streaming/garbage
+  \begin{itemize}
+    \item bureaucratic orgs do Z
+  \end{itemize}
+  \item ???
+\end{itemize}
+
+\newpage
+
+
+  \section{hot question}
+    \begin{itemize}
+      \item Are AIs necessarily a dehumanizing force?
+      \item Is the future of ``\textit{managed} work'' one of oppressive burdens?
+      \item Are AIs going to be tools of humans, or will humans be tools of AIs? (extensions?)
+      
+      \item in what ways are AIs making decisions that affect us?
+      \begin{itemize}
+        \item legal: bail, sentencing, etc?
+        \item financial: loans, insurance
+        \item business: freelance work assignment, guiding workers to places
+        \item politics: information diet
+      \end{itemize}
+
+    \end{itemize}
+  
+  \section{why does it matter?}
+    \begin{itemize}
+      \item The answer to (one of those questions) is going to determine if Neo from the Matrix is going to have to save us.
+    \end{itemize}
+  
+  \section{prior work: what's missing?}
+    \begin{itemize}
+      \item \citeauthor{uberAlgorithm}~\cite{uberAlgorithm} looked at this, but didn't take a shot at the deeper issues
+      \item \citeauthor{turkopticon}~\cite{turkopticon} got into some of the deeper undercurrents, but \dots
+      \item \textsc{need to come up with other examples --- look at notes from CHI review; look at FATML papers}
+      \item Amazon warehouse workers
+      \item stitchfix? @mav
+      \item Wikipedia?
+      \item Facebook/Instagram/YouTubers working around the opaque preferences of the system?
+      % \item Qbot, dan weld, etc\dots
+      % \item 
+    \end{itemize}
+  
+  \section{lay out the metaphor}
+    \begin{enumerate}
+      \item Bureaucracies are comprehensive organizations which try to achieve certain \textbf{goals}
+      \item They achieve those \textbf{goals} by doing \textbf{tasks}
+      \item The processes that determine how to do a task are what form the structure of bureaucracies
+      \item Following the process is deeply important, but people within the bureaucracies
+      --- bureaucrats ---
+      are empowered to use \textit{discretion} in their own ways.
+      \item This discretion is exercised at different levels and in different contexts to varying degrees, but
+      always in service to the \textbf{goals} of the bureaucracy
+      (e.g. doctors providing medical care, so misclassifying patients as inpatient)
+    \end{enumerate}
+    AIs are basically like that
+    \begin{enumerate}
+      \item Bureaucracies are the AIs
+      \item They're embedded with certain goals
+      \item They develop their own tasks to accomplish those goals (with incentives and disincentives to approach those goals)
+      \item Adherence to the process is important
+      \item \textsc{It's difficult to conceptualize AIs which can exercise discretion}
+    \end{enumerate}
+  
+  \section{what does the metaphor tell us?}
+    \begin{itemize}
+      \item AIs lack the capacity to exercise discretion in the current design paradigm
+      \item But this is necessary to deal with humans, because of the ``\dots~relatively high degree of uncertainty because of the complexity of subject matter (people) and the frequency or rapidity with which decisions have to be made.''
+    \end{itemize}
+  
+  \section{how should we rethink algos?}
+    \begin{itemize}
+      \item We need to figure out how to design algorithms with mechanisms for people to intercede and break the rules on behalf of the higher order purpose
+      \item AIs which have some conceptual understanding of that higher order purpose --- the \textbf{goals} of the org --- would be important
+      \item Encoding the nuance of those \textbf{goals} will prove to be impossible
+      \item Here are some ideas!
+      \begin{itemize}
+        \item Question the \textit{descriptive} vs \textit{prescriptive} tendencies of AI/ML
+              (e.g. \textit{reflecting} societal prejudice vs implicitly \textit{encoding} it into the system)
+        \item Provide operators with well--documented vectors to mess with levers
+        \item Do the things from that ethics paper about making clear how a decision was made
+      \end{itemize}
+    \end{itemize}
+% \end{enumerate}
+
+
+\section{Refs}
+\printbibliography[heading=none]
+% \printbibliography{}
+\end{document}

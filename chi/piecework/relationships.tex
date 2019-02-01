@@ -1,0 +1,187 @@
+\documentclass[pn4226]{subfiles}
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+\begin{document}
+
+
+\subsection[What will work and the place of work look like for workers]{Workers' Relationships to their Work}\label{sec:relationships}
+
+HCI and CSCW have historically framed themselves around supporting work.
+While all artifacts have politics,
+the recent shift into computational labor systems has directly impacted
+the lives and livelihoods of workers in new ways.
+So, it's imperative to ask:
+What will the future look like for the workers who use these systems?
+
+\subsubsection{\crowdworkpers}
+\begin{comment}
+	- Workers do it for money
+	- Workers coordinate and communicate (gray, being a turker, team stuff). there is mega--drama
+	- Workers don't like requesters. have tried to organize
+\end{comment}
+
+\topic{Who are the crowd workers and what draws them to crowd work?}
+Early literature emphasized motivations like fun and spare change, but this narrative soon shifted to emphasize that many workers use platforms such as Amazon Mechanical Turk as a primary source of income~\cite{kaufmann2011more,ipeirotis2010demographics,Antin2012a}.
+Despite this, Mechanical Turk is a disappointingly low--wage worksite for most people in the United States~\cite{ipeirotis2010demographics,martin2014being,gupta2014turk}.
+Thus, those who choose to opt out of the traditional labor force and spend significant time on Mechanical Turk are especially motivated by the opportunity for autonomy and transience between tasks~\cite{kaufmann2011more}.
+While some describe Turkers as powerless victims or even unaware of what's going on,
+this framing is increasingly being rejected by workers and designers as
+``cast[ing] Turkers as dopes in the system.''~\cite{storiesIraniSilberman}.
+
+
+
+\topic{Workers' relationships with requesters are fraught.}
+The unbridled power that requesters have over workers, and
+the resultant frustration that this generates,
+has motivated research into
+the tense relationships between workers and requesters~\cite{fixingChaos,dynamo}.
+Workers are often blamed for any low--quality work, regardless of whether they are responsible~\cite{martin2014being,takingAHITMcInnis}.
+Some research is extremely open about this position, blaming unpredictable work on ``malicious'' workers~\cite{MaliciousCrowdworkersGadiraju} or those with ``a lack of expertise, dedication [or] interest''~\cite{Sheng:2008:GLI:1401890.1401965}.
+Workers resent this position, and for good reason.
+Irani and Silberman highlighted the information asymmetry between workers and requesters on AMT,
+which led to the creation of Turkopticon, a site which allows Turkers to rate and review requesters~\cite{turkopticon}.
+Dynamo then took this critique on information asymmetry and power imbalances further, designing a platform to facilitate
+collective action among Turkers to changes to their circumstances~\cite{dynamo}.
+
+
+\topic{Researchers have also begun to appreciate the sociality of crowd workers.}
+Because the platforms do not typically include social spaces, workers instead congregate off--platform in forums and mailing lists.
+There, Turkers exchange advice on high--paying work, talk about their earnings, build social connections, and discuss requesters~\cite{martin2014being}.
+Many crowd workers know each other through offline and online connections, coordinating behind--the--scenes despite the platforms encouraging independent work~\cite{crowdcollab,yin2016communication}.
+However, the frustration and mistrust that workers experience with requesters does occasionally boil over on the forums. 
+%This behavior has come to be known as ``mega--drama'' amongst such workers~\cite{dynamo}.
+%Still, the study of these communities is made challenging because most of these platforms do not themselves include social affordances for workers~\cite{miller2011understanding}.
+
+
+\subsubsection{\pieceworkpers}
+
+\begin{comment}
+notes: what info do i assume the reader has seen already?
+- Clark: pieceworkers work harder, more diligently, etc...
+- Riis saw terrible conditions, documented and communicated it to the world
+- Worker advocacy groups arose to speak out against piecework
+\end{comment}
+
+\topic{Early observers believed that workers were strongly motivated by the autonomy of working in the piecework model.}
+Clark observed textile mill pieceworkers and reported,
+``When he works by the day the Italian operative wishes to leave before the whistle blows,
+but if he works by the piece he will work as many hours as it is possible for him to stand''~\cite{clark1908cotton}.
+However, the emergent trend contrasted with this early rhetoric, as
+when workers began instituting ``The Fix'', deliberately slow work to game efficiency experts~\cite{roy1954efficiency}.
+Piece workers, Roy found, would form acrimonious relationships with their managers.
+
+\topic{Soon, workers began resisting piecework regimes.}
+The match--girls engaged in their famous strike of 1888, particularly pushing to abolish the fines that were taken out of their wages.
+Soon others followed suit, including women in the garment industry in Philadelphia who established collective bargaining rights~\cite{10.2307/41829256} and national coal miners who effected an individual minimum wage in 1912~\cite{10.2307/2221944}.
+
+
+Many worker organizations began weighing in against piecework and the myriad oversights it made in valuing workers' time~\cite{american1921problem,richards1904anything}.
+As mounting attention increasingly revealed problems in piecework's treatment of workers,
+workers themselves began to speak out about their frustration with this new regime.
+Organizations representing
+railway workers,
+mechanical engineers, and
+others began to mount advocacy in defense of workers~\cite{american1921problem,richards1904anything}.
+Pieceworkers' relationships with their employers eventually developed a pattern of using 
+laborer advocacy groups~\cite{levi2009union,ahlquist2013interest,mccallum2013global,jacoby1983union}.
+Following the template of the match--girls, collective action grew to become a central component of negotiating with managers~\cite{russell1982collective,olsonlogic}.
+
+\topic{Relative to the modern on--demand workers, there is a noticeable dearth of information on the interpersonal relationships among pieceworkers beyond the match--girls at the end of the \nth{19} century.}
+Nevertheless, we can offer some observations:
+primary sources indicate that labor organizations wished for workers to identify as a collective group, 
+``not only as railroad employees but also as members of the larger life of the community''~\cite{american1921problem}.
+Doing this, 
+Ostrom and others later argued,
+would facilitate collective action and perhaps collective governance~\cite{ostrom1990governing,russell1982collective,olsonlogic}.
+Riis also contributed to this sense of shared struggle and endurance
+by documenting pieceworkers in their home--workplaces,
+literally bringing to light the grim circumstances in which pieceworkers lived and worked~\cite{riisOtherSideLives}.
+
+
+\subsubsection{\whatchanged}
+
+\begin{comment}
+	*workers make little money but love autonomy --- workers make little money
+	workers blamed for quality --- ???
+	both cases, sociality is hard
+	*collective action hard --- collective action succeeded
+	- algorithms, not managers
+\end{comment}
+
+\topic{There was generally less written about work quality concerns for historical pieceworkers than there is in modern on--demand work.}
+Why the difference?
+One possibility is that, by writing web scripts and applying them to many tasks,
+a small number of spammers have an outsized influence on the perception of bad actors.
+Another possibility is that historical pieceworkers faced much more risk in shirking:
+it was much harder for pieceworkers to move to a new location and find a new job.
+Today, Mechanical Turk workers can work for a dozen or more different groups in the span of a day.
+A third possibility: online anonymity breeds distrust~\cite{friedman2000trust}, and
+where pieceworkers could be directly observed by foremen and known to them,
+online workers are known by little more than an inscrutible alphanumeric string, like A2XJMS2J2FMVXK.
+
+
+
+\topic{The relationship between workers and employers has also shifted: while historically the management of workers had to be done through a foreman, foremen of the \nth{20} century have largely been replaced by algorithms of the \nth{21} century~\cite{uberAlgorithm}.}
+Consequently,
+the agents managing work are now
+cold, logical, and unforgiving.
+While a person might recognize that the ``attention check'' questions
+proposed by Le et al. and others ensure that
+malicious and inattentive workers are stopped~\cite{le2010ensuring,AAAIW113995},
+some implementations of these approaches
+only seem to antagonize workers~\cite{takingAHITMcInnis}.
+As Anderson and Schmittlein wrote in 1984,
+``when performance is difficult to evaluate,
+imperfect input measures and
+a manager's subjective judgment are preferable to
+defective (simple, observable) output measures''~\cite{10.2307/2555446}.
+This frustration has only grown as requesters have had to rely on automatic management mechanisms.
+Only a few use the equivalent of human foremen~\cite{haas2015argonaut,kulkarni2012mobileworks}.
+
+Relative to the history of collective action for pieceworkers,
+on--demand workers have struggled to make their voices heard~\cite{dynamo,storiesIraniSilberman,turkopticon}.
+With workers constantly drifting through these platforms, and with many part--time members,
+it's extremely difficult to corral the group to make a collective decision~\cite{dynamo}.
+Even when they can, enforcement remains a challenge:
+while pieceworkers could physically block access to a site of production and convince other workers to join them,
+online labor markets provide no facilities for workers to change the experience of other workers.
+This is a key limitation --- without it, workers cannot enforce a strike.
+
+
+\subsubsection{\implication}
+\topic{The decentralization and anonymization of on--demand work, especially online crowd work, will continue to make many of its social relationships a struggle.}
+While some workers get to know each other well on forums~\cite{martin2014being,crowdcollab}, many never engage in these social spaces.
+Without intervention, worker relationships and collectivism are likely to be inhibited by this decentralized design.
+One option is to build worker centralizing points into the platform, for example asking workers to vote on each others' reputation or allowing groups of workers to collectively reject a task from the platform~\cite{crowdguilds}.
+
+\topic{The history of piecework further suggests that relationships between workers and employers might be improved if employers engaged in more human management styles.}
+Instead of delegating as many management tasks as possible to an algorithm,
+it might be possible to build dashboards and
+other information tools that empower modern crowd work foremen~\cite{kulkarni2012mobileworks}.
+If the literature on piecework is to be believed,
+more considerate \textit{human} management may resolve
+many of the tensions.
+
+\topic{Reciprocally, crowd work may be able to inform piecework research in this domain.}
+There exists far less literature about piece workers' relationships than there does today about on--demand workers' relationships.
+Two reasons stand out: first, modern platforms are visible to researchers in ways that the sites of piece work labor were not.
+Second, Anthropology stands on a firmer theoretical and methodological basis than it did at the turn of the \nth{20} century.
+Malinowski, Boas, Mead, and
+other luminaries throughout the first half of the \nth{20} century
+effectively defined Cultural Anthropology as we know it today;
+\textit{participant--observation},
+the \textit{etic} and the \textit{emic} understanding of culture, and
+\textit{reflexivity}
+didn't take even a resemblance of their contemporary forms until these works~\cite{malinowski2002argonauts,boas1940race,mead1973coming}.
+On--demand labor today may give us an opportunity to revisit open questions in piecework with a more refined lens.
+
+
+
+
+
+% \onlyinsubfile{
+% \balance{}
+% \printbibliography
+% }
+\end{document}
