@@ -1,0 +1,57 @@
+\documentclass[10pt]{article}
+
+\usepackage{balance,graphics,setspace,parskip}
+\usepackage[margin=1in]{geometry}
+\usepackage{lipsum,color,subfiles,soul,xcolor}
+\usepackage[inline]{enumitem}
+\usepackage[backend=bibtex,style=authoryear]{biblatex}
+\usepackage{etoolbox}
+\AtBeginEnvironment{quote}{\singlespacing\small}
+  \bibliography{references}
+  % \addbibresource{references}
+
+\definecolor{Red}{HTML}{FF0000}
+\definecolor{Blue}{HTML}{0000FF}
+\newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
+\newcommand{\keyword}[1]{{\textbf{\texttt{\color{Blue}#1}}}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
+\newcommand{\topic}[1]{{\color{Blue}#1}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
+
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{SourceSerifPro}[
+ ItalicFont = SourceSerifPro,
+ ItalicFeatures={FakeSlant=0.2}]
+\setlength{\parskip}{.4em}
+\setlist{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+
+% \usepackage{sourceserifpro}
+\usepackage{booktabs} % For formal tables
+
+
+
+\begin{document}
+
+\begin{quote}
+
+\section*{Goal-less versus Goal-bound}
+In some situations, fee people know what the goals are; in others, people cling closely to goals long after they have become irrelevant or outmoded. In the sixties, for example, the Salk vaccine virtually eradicated polio. This medical breakthrough also brought an end to the existing goal of the March of Dimes organization, which for years had championed finding a cure for the crippling disease. The organization rebounded by shifting its purpose to focus on preventing birth defects.
+
+\subsection*{Irresponsible versus Unresponsive}
+If people abdicate their responsibilities, performance suffers. However, adherence too rigidly to policies or procedures can be equally harmful. In public agencies, ``street--level bureaucracies''~(\cite{lipsky1983street}) who deal with the public are often asked ``Could you do me this favor?'' or ``Couldn't you bend the rules a little bit in this case?' Turning down every request, no matter how reasonable, alienates the public and perpetuates the images of bureaucratic rigidity and red tape. But agency workers who are too accommodating create problems of inconsistency and favoritism.
+\end{quote}
+--- \cite[page 73]{bolman2017reframing}
+
+
+\begin{quote}
+And, like strategies, while it is widely presumed that policies are determined by political leaders and high--ranking officials, a vast body of research on implementation suggests that a variety of factors --- poorly specified or conflicting objectives, inadequate budgets, weakness of authority, misidrected incentives, existing work routines of operational personnel --- transform policies so that the actions of ``street--level bureaucrats'' differ markedly from the intentions of those who designed the programs but establish the meaning of the policies (see \cite{elmore1978organizational,lipsky1983street,pressman1973implementation})
+\end{quote}
+--- \cite[page 319]{scott2015organizations}
+
+
+% \onlyinsubfile{/
+% \bibliographystyle{author-year} % this will cause an error if there are no citations!
+  % \bibliographystyle{ACM-Reference-Format}
+  % \bibliography{references}
+\printbibliography{}
+% }
+\end{document}

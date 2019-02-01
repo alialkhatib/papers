@@ -1,0 +1,121 @@
+\documentclass[pn4226]{subfiles}
+\onlyinsubfile{
+  \bibliographystyle{SIGCHI-Reference-Format}
+  \bibliography{references}
+  \usepackage{xr-hyper}
+  \usepackage{hyperref}
+  \externaldocument{complexity}
+  \externaldocument{relationships}
+  \externaldocument{decomposition}
+  \externaldocument{piecework_lit}
+}
+
+\begin{document}
+
+\section{Introduction}\label{sec:introduction}
+
+\topic{The past decade has seen a flourishing of computationally--mediated labor.}
+A framing of work into modular, pre--defined components
+enables computational hiring and management of workers at scale~\cite{howe2008crowdsourcing,Bigham2014,crowdworkFuture}.
+In this regime, distributed workers engage in work whenever their schedules allow,
+often with little to no awareness of the broader context of the work, and
+often with fleeting identities and associations~\cite{martin2014being,uberAlgorithm}.
+
+For years, such labor was limited to information work such as data annotation and surveys~\cite{CrowdsourcingUserStudies,movieSummarizationWu,yuenSurvey,geiger2011managing,quinnbedersonTaxonomy}.
+However, physically embodied work such as driving and cleaning have now spawned multiple online labor markets as well~\cite{uberAlgorithm,uberOfficial,zaarlyOfficial,taskrabbitOfficial}.
+In this paper we will use the term \textit{on--demand labor}, to capture this pair of related phenomena:
+first, \textit{crowd work}~\cite{crowdworkFuture}, on platforms such as Amazon Mechanical Turk (AMT) and other sites of (predominantly) information work;
+and second, \textit{gig work}~\cite{friedman2014workers,Parigi:2016:GE:3026779.3013496}, often as platforms for one--off jobs, like driving, courier services, and administrative support.
+
+The realization that complex goals can be accomplished by directing crowds of workers has spurred firms to explore sites of labor
+such as AMT to find the limits of this distributed, on--demand workforce.
+Researchers have also taken to the space in earnest,
+developing systems that enable new forms of production
+(e.g. \cite{bernsteinSoylent,vizwiz,paolacci2010running}) and pursuing social scientific inquiry into the workers on these platforms~\cite{Ross,whoareNOTtheTurkers}.
+This research has identified the sociality of gig work~\cite{crowdcollab},
+as well as the frustration and disenfranchisement that these systems effect~\cite{turkopticon,martin2014being,takingAHITMcInnis}.
+Others have focused on the responses to this frustration,
+reflecting on the resistance that workers express against digitally--mediated labor markets~\cite{uberAlgorithm,dynamo}.
+
+
+\topic{This body of research has broadly worked toward the answer to one central question:
+\textit{What does the future hold for on--demand work and those who do it?}}
+Researchers have offered insights on this question along three major threads:
+First, \namerefl{sec:complexity} ---
+specifically, how complex are the goals that crowd work can accomplish, and
+what kinds of industries may eventually utilize it~\cite{suzukiAtelier,KimStoria,yuanAlmost,Yu2016b,Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364}?
+Second, \namerefl{sec:decomposition}~\cite{sensitiveTasks,LykourentzouPersonalityMatters,Law:2016:CKC:2858036.2858144,Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}?
+And third, \namerefl{sec:relationships}~\cite{turkopticon,storiesIraniSilberman,crowdcollab,takingAHITMcInnis}?
+
+This research has largely sought to answer these questions by examining extant on--demand work phenomena.
+So far, it has not offered an ontology to describe or understand
+the developments in worker processes that researchers have developed, or
+the emergent phenomena in social environments;
+nor has any research
+gone so far as to anticipate future developments.
+
+\begin{table*}[t]
+  \centering
+  \begin{tabularx}{\textwidth}{l X X X}
+    \toprule
+    & \textit{Observations in piecework} & \textit{Mechanism} & \textit{Implications for On--demand Work} \\
+    \midrule
+    {Complexity} &
+    \small{Growth from simple tasks such as sewing to more complex composite outcomes on the assembly line floor.} &
+    \small{Complexity was limited to tasks that could be easily measured and evaluated for payment by the piece.} &
+    \small{Measurement and verification will remain persistent challenges that will limit complexity unless solved.} \\ \hline
+
+    {Decomposition} &
+    \small{Work began sliced such that non--experts could perform each piece, but over time was sliced such that non--overlapping expertise was required for each step.} &
+    \small{Scientific Management and Taylorism informed and drove decomposition by measuring and facilitating the optimization of smaller tasks.} &
+    \small{After scientific management matured, piecework began  specialized training to create experts in narrow tasks. A similar shift seems feasible with on--demand work.} \\ \hline
+
+    {Workers} &
+    \small{Firms antagonized and exploited workers, leading workers to support one another independently, ultimately resulting in strong advocacy groups counterbalancing firms.} &
+    \small{The features of piecework (independence and transience) were both the fulcrum managers used to exploit workers as well as the focal point around which workers bonded.} &
+    \small{While worker frustrations are similar, the decentralized nature of on--demand work will limit collective action until there exist platforms to coordinate and exert pressure.} \\ 
+    \bottomrule
+  \end{tabularx}
+  \label{tab:overview}
+  \caption{Piecework and on--demand work have both wrestled with questions of how complex work can get, how finely--sliced tasks can become, and what the workplace will look like for workers. We connect piecework's history (left) to the mechanisms that determined its outcomes to these three questions (center) in order to derive predictions for modern on--demand work (right). }
+\end{table*}
+
+\subsection{Piecework as a lens to understand on--demand work}
+In this paper, we offer a framing for on--demand work as a contemporary instantiation of \textit{piecework},
+a work and payment structure which breaks tasks down into discrete jobs,
+wherein payment is made for \textit{output}, rather than for \textit{time}.
+We are not the first to relate on--demand work to piecework: in 2013, for example,
+Kittur et al. referenced crowd work as piecework briefly
+as a loose analogy~\cite{crowdworkFuture}.
+Our goal in this paper is to inspect the relationship much more closely.
+But more than this,
+the framing of on--demand labor as a reinstantiation of piecework 
+gives us years of historical material to help us make sense of this new form of work, and
+allows us to study on--demand work through a theoretical lens that is informed by years of rigorous, empirical research.
+
+More concretely, by positioning on--demand labor as
+an instantiation or even a continuation of piecework, we can make sense of past events as part of a much larger series of interrelated phenomena (Table~\ref{tab:overview}).
+We can reflect on differences in the features that impacted piecework historically and on--demand work today.
+And, to some extent, we can use these differences to offer some predictions of what on--demand work researchers
+and workers themselves
+might expect to see on the horizon.
+For example, we will draw on piecework's scholarship on task decomposition,
+which was historically limited by shortcomings in measurement and instrumentation, and
+leverage that insight to suggest how modern technology affects this mechanism in on--demand work
+--- namely, enabling precise tracking and measurement via algorithms and software.
+
+We organize this paper as follows:
+first, we review the definition and history of piecework
+to make clear the analogy to on--demand work;
+and second, we examine the three major research questions above using the lens of piecework. 
+For each question, we will
+contrast the perspective the piecework scholarship offers with on--demand labor's body of research,
+identify similarities and differences, and then
+offer predictions for on--demand work.
+
+% \onlyinsubfile{
+%   \printbibliography
+% }
+
+
+\end{document}

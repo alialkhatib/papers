@@ -1,0 +1,43 @@
+% % !TEX root = presentation.tex
+\documentclass[presentation]{subfiles}
+
+\onlyinsubfile{
+}
+\begin{document}
+
+\subfile{threads}
+% \againframe<2>{threads}
+
+\begin{frame}{The limits of complexity}
+  \begin{columns}
+    \begin{column}{.6\textwidth}
+      \visible<-4>{What do we mean when we say \alert{complexity}?}
+    \end{column}
+    \begin{column}{.4\textwidth}
+      \only<5->{\hfill \dots~In some cases. Sometimes.}
+    \end{column}
+  \end{columns}
+  \begin{columns}
+  \begin{column}{.55\textwidth}
+  \begin{itemize}
+    \item<2-> Can crowds help you \alert{revise} work?\par
+    \scriptsize{\textcite{bernsteinSoylent,Kim:2014:CSI:2556288.2556986,Nebeling:2016:WCW:2858036.2858169}\par}\normalsize{}
+    \item<3-> Can crowds \alert{critique} designs?\par
+    \scriptsize{\textcite{yuanAlmost,fuge2014analysis}\par}\normalsize{}
+    \item<4-> Can crowds create artifacts \alert{de novo}?\par
+    \scriptsize{\textcite{KimStoria,Kim2017,Hahn:2016:KAB:2858036.2858364,Lasecki:2014:LSR:2661334.2661352}\par}\normalsize{}
+  \end{itemize}
+  \end{column}
+  \begin{column}{.45\textwidth}
+      \begin{itemize}
+        \item[$\Rightarrow$]<6-> \hfill With variable success\par
+        \visible<0>{\scriptsize{\textcite{bernsteinSoylent,Nebeling:2016:WCW:2858036.2858169}\par}\normalsize{}}
+        \item[$\Rightarrow$]<7-> \hfill With careful guidance\par
+        \visible<0>{\scriptsize{\textcite{yuanAlmost,fuge2014analysis}\par}\normalsize{}}
+        \item[$\Rightarrow$]<8-> \hfill Within narrow specifications\par
+        \visible<0>{\scriptsize{\textcite{Hahn:2016:KAB:2858036.2858364,Lasecki:2014:LSR:2661334.2661352}\par}\normalsize{}}
+      \end{itemize}
+  \end{column}
+  \end{columns}
+\end{frame}
+\end{document}

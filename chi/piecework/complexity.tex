@@ -1,0 +1,207 @@
+\documentclass[pn4226]{subfiles}
+
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+\begin{document}
+
+\begin{comment}
+Crowdwork
+  - Kittur said let's do complex stuff
+  - This works by using CS techniques
+  - Clear that this works in focused cases
+  - More recent shift toward using experts
+\end{comment}
+
+\subsection[What are the complexity limits of on--demand work]
+{Complexity Limits of On--Demand Work}\label{sec:complexity}
+A key question to the future of on--demand work is
+\textit{what} precisely will become part of this economy.
+Paid crowdsourcing began with simple microtasks on platforms such as
+Amazon Mechanical Turk, but
+microtasks are only helpful if they build up to a larger whole.
+So, our first question:
+how complex can the work outcomes from on--demand work be?
+
+\subsubsection{\crowdworkpers}
+\topic{Kittur et al. were among the first to ask whether crowdsourcing could be used for more than parallelizing tasks~\cite{crowdForgeKittur}.}
+Their work showed that it could, with proof--of--concept crowdsourcing of
+encyclopedia articles and news summaries
+--- tasks which could be verified or repeated
+with reasonable expectations of similar results.
+Seeking to raise the complexity ceiling,
+researchers have since created
+yet more applications and techniques,
+including conversational assistants~\cite{lasecki2013chorus},
+medical data interpreters~\cite{lasecki2013chorus}, and
+idea generation~\cite{Yu2016a,Yu2016b}.
+
+\topic{To achieve complex work, this body of research has often applied ideas from Computer Science to design new workflows.}
+System designers leverage techniques such as MapReduce~\cite{crowdForgeKittur} and
+sequence alignment algorithms~\cite{lasecki2012real}, arranging humans as computational black boxes.
+This approach has proven a compelling one because
+it leverages the inherent advantages of
+scale,
+automation, and
+programmability that software affords.
+
+\topic{It is now clear that this computational workflow approach works with some classes of complex tasks, but the broader wicked problems largely remain unsolved.}
+As a first example,
+idea generation shows promise~\cite{Yu2016a,Yu2016b},
+but there is as yet no general crowdsourced solution for
+the broader goal of invention and innovation~\cite{fuge2014analysis}.
+Second,
+focused writing tasks are now feasible~\cite{Kim2017,bernsteinSoylent,Nebeling:2016:WCW:2858036.2858169,writingMicroTasks,agapie2015crowdsourcing}, but
+there is no general solution to create
+a cross--domain, high--quality crowd--powered author. 
+Third,
+data analysis tasks such as
+clustering~\cite{chilton2013cascade},
+categorization~\cite{andre2014crowd}, and
+outlining~\cite{luther2015crowdlines}
+are possible, but there is no general solution for sense--making.
+It is not yet clear what insights would be required
+to enable crowdsourced solutions for these broader wicked problems.
+
+
+\topic{Restricting attention to non--expert, microtask workers proved limiting.}
+So, Retelny et al. introduced the idea of crowdsourcing with
+online paid \textit{experts} from platforms such as Upwork.
+Expert crowdsourcing enables access to a much broader set of workers,
+for example designers and programmers.
+The same ideas can then be applied to expert ``macro--tasks''~\cite{cheng2015break,haas2015argonaut}, enabling the crowdsourcing of goals such as user--centered design~\cite{foundry},
+programming~\cite{latoza2014microtask,Fast2016,Chen2016}, and
+mentorship~\cite{suzukiAtelier}.
+However, there remains the open question of
+how complex the work outcomes from expert crowds can be.
+
+\subsubsection{\pieceworkpers}
+\begin{comment}
+- Farm workers-->textile
+- Limit: human management and oversight
+- Evaluation
+- Skilled work harder
+- Only some organizations can use it
+- Management practices
+\end{comment}
+
+\begin{comment}
+notes: what info do i assume the reader has seen already?
+- Graves: railway companies used ``efficiency experts'' to study how long tasks should take
+- Hart: evaluation limits complexity (we can affect that with peer evaluation!)
+- Graves: sparks of Scientific Management in Piecework
+- organization types are important determinants of piecework viability: lots of types of tasks? bad
+  - Hart (I think?): variability in workers is fine though
+- Foreman is important
+- 19th century: piecework was mostly cottage industry with untrained or informally trained workers
+  (unlike industrial metal workers during WWII)
+\end{comment}
+
+Piecework's body of research most squarely addresses complexity in two of the cases we looked at earlier: Airy's human computers and among industrial workers.
+
+\topic{Airy's work on astronomical charts opened the door to greater task complexity by encoding the intelligence into the process rather than the people.}
+Airy's computers had relatively limited education in mathematics, but by combining simple mathematical operations, Airy was able to create a complex composite outcome~\cite{grier2013computers}.
+Likewise, in Ford's factories, no individual could build the entire car, but the process could emergently produce one.
+
+But when piecework intially entered the American economy,
+it was not used for complex work.
+Without having designed complex work processes, piecework managers were restricted to available workers' skills such as sewing: it was infeasible to provide new pieceworkers with the comprehensive education
+that apprenticeships imparted \cite{hart2013rise}.
+So, initially piecework arose for farm work, and as
+Raynbird and others discuss,
+the practice remained relatively obscure until
+it blossomed in the textile industry~\cite{hughRaynbirdTaskWork}.
+Complexity levels remained low at the turn of
+the \nth{20} century as piecework saturated densely populated urban areas
+such as London and New York City~\cite{riisOtherSideLives}.
+
+\topic{Measurement also limited the complexity of piecework: only tasks that could be measured and priced could be completed via piecework.}
+Earlier we discussed Graves's and later Brown's analysis of railway workers.
+They identified task homogeneity and measurement as key requirements for piecework to be successful.
+However, complex, creative work
+--- which is inherently heterogeneous and difficult to routinize ---
+was unsuitable~\cite{10.2307/23702539}.
+
+Brown's description of ``efficiency experts'' would corroborate this:
+efficiency experts can effectively gauge how long known tasks should take, but
+would find themselves overwhelmed if they attempted to assess creative tasks like scientific research,
+which can take an arbitrary number of iterations before proceeding to a subsequent step.
+
+
+\topic{Moreover, piecework was limited to tasks that could be quickly and accurately evaluated.}
+Hart argues that evaluation limited piecework's complexity:
+at some point, evaluating multidimensional work for quality
+(rather than for quantity) becomes infeasible.
+In his words,
+``if the quality of the output is more difficult to measure than the quantity [\ldots]
+then a piecework system is likely to encourage
+an over--emphasis on quantity~\dots~and an under--emphasis on quality''~\cite{hart2016rise}.
+Complex work, which is often subjective to evaluate, falls victim to this pitfall.
+
+
+\subsubsection{\whatchanged}
+\begin{comment}
+  mangeerial overhead limits, so what's different
+  more people can now do complex work without training (more complex)
+  parts of management can be automated (more firms)
+  cheaper to create the infrastructure (more complex)
+\end{comment}
+
+\topic{The research on piecework tells us that we should expect it to thrive in industries where the nature of the work is limited in complexity~\cite{Brown01041990}, and become less common as work becomes more complex.}
+Has computation shifted piecework's previous limits of
+expertise, measurement, and evaluation?
+
+\topic{In some ways, yes: technology increases non--experts' levels of expertise by giving access to information that would otherwise be unavailable.}
+For example, taxi drivers in London endure rigorous training to pass a test known as ``The Knowledge'': a demonstration of the driver's comprehensive familiarity with the city's roads.
+This test is so challenging that veteran drivers develop significantly larger
+the regions of the brain associated with spatial functions such as navigation~\cite{Maguire11042000,Maguire2894,Skok:1999:KML:299513.299625,skok2000managing,Woollett1407,woollett2011acquiring}.
+In contrast, with on--demand platforms such as Uber, services such as Google Maps and Waze make it possible for
+people entirely unfamiliar with a city
+to operate professionally~\cite{silva2013traffic,hind2014outsmarting}.
+Other examples include search engines enabling information retrieval, and
+word processors enabling spelling and grammar checking.
+By augmenting the human intellect~\cite{engelbart2001augmenting},
+computing has shifted the complexity of work that is possible with minimal or no training.
+
+\topic{Algorithms have automated some tasks that previously fell to management.}
+Computational systems now act as ``piecework clerks''~\cite{10.2307/23702539} to
+inspect and modify work~\cite{turkopticon,takingAHITMcInnis}.
+However, these algorithms are less competent than humans at evaluating subjective work, as well as
+in their ability to exercise discretion, causing new problems for workers and managers.
+
+\subsubsection{\implication}
+Algorithms are undoubtedly capable of shepherding more complex work than the linear processes available to Airy and Ford.
+However, as work becomes more complex,
+it becomes increasingly difficult to codify a process to achieve it~\cite{Faraj2006a,edmondson2012teaming}.
+So, while algorithms will increase the complexity ceiling beyond what was possible previously with piecework, there is a fundamental limit to how complex such work can become.
+
+Technology's ability to support human cognition will enable stronger assumptions about workers' abilities, increasing the complexity of on--demand work outcomes.
+Just as the shift to expert crowdsourcing increased complexity, so too will workers with better tools increase the set of tasks possible.
+Beyond this, further improvements would most likely come from replicating the success of narrowly--slicing education for expert work as Hart and Roberts and later Grier described in their piecework examples
+of human computation~\cite{grier2013computers} and
+drastically reformulating macro--tasks given the constraints of piecework~\cite{hart2013rise}.
+An argument might be made that
+MOOCs and other online education resources
+provide crowd workers with the resources that they need, but 
+it remains to be seen whether that work will be appropriately valued, let alone
+properly interpreted by task solicitors~\cite{aguaded2013mooc}.
+If we can overcome this obstacle,
+we might be able to empower more of these workers to do complex work such as engineering,
+rather than doom them to ``uneducated'' match--girl reputations~\cite{10.2307/3827491}.
+However, many such experts are already available on platforms such as Upwork, so training may not directly increase the complexity accessible to on--demand work unless it makes common expertise more broadly available.
+
+Evaluation remains as difficult for crowd work as it did for the efficiency experts. 
+Reputation systems for crowdsourcing platforms remain notoriously inflated~\cite{Horton2015a}.
+Ultimately, many aspects of assessment remain subjective: whether a logo made for a client is fantastic or terrible may depend on taste.
+
+So, in the case of complexity, the history of piecework does not yet offer compelling evidence that on--demand work will achieve far more complex outcomes than piecework did.
+Improvements in workflows, measurement, and evaluation have already been made, and it's not immediately clear that the remaining challenges are readily solvable.
+However, on--demand work will be far more broadly distributed than piecework historically was
+--- reaching many more tasks and areas of expertise by virtue of the internet.
+
+\onlyinsubfile{
+  \bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{references}
+}
+
+\end{document}

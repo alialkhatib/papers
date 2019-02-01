@@ -1,0 +1,51 @@
+\documentclass[presentation]{subfiles}
+
+% \newenvironment{grayed}{\color{red}}{\ignorespacesafterend}
+
+% note to self later: this needs to be fixed because it makes like 6 slides...
+
+\begin{document}
+\begin{frame}[t,label=threads]{Ongoing Threads in Crowdsourcing Research}
+
+% \begin{minipage}[t][30mm][t]{\textwidth}
+  \begin{columns}
+    \begin{column}[T]{0.5\textwidth}
+      % \begin{grayed}
+      % \textcolor{gray}{
+        % \onslide<1>{
+          \only<-3>{
+            \begin{block}
+              {\textbf{\Large Complexity}}
+              \scriptsize{\textcite{suzukiAtelier,KimStoria,yuanAlmost,Yu2016b,Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364,crowdForgeKittur}\par}\normalsize{}
+            \end{block}
+            }
+        % }
+      % \end{grayed}
+      \onslide<1,3->{
+        \vspace*{10mm}
+        \begin{block}
+        {\textbf{\Large Workers}}
+          \only<-3>{
+            \scriptsize{\textcite{turkopticon,storiesIraniSilberman,crowdcollab,takingAHITMcInnis,dynamo,uberAlgorithm}\par}\normalsize{}
+          }
+          
+        \end{block}
+      }
+    \end{column}
+
+    \begin{column}[T]{0.5\textwidth}
+      \onslide<1,3->{
+        \begin{block}
+          {\textbf{\Large Decomposition}}
+          \only<-3>{
+            \scriptsize{\textcite{sensitiveTasks,LykourentzouPersonalityMatters,Law:2016:CKC:2858036.2858144,Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}\par}\normalsize{}
+          }
+        \end{block}
+      }
+    \end{column}
+  \end{columns}
+% \end{minipage}
+
+\end{frame}
+
+\end{document}

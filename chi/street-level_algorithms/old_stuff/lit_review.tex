@@ -1,0 +1,60 @@
+\documentclass[10pt]{article}
+
+\usepackage{balance,graphics,setspace,parskip}
+\usepackage[margin=1in]{geometry}
+\usepackage{lipsum,color,subfiles,soul,xcolor}
+
+\usepackage[inline]{enumitem}
+\definecolor{Red}{HTML}{FF0000}
+\definecolor{Blue}{HTML}{0000FF}
+\newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
+\newcommand{\keyword}[1]{{\textbf{\texttt{\color{Blue}#1}}}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
+\newcommand{\topic}[1]{{\color{Blue}#1}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
+
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{SourceSerifPro}[
+ ItalicFont = SourceSerifPro,
+ ItalicFeatures={FakeSlant=0.2}]
+\setlength{\parskip}{.4em}
+\setlist{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\setlist[enumerate]{label=(\arabic*)}
+
+% \usepackage{sourceserifpro}
+\usepackage{booktabs} % For formal tables?
+
+
+
+\begin{document}
+
+\ali{background/literature review}
+
+\section*{What are bureaucracies?}
+% the government that sort of fills in to connect the disconnect between elected people and the ``making the stuff happen''
+
+
+\section*{What are ``street--level'' bureaucracies?}
+the part of bureaucratic organizations that people interact with --- the ``contact points''.
+judges, police officers, teachers, etc\dots are street--level; superintendents, bailiffs, internal police agencies (IAB?) are not
+
+these are the most ``concrete'' ways that governance becomes ``real''; they're the places that everyday people interact with the governance model that moderates their behavior, and where policy gets enforced.
+
+\section*{Why are ``street--level'' bureaucracies interesting, useful, or anything?}
+
+oh they're not
+
+just kidding
+
+
+street level bureaucrats have a number of powers that boil down to one feature: discretion.
+
+Discretion in this context manifests itself as a capacity for bureaucrats to selectively enforce policies on people.
+In this way, they create their own policies; the collective behavior of bureaucrats becomes its own policy,
+wherein people may or may not be charged of certain crimes, or 
+
+
+
+
+\bibliographystyle{acm}
+\bibliography{references}
+\end{document}

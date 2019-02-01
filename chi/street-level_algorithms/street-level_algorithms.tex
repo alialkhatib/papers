@@ -1,0 +1,154 @@
+\documentclass[sigchi]{acmart}
+
+\def\UrlBreaks{\do\.\do\@\do\\\do\/\do\!\do\_\do\|\do\;\do\>\do\]%
+  \do\)\do\,\do\?\do\'\do+\do\=\do\#\do-}
+
+\usepackage{color,subfiles,soul,nth,balance}
+\usepackage[inline]{enumitem}
+
+\definecolor{Red}{HTML}{FF0000}
+\definecolor{Purple}{HTML}{FF00FF}
+\definecolor{Blue}{HTML}{0000FF}
+\definecolor{Orange}{HTML}{a37219}
+\definecolor{BrightOrange}{HTML}{ED702D}
+\newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
+\newcommand{\msb}[1]{{\color{Purple}[msb: #1]}}
+\newcommand{\thesis}[1]{{\color{Orange}{#1}}}
+\newcommand{\topic}[1]{{\color{Blue}#1}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
+\newcommand{\change}[1]{{\color{BrightOrange}#1}}
+% \renewcommand{\change}[1]{#1}
+\newcommand{\RED}[1]{{\color{Red}#1}}
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+
+% Copyright
+% \setcopyright{none}
+% DOI
+\acmDOI{10.475/123_4}
+% ISBN
+\acmISBN{123-4567-24-567/08/06}
+%Conference
+\acmConference[CHI '19]{ACM Conference on Human Factors in Computing Systems}{April 2019}{Glasgow, UK}
+\acmYear{2019}
+\copyrightyear{2019}
+\acmPrice{15.00}
+\renewcommand{\topic}[1]{#1} % don't do anything with \topic sentences; this is just for drafts, and shouldn't show up in fully compiled documents!
+\renewcommand{\thesis}[1]{#1} % don't do anything with \thesis sentences; this is just for drafts, and shouldn't show up in fully compiled documents!
+
+\copyrightyear{2019}
+\acmYear{2019}
+\setcopyright{acmlicensed}
+\acmConference[CHI 2019]{CHI Conference on Human Factors in Computing Systems Proceedings}{May 4--9, 2019}{Glasgow, Scotland Uk}
+\acmBooktitle{CHI Conference on Human Factors in Computing Systems Proceedings (CHI 2019), May 4--9, 2019, Glasgow, Scotland Uk}
+\acmPrice{15.00}
+\acmDOI{10.1145/3290605.3300760}
+\acmISBN{978-1-4503-5970-2/19/05}
+
+
+
+\begin{document}
+
+\renewcommand{\topic}[1]{#1} % don't do anything with \topic sentences; this is just for drafts, and shouldn't show up in fully compiled documents!
+\renewcommand{\thesis}[1]{#1} % don't do anything with \thesis sentences; this is just for drafts, and shouldn't show up in fully compiled documents!
+\renewcommand{\notinsubfile}[1]{#1}
+\renewcommand{\onlyinsubfile}[1]{}
+% \renewcommand{\ali}[1]{}
+
+\title[Street--Level Algorithms]{Street--Level Algorithms: A Theory at the Gaps Between Policy and Decisions}
+
+% \author{Anonymized}
+% \affiliation{%
+%   \institution{~}
+%   \city{~}
+%   \state{~}
+%   \postcode{~}
+% }
+% \email{}
+
+\author{Ali Alkhatib}
+\affiliation{\institution{Stanford University Computer Science}}
+\email{ali.alkhatib@cs.stanford.edu}
+
+\author{Michael Bernstein}
+\affiliation{\institution{Stanford University Computer Science}}
+\email{msb@cs.stanford.edu}
+
+% The default list of authors is too long for headers.
+\renewcommand{\shortauthors}{Alkhatib and Bernstein}
+% \renewcommand{\shortauthors}{Anonymized}
+
+
+\begin{abstract}
+Errors and biases are earning algorithms increasingly malignant reputations in society.
+A central challenge is that algorithms must bridge the gap between
+high--level policy and on--the--ground decisions,
+making inferences in novel situations where the policy or training data do not readily apply.
+In this paper,
+we draw on the theory of \textit{street--level bureaucracies},
+how human bureaucrats such as police and judges interpret policy to make on--the--ground decisions.
+We present by analogy a theory of \textit{street--level algorithms},
+the algorithms that bridge the gaps between policy and decisions about people in a socio-technical system.
+We argue that unlike
+street--level bureaucrats, who reflexively refine their decision criteria as they reason through a novel situation,
+street--level algorithms at best refine their criteria only after the decision is made.
+This loop--and--a--half delay results in illogical decisions when handling new or extenuating circumstances.
+This theory suggests designs for street--level algorithms that draw on
+historical design patterns for street--level bureaucracies, including
+mechanisms for self--policing and recourse in the case of error.
+\end{abstract}
+
+\fancyhead{}
+% this is the abstract we love
+\begin{comment}
+As algorithmic systems govern more aspects of our lives than ever before, their errors, biases, and misclassifications have earned them an increasingly malignant reputation.
+The challenge is that algorithms must fill in the gaps between high-level policy and on-the-ground decisions, interpolating between their training data and the diverse situations seen at the margin in practice.
+In this paper, we frame this challenge using the theoretical foundations of \textit{street--level bureaucracies}: how humans ``on the street'' such as police officers and judges performed the same task of bridge the gaps between high-level policy and on-the-ground decisions.
+We present by analogy a theory of the algorithms that similarly bridge the gaps between policy decisions and individual human experiences: \textit{street--level algorithms}. We argue that unlike street--level bureaucrats, who refine their decision criteria as they reason through a novel or marginal situation, street--level algorithms can at best refine their decision criteria only after the decision is made. This loop-and-a-half delay results in illogical algorithmic policy decisions when handling rare cases, as in intersectional identity where specific combinations are rare, or when facing nonstationary distributions such as evolving norms.
+We suggest design implications for street--level algorithms, and how they might manage the inevitable gap between policy and execution.
+\end{comment}
+
+\begin{CCSXML}
+<ccs2012>
+<concept>
+<concept_id>10003120.10003121.10003126</concept_id>
+<concept_desc>Human-centered computing~HCI theory, concepts and models</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Human-centered computing~HCI theory, concepts and models}
+
+\keywords{Street--level algorithms; Street--level bureaucracies; Artificial Intelligence}
+\maketitle
+
+\subfile{introduction}
+\subfile{background}
+\section{Case studies}
+\topic{We will focus on three cases to illustrate a methodology for thinking about the problems with street--level algorithms more broadly.}
+We will look at moderation through YouTube's demonetization system and how it fails when it encounters underrepresented groups---in this case, members of the LGBTQ community discussing their gender identity and sexuality.
+We will proceed to examine the algorithmic management of workers in online labor markets and the perils of misjudgment by algorithmic quality control systems.
+Finally, we will discuss the emergence of algorithmic bias in judicial bail recommendation systems---a topic that has already generated substantial academic discussion in the past several years.
+In all of these cases, a theme will emerge of
+algorithmic system encountering either a novel otherwise unforeseen situation for which it was not trained---and for which, perhaps, it \textit{could} not have been trained---and that system making a decision without reflexivity.
+
+\subfile{youtube}
+\subfile{gigwork}
+\subfile{judicial_bias}
+
+\subfile{design_implications}
+\subfile{discussion}
+\subfile{conclusion}
+
+\begin{acks}
+We would like to thank Os Keyes and Jingyi Li, among others, for volunteering their time and patience as they provided input to help us understand and discuss several of the sensitive topics with which we engaged.
+
+This work was supported by a National Science Foundation award IIS-1351131 and the Stanford Cyber Initiative.
+
+\end{acks}
+\bibliographystyle{ACM-Reference-Format}
+\balance
+\bibliography{references}
+
+\end{document}

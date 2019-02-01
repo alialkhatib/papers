@@ -1,0 +1,109 @@
+\documentclass[aspectratio=169,12pt,noslidenumbers]{beamer} % or 14 or 17 or 20
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer}
+\usepackage{pgfcalendar,pgfornament,svg,subfiles,chronosys,cancel,xcolor,color,nth}
+\usepackage[outline]{contour}
+\usepackage{datenumber,xparse,fp}
+\usetikzlibrary{arrows,automata}
+\usepackage[citestyle=authoryear-comp,backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\bibliography{references}
+\usetheme{metropolis}
+\beamertemplatenavigationsymbolsempty
+\definecolor{stanfor¡ed}{HTML}{8C1515}
+\definecolor{metroBackground}{RGB}{250,250,250}
+
+
+\setbeamertemplate{frametitle}
+{\vskip-3pt
+  \leavevmode
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=5.8ex,dp=1ex]{frametitle}%
+    \raggedright\hspace*{1em}\large{\insertframetitle}
+  \end{beamercolorbox}
+  }%
+}
+\setbeamertemplate{caption}{\raggedright\footnotesize{\insertcaption}\par}
+
+
+\addtobeamertemplate{frametitle}{}{%
+    \begin{textblock*}{28mm}(\paperwidth-40mm,-12mm)
+      \includegraphics[height=10mm]{../../../presentations/common_figures/origami-1.png}
+      \includegraphics[height=10mm]{../../../presentations/common_figures/origami-2.png}
+      \includegraphics[height=8mm]{../../../presentations/common_figures/origami-white.png}
+    \end{textblock*}}
+
+\input{timeline_code}
+
+\DeclareCiteCommand{\eventcite}{}{\chronosevent{\thefield{year}}{\printnames{labelname}}}{}{}
+
+
+\definecolor{Orange}{HTML}{E98125}
+\definecolor{Blue}{HTML}{0645AD}
+\hypersetup{colorlinks,linkcolor=,urlcolor=Blue}
+
+\definecolor{PineGreen}{HTML}{008800}
+\definecolor{Red}{HTML}{FF0000}
+\definecolor{Blue}{HTML}{0000FF}
+\definecolor{JokeGreen}{HTML}{00C953}
+\newcommand{\msb}[1]{{\color{PineGreen}[MSB: #1]}}
+\newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
+
+\newenvironment{mystepwiseitemize}{\begin{itemize}[<+-| alert@+>]}{\end{itemize}}
+% Theme colors are derived from these two elements
+\setbeamercolor{alerted text}{fg=Orange}
+\setsansfont[BoldFont={Source Sans Pro Bold},
+              Numbers={OldStyle}]{Source Sans Pro}
+\setmainfont[BoldFont={Source Serif Pro Semibold},
+              Numbers={OldStyle}]{Source Serif Pro}
+\setmonofont{Source Code Pro}
+\setbeamercolor{institute in head/foot}{fg=stanfordRed}
+\setbeamercovered{transparent}
+\setbeamercovered{again covered={\opaqueness<1->{15}}}
+
+\title{Examining Crowd Work and Gig Work Through The Historical Lens of Piecework}
+% \metroset{titleformat=smallcaps}
+\contourlength{0.1pt}
+\contournumber{10}
+\author{{Ali Alkhatib}, Michael Bernstein, Margaret Levi\\
+\href{mailto:ali.alkhatib@cs.stanford.edu}{ali.alkhatib@cs.stanford.edu} ||
+         \href{http://twitter.com/_alialkhatib}{@\_alialkhatib}}
+
+\institute[Stanford]{Stanford University}
+% \newdate{talkDate}{10}{05}{2017}
+\date{May 10, 2017}
+% \date{\talkDate}
+
+\hypersetup{
+  colorlinks = true,
+  % linkcolor = blue,
+  citecolor = blue
+}
+
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+\begin{frame}
+\titlepage
+\end{frame}
+% \setbeamercovered{transparent}
+
+
+\subfile{introduction}
+\subfile{complexity}
+\subfile{closing}
+\againframe[standout]{takeaway}
+\subfile{contact}
+
+
+
+\begin{frame}[allowframebreaks]{References}
+  \printbibliography{}
+\end{frame}
+
+\end{document} 

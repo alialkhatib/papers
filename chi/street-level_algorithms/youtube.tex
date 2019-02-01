@@ -1,0 +1,132 @@
+%!TEX root = ./street-level_algorithms.tex
+\documentclass[street-level_algorithms]{subfiles}
+
+\begin{document}
+
+\subsection{YouTube content moderation}\label{sec:YouTube}
+
+\topic{YouTube enforces many of its content policies algorithmically.}
+The decisions of how to handle user--generated content in general have enormous bearing on
+the culture of today's online platforms~\cite{gillespie2018custodians}.
+On YouTube, machine learning systems classify whether each uploaded video contains
+content that is protected by an existing copyright~\cite{kim2007youtube},
+and whether it violates YouTube's ``advertiser--friendly content guidelines''~\cite{youtube2010youtube}.
+The content guidelines, for example, state that to earn ad revenue,
+videos must not feature controversial issues, dangerous substances,
+harmful acts, inappropriate language, or sexually suggestive content.
+YouTube's advertisers do not want their ads run on videos with this content,
+so if a video does not meet the content deadlines, it is \textit{demonetized},
+where YouTube does not show ads on the video and the content creator receives no income for it.
+
+\topic{But these demonetization algorithms have made highly--publicized errors.}
+For example, YouTube began labeling videos uploaded by transgender YouTubers
+as ``sexually explicit''~\cite{LGBTYouTube}, demonetizing them.
+When video titles included words like ``transgender'', they were demonetized;
+when the content creators removed ``transgender'' but left other aspects of the video as--is,
+the same videos were monetized normally~\cite{YouTubeProblems}.
+
+
+YouTube's classifier for sexually explicit content misfired.
+Discussions of transgender issues are not necessarily about sex at all;
+while sex and gender have historically been conflated~\cite{valdes1994queers},
+they refer to different ideas~\cite{udry1994nature};
+the state of being trans does not imply any particular sexuality.
+% \citeauthor{ryan2009transgender}
+% Even if a discussion about gender identity mentions sex,
+% it does not necessarily mean that the discussion is sexual,
+% nor does that necessarily mean sexually explicit.
+The algorithm's training data or model may not have yet represented
+the evolution of our collective consciousness to acknowledge this distinction,
+or our changing desire to treat people variably along these dimensions
+and with more consideration than we have in the past.
+As people increasingly turn to and rely on YouTube to be a venue to earn a living
+--- much like a public square ---
+YouTube's algorithmic classification system
+denies people a space for this discussion about the biological and cultural distinctions of sex and gender.
+YouTube eventually apologized, stating
+``our system sometimes make mistakes in understanding context and nuances''~\cite{wright_2018}.
+
+
+
+\topic{These issues also emerge in the opposite direction, so to speak.}
+The same algorithms that mischaracterized discussions about
+\textit{gender} as \textit{sexual} and consequently inappropriate for advertising
+failed to flag
+inappropriate content disguised in a large number of children's cartoons.
+Fraudulent videos of Peppa Pig being tortured at a dentist's office were left alone, and
+videos of cartoon characters assaulting and killing each other were passed over by the algorithm,
+in some cases being included in YouTube Kids,
+a subset of YouTube which offers to source content appropriate specifically for children.
+This failure to identify troubling content wrapped in
+ostensibly child--friendly animation
+again led to a refinement of YouTube's policies and algorithms.
+
+\topic{It can be useful to think about YouTube's content moderation algorithms as
+analogous to the class of street--level bureaucrats who
+monitor and interact with street performers in offline urban contexts.}
+Street performance, or \textit{busking}, is usually monitored by police~\cite{quilter2015long}.
+Many cities have laws which restrict busking in certain contexts.
+The police must identify when they should enforce laws strictly and when they should take a more permissive stance:
+the details of enforcement of those laws is necessarily left to police officers,
+affording them substantial latitude.
+The public record is full of instances of police ranging in behavior from
+aggressively managing to enjoying and engaging in the performance themselves~\cite{grill2011street}.
+As performance by nature often pushes the bounds of expectations and
+street performance in particular is inherently experimental~\cite{harrison1990drawing},
+police have to be flexible about the application of their powers and make reasonable decisions in new circumstances.
+The challenge is to characterize the novelty of the situation and reflect on the decision they're being called to make.
+More importantly, they must make these decisions in the moment,
+applying the implications of that decision to a constantly--updating intuition about
+the effective policy they're creating through their selective enforcement of laws.
+
+\topic{We can think of YouTube's monetization algorithm as akin to a sort of police force
+that encounters hundreds of thousands of new performances every day and
+is expected to navigate those situations appropriately.}
+The challenge is that this algorithmic police force trains and updates its policies in batches:
+it is executing on today's performances based on yesterday's data.
+Yesterday, transgender people weren't speaking publicly,
+in a venue accessible all over the world,
+about deeply personal aspects of their lives in the ways that they now do.
+The algorithm is always behind the curve:
+at best, it gets feedback or negative rewards
+only after it has executed its decision,
+in this case when YouTubers appeal or gather media attention.
+By contrast, police reflexively construct
+an interpretation of the situation as soon as they encounter it,
+rather than merely match on learned patterns.
+
+\topic{This case highlights a shortcoming with a commonly offered solution to these kinds of problems,
+that more training data would eliminate errors of this nature: culture always shifts.}
+Simply having more data will never allow us to anticipate and prevent these kinds of errors.
+Experimentation is often the point of performance and art, and
+certainly part of the nature of public performance art like YouTube~\cite{cohen1998radical,mason1992street}.
+Society is slowly (albeit not consistently) coming to acknowledge that transgender people are people,
+and in doing so recognize that their gender identities are acceptable to discuss.
+In statistical terms, we might say that
+the data in this system is a nonstationary process:
+the distribution (of words, topics, and meanings) changes, sometimes abruptly.
+YouTube was, at one time, a uniquely empowering space for members of the transgender community
+to be candid and to explore their shared experiences~\cite{ONeill2014,raun2016out}, but
+arguably culture has grown in ways that YouTube and its content classification algorithms have not.
+Reinforcement rewards and new training data can help an algorithm reconfigure its decision boundary, but
+even deep learning only gets this new training information \textit{after}
+it has already made decisions, sometimes hundreds of thousands of decisions
+--- \textit{effecting} a policy deterring transgender YouTubers from discussing their gender identity,
+or risk being demonetized for discussing content the system erroneously classifies as ``sexual''.
+
+\topic{The effects of bad street--level algorithms are farther--reaching than the immediate cases that are mishandled.}
+\citeauthor{lipsky1983street} points out that
+people begin to work around street--level bureaucracies when they become unreliable and untrustworthy, or
+when the public decide that they cannot hope for bureaucrats to make favorable decisions~\cite{lipsky1983street}.
+We see this phenomenon unfolding on YouTube:
+as their demonetization algorithms mishandle more and more YouTubers ~\cite{adpocalypseForbes,summers2018professors},
+creators have begun to circumvent YouTube monetization entirely,
+encouraging audiences to support them through third--party services such as Patreon~\cite{leppanen2017state}.
+
+
+\onlyinsubfile{
+  \bibliographystyle{ACM-Reference-Format}
+  \bibliography{references}
+}
+
+\end{document}

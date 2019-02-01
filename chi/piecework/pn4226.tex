@@ -1,0 +1,189 @@
+\documentclass{sigchi}
+
+\usepackage{xr-hyper}
+\usepackage{todonotes,txfonts,balance,graphics,color,alphalph,subfiles,appendix,endnotes}
+\usepackage{booktabs,textcomp,microtype,ccicons,enumitem,moreenum,nth,endnotes,textcase}
+\usepackage[normalem]{ulem}
+% \usepackage[hyphens]{url}
+\def\UrlBreaks{\do\/\do-}
+\usepackage{breakurl}
+% \usepackage{natbib}
+% \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
+\usepackage[T1]{fontenc}
+\usepackage[pdflang={en-US},pdftex]{hyperref}
+\usepackage{mfirstuc,lastpage,cleveref}
+\usepackage[en-GB]{datetime2}
+\usepackage{fancyhdr,tabularx}
+\usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
+\usepackage[utf8]{inputenc} % for a UTF8 editor only
+
+% \bibliographystyle{SIGCHI-Reference-Format}
+\renewcommand*{\notesname}{Graveyard of old paragraphs}
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+
+% \setcounter{biburlnumpenalty}{100}
+% \setcounter{biburllcpenalty}{100}
+% \setcounter{biburlucpenalty}{100}
+
+% \bibliography{references}
+\providecommand*{\namerefl}[1]{%
+\refused{#1}%
+\MakeTextLowercase{%
+\getrefbykeydefault{#1}{name}{??}%
+}%
+}
+
+
+% Paper metadata (use plain text, for PDF inclusion and later
+% re-using, if desired).  Use \emtpyauthor when submitting for review
+% so you remain anonymous.
+
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{%
+   % label=\alph*),
+ label=\arabic*),
+}
+
+\setlist{nolistsep}
+\def\plaintitle{Examining Crowd Work and Gig Work Through The Historical Lens of Piecework}
+% \def\plaintitle{Crowd Work and Gig Work [as] Seen Through the Historical Lens of Piecework}
+\def\plainauthor{Ali Alkhatib, Michael S. Bernstein, Margaret Levi}
+\def\emptyauthor{}
+\def\plainkeywords{Crowd work; gig work; on--demand work; piecework}
+\def\plaingeneralterms{Group and Organization Interfaces}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{
+    \def\UrlFont{\sf}
+  }{
+    \def\UrlFont{\small\bf\ttfamily}
+  }}
+\makeatother
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+\definecolor{PineGreen}{HTML}{008800}
+\definecolor{Red}{HTML}{FF0000}
+\definecolor{Blue}{HTML}{0000FF}
+\definecolor{JokeGreen}{HTML}{00C953}
+\newcommand{\msb}[1]{{\color{PineGreen}[MSB: #1]}}
+\newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
+\newcommand{\TO}{\textit{Turkopticon}}
+\newcommand{\DO}{\textit{Dynamo}}
+
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={\plaintitle},
+% Use \plainauthor for final version.
+  pdfauthor={\plainauthor},
+  % pdfauthor={\emptyauthor},
+  pdfkeywords={\plainkeywords},
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+  hypertexnames=false
+}
+
+
+
+\newcommand{\subsubsubsection}[1]{\textit{#1}}
+\newcommand{\pieceworkpers}{The perspective of piecework}
+\newcommand{\crowdworkpers}{The perspective of on--demand work}
+\newcommand{\whatchanged}{Comparing the phenomena}
+\newcommand{\implication}{Implications for on--demand work}
+\newcommand{\pieceworkdefinition}{piecework is the paradigm of remuneration that is largely made compelling for its use of
+``payment for results'',
+leading to and leveraging narrower skill sets required for narrowly defined tasks,
+and affording workers some amount of freedom to complete tasks
+(and consequently earn money)
+at at whatever rate and in whichever manner they wish} % do i use this more than once? even that much?
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+\newcommand{\note}[1]{\footnote{#1}}
+\newcommand{\topic}[1]{{\color{Blue}#1}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
+\newcommand{\joke}[1]{{\color{JokeGreen}#1}} % if you're in a subfile, make the joke JokeGreen colored so people know I'm being funny!
+
+\let\internalNoteali\ali
+\let\internalNotemsb\msb
+\onlyinsubfile{\renewcommand{\ali}[1]{\onlyinsubfile{\internalNoteali{#1}}}}
+\onlyinsubfile{\renewcommand{\msb}[1]{\onlyinsubfile{\internalNotemsb{#1}}}}
+
+\renewcommand{\headrulewidth}{0pt}
+
+
+\begin{document}
+\CopyrightYear{2017}
+\setcopyright{acmlicensed}
+\conferenceinfo{CHI 2017,}{May 06 - 11, 2017, Denver, CO, USA}
+\isbn{978-1-4503-4655-9/17/05}\acmPrice{\$15.00}
+\doi{http://dx.doi.org/10.1145/3025453.3025974}
+\renewcommand{\topic}[1]{#1} % don't do anything with \topic sentences; this is just for drafting 
+\renewcommand{\joke}[1]{} % don't do anything with \jokes! Just throw them away! (Better to drop it than accidentally include it)
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+\renewcommand{\note}[1]{\onlyinsubfile{\note{#1}}}
+
+
+
+\title{\plaintitle}
+
+\numberofauthors{1}
+\author{%
+  \alignauthor{Ali Alkhatib, Michael S. Bernstein, Margaret Levi\\
+    \affaddr{Computer Science Department and CASBS}\\
+    \affaddr{Stanford University}\\
+    \email{\{ali.alkhatib, msb\}@cs.stanford.edu, mlevi@stanford.edu}}\\
+}
+% \author{
+% \alignauthor{Anonymized for Review\\
+% \affaddr{~}\\
+%     \affaddr{~}\\
+%     \email{~}}\\
+% }
+\maketitle
+\subfile{abstract.tex}
+
+\category{H.5.3.}{Information Interfaces and Presentation
+  (e.g. HCI)}{Group and Organization Interfaces}
+
+\keywords{\plainkeywords}
+\ali{maybe put a table with high level summaries}
+\subfile{introduction.tex}
+\subfile{piecework_lit.tex}
+\subfile{cases.tex}
+\subfile{discussion.tex}
+\subfile{conclusion.tex}
+
+
+\balance{}
+
+\bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{references}
+
+% \section{References}
+% \printbibliography[heading=none]
+
+
+
+\end{document}

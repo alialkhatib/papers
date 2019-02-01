@@ -1,0 +1,156 @@
+\documentclass[pn4226]{subfiles}
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+\onlyinsubfile{
+\usepackage{xr-hyper}
+\usepackage{hyperref}
+\externaldocument{complexity}
+\externaldocument{relationships}
+\externaldocument{decomposition}
+}
+
+\begin{document}
+
+\section{Discussion}
+\topic{In our analysis of on--demand work via the piecework lens, three issues arise:}
+\begin{inlinelist}
+  \item \namerefl{sec:perilousProblemsPredicting},
+  \item \namerefl{sec:polarizationOfCrowdWork}, and
+  \item \namerefl{sec:whatShouldBeTheFuture}.
+\end{inlinelist}
+We will attempt to grapple with these questions here explicitly.
+
+
+\subsection{The Hazards of Predicting the Future}\label{sec:perilousProblemsPredicting}
+\topic{The past isn't a perfect predictor for the future; as Scholz cautions, ``it would be wrong to conclude that in the realm of digital labor there is nothing new under the sun''~\cite{scholz2012digital}.}
+Our analysis is limited by the differences, foreseen and unforeseen, between historical piecework and modern on--demand work.
+For example, unlike physical work environments, people can (and often do) make one--off contributions to online communities~\cite{mcinnis2016one}.
+While we have attempted to identify some likely parallels and divergences between piecework and on--demand work,
+we can't claim to have accounted for everything.
+
+\topic{But this does not mean that attempting to draw meaningfully from historical scholarship would be folly; enough of piecework can and does inform on--demand work that HCI and CSCW researchers might seek out historical framings for other phenomena of study as well.}
+While we can only speculate one of (perhaps many) possible futures, history does allow us to articulate and bound which futures appear more likely.
+
+\topic{Rosenberg and others have contributed substantially to the practice in part by clearly limiting the extent of their claims --- only offering, for instance, ``to narrow our estimates and thus to concentrate resources in directions that are more likely to have useful payoffs''~\cite{rosenberg1994exploring}.}
+Using this approach,
+our method of relating history to modern socio--technical systems may be
+a useful tool for researchers attempting
+to make sense of ostensibly new phenomena.
+In other words, offering ``that past history is an indispensable source of information
+to anyone interested in characterizing technologies''~\cite{rosenberg1982inside}.
+
+
+\subsection{Utopian and Dystopian Visions}\label{sec:polarizationOfCrowdWork}
+\topic{An easy narrative is to characterize the future of on--demand labor at one of two extremes.}
+On one hand, crowd work researchers
+imagine the application of crowdsourcing as
+a potentially bright future that enables the achievement of near--impossible goals and career opportunities~\cite{redballoon,crowdworkFuture,vizwiz,suzukiAtelier}.
+On the other hand, researchers
+warn that on--demand labor will create exploitative sites of dispossession~\cite{scholz2012digital},
+discrimination~\cite{edelman2015racial},
+and invisible, deeply frustrated workers~\cite{turkopticon,bighamHalfWorkday}.
+
+\topic{A uniquely challenging facet of this domain is the public attention that it has garnered.}
+Activists have described speculative work as having
+``essentially been turned into modern--day slaves''~\cite{activistsHuffPoLawsuit}.
+Meanwhile, advocates have described it as
+``a project of sharing aimed at providing ordinary people with more economic opportunities and improving their lives''~\cite{uberPropaganda}.
+
+\topic{Piecework teaches us that, without appropriate norms and policies, the dystopian outcome has happened and may happen again.}
+The piecework nature of on--demand work induces us
+``to neglect tasks that are less easy to measure''~\cite{SJOE:SJOE371},
+rewarding us not for creativity but predictability;
+payment for this work may ultimately be determined by
+algorithms that fundamentally don't understand people;
+the layers between us and our managers might eventually become
+``defective (simple, observable)'' algorithms~\cite{10.2307/2555446},
+just like those which already frustrate
+on--demand workers~\cite{uberAlgorithm,dynamo,turkopticon}.
+However, social policy has advanced since the early 1900s, so as on--demand work grows, a repeat of \textit{How the Other Half Lives}~\cite{riisOtherSideLives} seems less likely.
+
+\topic{On the other hand, while piecework's nascent years were grim, what followed was a century of some of the most potent labor advocacy organizations in modern history~\cite{hart2013rise,mccallum2013global}.}
+Even today, the \textit{geist} of the labor union revolution
+inspires collective action and worker empowerment around the world.
+Recently, in India, workers across the nation engaged in
+the largest labor strike in human history~\cite{indiaStrikeRealNews}.
+If labor advocacy groups can find ways to effect change in on--demand work as some have called for~\cite{futureUnions},
+then the future of on--demand labor may follow
+the same trajectory of worker empowerment that piecework saw.
+
+
+\topic{The history of piecework suggests that the utopian and dystopian outcomes will \textit{both} occur,
+in different parts of the world and to different groups of people.}
+When piecework largely disappeared in the United States, outsourcing appeared --- creating major labor issues around the world.
+It'ss entirely possible that we will create a new brand of flexible online career in developed countries,
+while simultaneously fueling an unskilled decentralized labor force in developing nations.
+As designers and researchers, this prompts the question: which outcome are we attempting to promote or avoid for whom?
+
+
+\subsection{A Research Agenda}\label{sec:whatShouldBeTheFuture}
+\topic{Piecework also helps bring into focus the areas of research that might bear the most fruit.}
+We return to the three questions that motivated this paper:
+\begin{inlinelist}
+  \item \nameref{sec:complexity}?
+  \item \nameref{sec:decomposition}?
+  \item \nameref{sec:relationships}?
+\end{inlinelist}
+
+\topic{While we have arguably outpaced piecework with regard to the limits on the complexity of work, the most complex and open--ended wicked problems~\cite{rittel1973dilemmas} remain the domain of older human collectives such as governments and organizations.}
+In addition, we can learn from the piecework literature as it relates to
+the stymieing effect that mismanagement has on workers;
+research into complexity limits should focus on finding new ways to manage workers,
+in particular using humans (perhaps other crowd workers)
+to act as modern ``foremen''.
+
+\topic{Piecework researchers looking into decomposition pointed out long ago that piecework is saddled by a lower limit on decomposition:}
+as Bewley mentions,
+``piecework does not compensate workers for time spent switching tasks''~\cite{bewley1999wages}. 
+We've since studied this phenomenon in crowd work both
+observationally \cite{taskSearch} and
+experimentally \cite{delayAndOrderLasecki}.
+We should consider whether this remains a worthwhile area to explore;
+unless the work we put forth directly affects the costs of task--switching
+--- for instance, the cost of suboptimal task search, or the cognitive burden of changing tasks ---
+we may only make incremental advances in micro--task decomposition.
+When the cognitive cost of understanding a task and its inputs outstrips the effort required to complete it, decomposition seems a poor choice.
+
+\topic{Finally, we turn to the relationships of crowd workers.}
+The crowd work literature here can convincingly speak back to
+the piecework scholarship perhaps more than in the other sections.
+The tools that are available to us today
+--- not just technical, but \textit{methodological} ---
+make it possible to
+discover, study, and partner with 
+crowd workers in ways that were unimaginable to piecework researchers.
+Bigham engages in crowd work~\cite{bighamHalfWorkday}
+not just because it's possible, but because our community
+appreciates the importance of approaches such as participant--observation and ethnography as a whole~\cite{olson2014ways}.
+
+\topic{We should also take a moment to explore the opportunity to discuss the ethics of on--demand labor, as Williamson does~\cite{williamson2016}.}
+The literature on the history of piecework does not
+frame the question as \textit{whether piecework is inherently ethical or unethical},
+instead asking \textit{what conditions render it exploitative}.
+The literature we have brought to bear suggests that exploitation occurs when
+conditions harm workers directly or indirectly, such as
+in sweatshops and agricultural work with pesticides, or where
+employers systematically underpay or overwork laborers by contemporary standards.
+
+\topic{The question then is whether given socio--technical infrastructures systematically harm, underpay, or overwork workers.}
+For example, Amazon Mechanical Turk does not directly require any rate of payment for work,
+but its design encourages employers to engage in exploitative behavior:
+piece--rate pay, for example, does not value workers' task search time;
+additionally, task design interfaces undeniably frame
+workers as unreliable by recommending
+replication with multiple workers rather than
+trusting and paying individual workers more.
+
+
+\topic{Piecework also has lessons for a number of other research questions in crowdsourcing.}
+For example, future work could more deeply explore the evolution of
+scientific management as it relates to
+crowdsourcing optimization;
+quality control approaches between the two eras; and
+further analysis of incentive structures.
+
+\end{document}

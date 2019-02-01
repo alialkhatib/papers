@@ -1,0 +1,130 @@
+\documentclass[10pt]{article}
+
+\usepackage{balance,graphics,setspace,parskip}
+\usepackage[margin=1in]{geometry}
+\usepackage{lipsum,color,subfiles,soul,xcolor}
+\usepackage[inline]{enumitem}
+\definecolor{Red}{HTML}{FF0000}
+\definecolor{Blue}{HTML}{0000FF}
+\newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
+\newcommand{\keyword}[1]{{\textbf{\texttt{\color{Blue}#1}}}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
+\newcommand{\topic}[1]{{\color{Blue}#1}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
+
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{SourceSerifPro}[
+ ItalicFont = SourceSerifPro,
+ ItalicFeatures={FakeSlant=0.2}]
+\setlength{\parskip}{.4em}
+\setlist{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+
+% \usepackage{sourceserifpro}
+\usepackage{booktabs} % For formal tables?
+
+
+
+\begin{document}
+
+
+
+
+\textbf{Street Level Algorithms}
+% Algorithmic enforcement of law online
+
+\section{Introduction}
+We've been allowing digital systems to make decisions about content we produce.
+Is it spam?
+Is it racist?
+Is it constructive to the conversation overall?
+Is it good?
+We've had to make this trade off --- where computers ultimately make decisions about the value of our work --- in order to make the entire operation of peer production work.
+
+(The key thing is discretion!)
+
+
+These systems have gotten more complex over the years, in part in response to increasingly resourceful, cleverer bad actors; but also in response to the growing responsibility that we've assigned to them.
+What was once a very simple filter to determine whether an email is spam has become a very complex neural network that attempts to infer whether content being shared in someone's social network is an accurate description of the world itself, or false, and if so whether the author's \textit{intent} was malevolent.
+
+These systems used to make decisions that were relatively inconsequential, like whether a piece of mail was spam.
+That's changed in the past several years; today, computational systems score criminal defendants --- those scores largely determine whether these people have any hope of making bail.
+
+
+\ali{This paper isn't about the fact that algorithmic systems are taking a larger role in society.
+That much is a given, and it's not particularly interesting}
+
+This paper's focus isn't on the growing role of algorithms in society; instead,
+we look at how people have dealt with that reality.
+Specifically, we're interested in the \textit{ways} and \textit{reasons} that people work around sociotechnical systems, and
+the challenges that emerge for designers of sociotechnical systems which (increasingly, computationally) mediate people's behavior.
+
+In this paper, we introduce a way of thinking about a landscape of problems which broadly describe people working around AI systems meant to manage them in various ways.
+To be more concrete, we
+\begin{enumerate*}
+  \item look at the ways people work around computational management systems in particular;
+  \item offer a lens --- bureaucratic theory --- that helps make sense of these anomalous behaviors as one broader pattern; and
+  \item show how this informs a crucial value in bureaucratic systems --- \textit{discretion} --- that's absent from algorithmically mediated systems.
+\end{enumerate*}
+
+\ali{What we offer in this paper is the following: that we can think about algorithmic systems --- specifically those that handle people --- as akin to ``street--level bureaucracies'', with all the nuance of governance, and all of the challenges and opportunities that this framing brings.}
+
+\section{what is bureaucratic theory?}
+\ali{think ``outline''}
+\begin{itemize}
+  \item Weber talks about bureaucracies
+  \item Qualities of a bureaucracy --- or ``what makes a good one?''
+      \ali{the systematic capacity to undo wrong decisions?}
+\end{itemize}
+
+% \ali{So}
+
+\section{some case studies}
+\ali{I want to compile a bunch of cases of people working around AI systems, distill them into a few categorical kinds of ``system evasion''(?), and pick an illustrative example.
+
+I expect that everything will start to come into focus later when we suggest that [the above lens] is a useful way of thinking about this stuff.
+
+Maybe to Michael/Mark Ackerman's comment, these should look, by all appearances, to be fundamentally different phenomena (or motivated by different mechanisms). The contribution here would be that they're all essentially motivated by the failure of [algorithmic] bureaucracies.}
+
+
+\section{What are bureaucracies?}
+(very) broadly, a system of gov. in which the people who make decisions are hired rather than elected
+
+\subsection{What are ``street--level bureaucracies''?}
+``street--level'' bureaucracies describe the ``contact points'' of bureaucracies where bureaucrats make critical decisions about in--the--moment dispensation of benefits, or allocation of public resources, etc\dots
+
+\subsection{Why are ``street--level bureaucracies'' interesting (or ``what do they offer'')?}
+\begin{enumerate}
+  \item \textbf{Discretion} --- They can choose to enforce or ignore the rules as needed/desired
+  \item \textbf{Autonomy}   --- They don't face intense scrutiny for every decision they make (almost impossible to interrogate)
+  \item \textbf{Resistance} --- They can resist or ignore the agendas of higher level administrators in favor of their own agendas
+  \ali{is this a little like how AIs will optimize for weird things despite software engineers trying to design to optimize for a different goal?}
+\end{enumerate}
+
+\section{The value we need: compassion (or discretion or semantic understanding of the {goal} (as opposed to the task) or whatever)}
+\ali{Short section describing bureaucratic theory}
+
+``interactions with street--level bureaucracies are places where citizens experience directly the government they have implicitly constructed.''
+
+
+
+\section{(a few) case studies unrolled}
+
+\begin{enumerate}
+  \item facebook news feed manipulation (which manipulation?): engineers want to design a system that rewards certain kinds of content by putting it in front of more people. That resource is scarce, and Facebook serves to ration that resource \ali{blah, what are thoughts?}
+  \item gig economy: people design dispatch systems to try to optimize the number of drivers on the road (surge pricing), where they go (dispatch ordering, etc\dots), and more. but these systems are frustrating because they're difficult to predict and sometimes make decisions that seem arbitrary or inconsiderate of drivers' needs.
+  \item algorithmic bias in law/justice: People design algorithmic systems to try to maximize ``justice'', but optimize according to measurable outcomes like court date attendance, without exercising discretion in consideration of historical social injustices or other factors that are difficult to quantify or don't necessarily clearly relate to the optimization variable \ali{this needs more work} 
+  % \item what
+  \item blockchain: backlash to opaque governance models leads people to gravitate to radically open governance models that are decentralized and unanimously agreed upon,
+  but the tendency to rely on technology ultimately dooms these efforts for the same reasons that many of these other examples fail. That is, they don't have the slack necessary, that humans provide, in the intermediate step between ``deciding on policy'' and ``policy is reality'' --- the \textit{execution} of policy (which causes things like rollbacks, hard forks, etc\dots which are arguably much more destructive because, again, the system isn't designed with any slack in mind)
+  \item youtube: rules get decided by YouTube (HQ), and propagated (to varying degrees of success) to YouTubers; but enforcement doesn't feel fair, because the agents that promote, demonetize, and remove videos are algorithmic, rather than humans. (can't exercise discretion if it doesn't have knowledge)
+  % \item whattt
+  % \item blockchain: backlash to opaque governance models leads people to gravitate to radically open governance models that are decentralized and unanimously agreed upon,
+  % but the tendency to rely on technology ultimately dooms these efforts for the same reasons that many of these other examples fail. That is, they don't have the slack necessary, that humans provide, in the intermediate step between ``deciding on policy'' and ``policy is reality'' --- the \textit{execution} of policy (which causes things like rollbacks, hard forks, etc\dots which are arguably much more destructive because, again, the system isn't designed with any slack in mind)
+  \item twitter: the desire to promote engaging content collides with the desire to remove bad content; controversial content ends up in front of more users because that's engaging. etc\dots
+\end{enumerate}
+
+
+% \onlyinsubfile{
+%   \bibliographystyle{ACM-Reference-Format}
+%   \bibliography{references}
+% }
+\end{document}
