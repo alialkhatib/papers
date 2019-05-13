@@ -1,0 +1,211 @@
+\documentclass[aspectratio=169,12pt,noslidenumbers]{beamer} % or 14 or 17 or 20
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,multicol}
+\usepackage{pgfcalendar,pgfornament,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+  
+\usetikzlibrary{positioning}
+\usepackage[outline]{contour}
+\usepackage[citestyle=numeric,backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\usepackage[normalem]{ulem}
+\bibliography{references}
+\usetheme{metropolis}
+
+
+\definecolor{Blue}{HTML}{00548f}
+\definecolor{Cardinal Red}{HTML}{8c1515}
+\definecolor{White}{HTML}{ffffff}
+\definecolor{Cool Grey}{HTML}{4d4f53}
+\definecolor{Black}{HTML}{2e2d29}
+\definecolor{Bright Red}{HTML}{B1040E}
+\definecolor{Chocolate}{HTML}{2F2424}
+\definecolor{Stone}{HTML}{544948}
+\definecolor{Fog}{HTML}{F4F4F4}
+\definecolor{Light Sandstone}{HTML}{F9F6EF}
+\definecolor{Sandstone}{HTML}{d2c295}
+\definecolor{Warm Grey}{HTML}{3f3c30}
+\definecolor{Beige}{HTML}{9d9573}
+\definecolor{Light Sage}{HTML}{c7d1c5}
+\definecolor{Clay}{HTML}{5f574f}
+\definecolor{Cloud}{HTML}{dad7cb}
+\definecolor{Driftwood}{HTML}{b6b1a9}
+\definecolor{Stone}{HTML}{928b81}
+\definecolor{Sandhill}{HTML}{b3995d}
+\definecolor{Palo Alto}{HTML}{175e54}
+\definecolor{Teal}{HTML}{00505c}
+\definecolor{Purple}{HTML}{53284f}
+\definecolor{Redwood}{HTML}{8d3c1e}
+\definecolor{Brown}{HTML}{5e3032}
+\definecolor{Sky}{HTML}{0098db}
+\definecolor{Lagunita}{HTML}{007c92}
+\definecolor{Mint}{HTML}{009b76}
+\definecolor{Gold}{HTML}{b26f16}
+\definecolor{Sun}{HTML}{eaab00}
+\definecolor{Poppy}{HTML}{e98300}
+\definecolor{Dark Red}{HTML}{820000}
+
+\setbeamercovered{transparent}
+\setbeamercolor{background canvas}{bg=Fog}
+\setbeamercolor{frametitle}{bg=Dark Red,fg=Fog}
+\setbeamercolor{alerted text}{fg=Bright Red}
+
+\hypersetup{colorlinks,linkcolor=Bright Red,urlcolor=Bright Red,citecolor=Bright Red}
+\setbeamertemplate{caption}{\insertcaption}
+
+
+\setsansfont[BoldFont={Source Sans Pro Bold},
+              Numbers={OldStyle}]{Source Sans Pro}
+\setmainfont[BoldFont={Source Serif Pro Semibold},
+              Numbers={OldStyle}]{Source Serif Pro}
+\setmonofont{Source Code Pro}
+
+
+\metroset{titleformat=smallcaps,numbering=counter}
+
+
+\newenvironment{mystepwiseitemize}{\begin{itemize}[<+-| alert@+>]}{\end{itemize}}
+
+
+
+
+
+
+
+
+\title{Some cool CHI papers}
+\author{Ali Alkhatib} % \\ 
+% \href{http://twitter.com/_alialkhatib}{@\_alialkhatib} ||
+% \href{mailto:ali.alkhatib@cs.stanford.edu}{ali.alkhatib@cs.stanford.edu}}
+
+\institute[Stanford]{Stanford University}
+\date{\today}
+
+
+
+
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+% \usebackgroundtemplate{\includegraphics[width=\paperwidth]{figures/highgray.png}}
+
+\begin{frame}
+\titlepage
+\end{frame} 
+
+
+% \def\stackalignment{l}
+% \def\stacktype{S}
+
+\begin{frame}<-2>[label=roadmap]\frametitle{Papers I liked and want to see}
+
+% \begin{multicols}{2}
+\begin{enumerate}
+  % \item
+  % Ethical Mediation in UX Practice
+  % % {\\\scriptsize by \textbf{Colin M. Gray} \& \textbf{Shruthi Sai Chivukula}} 
+  
+  % \item
+  % What Happens After Disclosing Stigmatized Experiences on Identified Social Media: Individual, Dyadic, and Social/Network Outcomes
+  % % {\\\scriptsize by \textbf{Nazanin Andalibi}}
+  
+  % \item
+  % Communication Breakdowns Between Families and Alexa
+  % % {\\\scriptsize by \textbf{Erin Beneteau}, \textbf{Olivia K. Richards}, \textbf{Mingrui Zhang}, \textbf{Julie A. Kientz}, \textbf{Jason Yip}, \& \textbf{Alexis Hiniker}}
+  
+  % \item
+  % A Framework for the Experience of Meaning in Human-Computer Interaction
+  % % {\\\scriptsize by \textbf{Elisa D. Mekler} \& \textbf{Kasper Hornbæk}}
+  
+  % \item
+  % Understanding Digitally-Mediated Empathy: An Exploration of Visual, Narrative, and Biosensory Informational Cues
+  % % {\\\scriptsize by \textbf{Max T. Curran}, \textbf{Jeremy Raboff Gordon}, \textbf{Lily Lin}, \textbf{Priyashri Kamlesh Sridhar}, \& \textbf{John Chuang}}
+  
+  \item<1,2>
+  The Gendered Geography of Contributions to OpenStreetMap: Complexities in Self-Focus Bias
+  {\\\scriptsize by \textbf{Maitraye Das}, \textbf{Brent Hecht}, \& \textbf{Darren Gergle}}
+  
+  % \item<+>
+  % Guidelines for Human-AI Interaction
+  % {\\\scriptsize by \textbf{Saleema Amershi}, \textbf{Dan Weld}, \textbf{Mihaela Vorvoreanu}, \textbf{Adam Fourney}, \textbf{Besmira Nushi}, \textbf{Penny Collisson}, \textbf{Jina Suh}, \textbf{Shamsi Iqbal}, \textbf{Paul N. Bennett}, \textbf{Kori Inkpen}, \textbf{Jaime Teevan}, \textbf{Ruth Kikin-Gil}, \& \textbf{Eric Horvitz}}
+  
+  % \item
+  % Toward Algorithmic Accountability in Public Services: A Qualitative Study of Affected Community Perspectives on Algorithmic Decision-making in Child Welfare Services
+  % % {\\\scriptsize by \textbf{Anna Brown}, \textbf{Alexandra Chouldechova}, \textbf{Emily Putnam-Hornstein}, \textbf{Andrew Tobin}, \& \textbf{Rhema Vaithianathan}}
+  % \item
+  % ``They Don't Leave Us Alone Anywhere We Go'': Gender and Digital Abuse in South Asia
+  % % {\\\scriptsize by \textbf{Nithya Sambasivan},  \textbf{Amna Batool},  \textbf{Nova Ahmed},  \textbf{Tara Matthews},  \textbf{Kurt Thomas},  \textbf{Laura Sanely Gaytán-Lugo},  \textbf{David Nemer},  \textbf{Elie Bursztein},  \textbf{Elizabeth Churchill}, \& \textbf{Sunny Consolvo}}
+  % \item
+  % From Gender Biases to Gender-Inclusive Design: An Empirical Investigation
+  % % {\\\scriptsize by \textbf{Mihaela Vorvoreanu},  \textbf{Lingyi Zhang},  \textbf{Yun-Han Huang},  \textbf{Claudia Hilderbrand},  \textbf{Zoe Steine-Hanson}, \& \textbf{Margaret Burnett}}
+  % \item
+  % Modeling the Engagement-Disengagement Cycle of Compulsive Phone Use
+  % % {\\\scriptsize by \textbf{Jonathan A. Tran}, \textbf{Katie S. Yang}, \textbf{Katie Davis}, \& \textbf{Alexis Hiniker}}
+  % \item
+  % Keeping Rumors in Proportion: Managing Uncertainty in Rumor Systems
+  % % {\\\scriptsize by \textbf{Peter M. Krafft} \& \textbf{Emma S. Spiro}}
+  % \item
+  % AI-Mediated Communication: How the Perception that Profile Text was Written by AI Affects Trustworthiness
+  % % {\\\scriptsize by \textbf{Maurice Jakesch}, \textbf{Megan French}, \textbf{Xiao Ma}, \textbf{Jeffrey T. Hancock}, \& \textbf{Mor Naaman}}
+  % \item
+  % Understanding Personal Productivity: How Knowledge Workers Define, Evaluate, and Reflect on Their Productivity
+  % % {\\\scriptsize by \textbf{Young-Ho Kim}, \textbf{Eun Kyoung Choe}, \textbf{Bongshin Lee}, \& \textbf{Jinwook Seo}}
+  % \item
+  % May AI? Design Ideation with Cooperative Contextual Bandits
+  % % {\\\scriptsize by \textbf{Janin Koch}, \textbf{Andrés Lucero}, \textbf{Lena Hegemann}, \& \textbf{Antti Oulasvirta}}
+  % \item
+  % In a Silent Way: Communication Between AI and Improvising Musicians Beyond Sound
+  % % {\\\scriptsize by \textbf{Jon McCormack}, \textbf{Toby Gifford}, \textbf{Patrick Hutchings}, \textbf{Maria Teresa Llano Rodriguez}, \textbf{Matthew Yee-King}, \& \textbf{Mark d'Inverno}}
+  % \item
+  % The Effects of Interruption Timings on Autonomous Height-Adjustable Desks that Respond to Task Changes
+  % % {\\\scriptsize by \textbf{Bokyung Lee}, \textbf{Sindy Wu}, \textbf{Maria Jose Reyes}, \& \textbf{Daniel Saakes}}
+  % \item
+  % Managing Messes in Computational Notebooks
+  % % {\\\scriptsize by  \textbf{Andrew Head}, \textbf{Fred Hohman}, \textbf{Titus Barik}, \textbf{Steven Drucker}, \& \textbf{Robert DeLine}}
+  \item<1,3>
+  On the Internet, Nobody Knows You're a Dog\dots~Unless You're Another Dog
+  {\\\scriptsize by \textbf{Ilyena Hirskyj-Douglas} \& \textbf{Andrés Lucero}}
+  % \item
+  % ``I make up a silly name'': Understanding Children's Perception of Privacy Risks Online
+  % \item
+  % A Practice-Led Account of the Conceptual Evolution of UX Knowledge
+  % \item
+  % The Impact of Web Browser Reader Views on Reading Speed and User Experience
+  % \item
+  % Who Gets to Future? Race, Representation, and Design Methods in Africatown
+  % \item<1,3>
+  % Does Being Verified Make You More Credible? Account Verification's Effect on Tweet Credibility
+  % {\\\scriptsize by \textbf{Tavish Vaidya}, \textbf{Daniel Votipka}, \textbf{Michelle L. Mazurek}, \& \textbf{Micah Sherr}}
+  % \item
+  % The Promise of Empathy: Design, Disability, and Knowing the 'Other'
+  % \item
+  % Volunteer Moderators in Twitch Micro Communities: How They Get Involved, the Roles They Play, and the Emotional Labor They Experience
+  % \item
+  % Understanding the Shared Experience of Runners and Spectators in Long-Distance Running Events
+  % \item
+  % r/science: Challenges and Opportunities in Online Science Communication
+  % \item
+  % Human-Computer Insurrection: Notes on an Anarchist HCI
+  % \item
+  % A Translational Science Model for HCI
+  % \item
+  % User Attitudes towards Algorithmic Opacity and Transparency in Online Reviewing Platforms
+
+\end{enumerate}
+\end{frame}
+\subfile{OSM}
+
+
+\againframe<2-3>{roadmap}
+
+\subfile{dog}
+
+% \begin{frame}[allowframebreaks]{References}
+%   \printbibliography{}
+% \end{frame}
+
+\end{document} 

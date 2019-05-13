@@ -1,0 +1,208 @@
+\documentclass[presentation]{subfiles}
+
+
+\begin{document}
+
+
+\begin{frame}[t]
+    
+\begin{columns}
+\begin{column}{\textwidth}
+\includegraphics[width=\textwidth]{figures/osm_cover.png}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}[t]\frametitle{background}
+  
+\begin{itemize}
+  \item We know that \alert{Wikipedia} has lopsided participation along gender lines.
+  \begin{itemize}
+    \visible<+->{\item Is it also bad in other settings, like on OpenStreetMap?}
+    \visible<+->{\item If so, why?}
+  \end{itemize}
+  \visible<+->{\item We also know that, on other platforms, men and women are discussed very differently.}
+  \begin{itemize}
+    \visible<+->{\item Does that manifest somehow differently from Wikipedia?}
+
+    % {\scriptsize e.g. women's biographies tend to talk a lot more about child-rearing than men's biographies}}
+
+    \visible<+->{\item Does \alert{self-focus bias} play out here as well?}
+
+  \end{itemize}
+\end{itemize}
+
+\vfill
+
+\visible<+->{These are \alert{\strong{participation disparities}} and \alert{\strong{content disparities}}}
+
+\end{frame}
+
+
+\begin{frame}[b,label=mapped]\frametitle{gender disparities in OSM mapping data contributions}
+    
+
+\begin{columns}
+\begin{column}{0.6\textwidth}
+\includegraphics[width=\textwidth]{figures/disparity_alpha.png}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+{\small The US counties shown in red are those with at least 1 edit from the women power editors in our sample in the no-bots dataset. A prominent ``No Female Edits Belt'' (in white) is visible running from the Northern Mountain West down through the Great Plains, Midwest, and Appalachians.
+
+}
+\end{column}
+\end{columns}
+\hfill {\scriptsize (note: these counties may be edited by non-power-editors or unidentifed female editors)}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{salient takeaways}
+
+\begin{itemize}
+  \item Every county in the continental US received ≥1 edit from male editors; only 1/3 of the counties received ≥1 edit from female editors
+  % \item less than 3\% of the {counties} in our dataset have a higher ratio of female edits to male edits.
+  \item {there's a {rural/urban dimension} } % read the paper for more info}
+  % \item rural counties had a higher proportion (nearly 5\% greater) of male edits compared to the proportion of female edits
+
+  \item {there's a {racial/diversity dimension} } \hfill {\scriptsize read the paper for more info on both}
+  % \item the least racially diverse counties received a higher proportion (8.92\% greater) of the male edits compared to female edits
+
+  % \item A male produces only 0.51 times what a female produces in the most diverse counties, but produces nearly 3.78 times that in the least diverse counties
+
+  \item male editors created more edits with bots than female editors did
+
+  \item ``\alert<1>{women editors were more likely to contribute [more] information about \em{masculinized spaces}} relative to men, and \alert<2>{men were more likely to contribute [more] information about \em{feminized spaces}} relative to women''
+  
+  \begin{itemize}
+    \item A male editor makes \textasciitilde1.5 times what a female produces in the \em{masculinized spaces}, but produces over 2.5-3 times that in the \em{feminized spaces}
+  \end{itemize}
+
+  % \hfill {\scriptsize this appeared in both datasets on which they ran analyses}
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}[t]\frametitle{What's going on/what to do}
+
+
+    \alert{\strong{What's going on?}}
+    
+    \begin{itemize}
+      \item self-focus bias isn't happening?
+      \item intersectional or other demographic factors overpowering gender self-focus bias?
+    \end{itemize}
+    
+
+    \alert{\strong{What to do?}}
+    \begin{itemize}
+      \item ``we need to think critically about ways to increase coverage of under-represented facilities on OSM''
+      \item Send in the bots
+    \end{itemize}
+  % \end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}[t]\frametitle{issues?}
+
+categorized various places as \alert{feminized} or \alert{masculinized}:
+
+\begin{columns}[T]
+
+\begin{column}{0.48\textwidth}
+
+\begin{itemize}
+\item childcare
+\item kindergarten
+\item hospice
+\item day-care
+\item assisted living
+\item nursery
+\item retirement home
+\item beauty
+\item nail salon
+\end{itemize}
+
+\end{column}
+
+\begin{column}{0.48\textwidth}
+
+\begin{itemize}
+\item brothel
+\item nightclub
+\item strip club
+\item swinger club
+\item love hotel
+\item sex shop
+\item adult
+\item sperm bank
+\item barber shop
+\end{itemize}
+
+\end{column}
+
+\end{columns}
+\end{frame}
+
+
+\begin{frame}\frametitle{discuss?}
+  \begin{center}
+  some major things to take away
+  \end{center}
+  
+  \begin{columns}
+  \begin{column}{0.4\textwidth}
+  \includegraphics[width=\textwidth]{figures/disparity_alpha.png}
+  \end{column}
+  
+  \begin{column}{0.59\textwidth}
+  \begin{itemize}
+    \item women edit OSM less often than men
+    \item men and women seem to edit locations associated with other gender more often than their own
+    \item self-focus bias doesn't \alert{seem} to play out
+    \item participation \& content disparities
+  \end{itemize}
+  \end{column}
+  \end{columns}
+
+\begin{itemize}
+\item some issues:
+    \begin{itemize}
+      \item inferred genders from usernames
+      \item sorta problematic classifications of locations
+    \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
