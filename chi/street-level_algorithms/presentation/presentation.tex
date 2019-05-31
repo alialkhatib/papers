@@ -1,0 +1,71 @@
+\documentclass[aspectratio=169,12pt]{beamer} % or 14 or 17 or 20
+
+\usepackage{nopageno}
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,geometry}
+\usepackage{pgfcalendar,pgfornament,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+\usepackage{calc,environ}
+  \usetikzlibrary{positioning}
+\usepackage[outline]{contour}
+\usepackage[citestyle=authoryear,
+            autocite=footnote,
+            backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\usepackage[normalem]{ulem}
+
+% \setbeamertemplate{footline}[~
+   % \setbeamertemplate{footline}[frame number]
+% ]
+
+
+\bibliography{references}
+\usetheme{metropolis}
+
+\input{colors}
+\input{customizations}
+
+
+\title{Street-Level Algorithms}
+\subtitle{A Theory at the Gaps Between Policy and Decisions}
+\author{{Ali Alkhatib}, Michael Bernstein\\
+\href{http://twitter.com/_alialkhatib}{@\_alialkhatib} || \href{mailto:ali.alkhatib@cs.stanford.edu}{ali.alkhatib@cs.stanford.edu}}
+
+\institute[Stanford]{{\normalsize Stanford HCI Group}}
+\date{}
+
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+\begin{frame}
+\titlepage
+\end{frame} 
+
+
+\def\stackalignment{l}
+\def\stacktype{S}
+
+
+\subfile{introduction}
+\subfile{street-level_bureaucracy}
+\subfile{street-level_algorithms}
+\subfile{reflexivity_in_bureaucracy_and_algorithms}
+\subfile{youtube_content_moderation}
+\subfile{quality_control_in_crowd_work}
+\subfile{algorithmic_bias_in_justice}
+% \subfile{but_algos_cant}
+
+\subfile{design_implications}
+\subfile{discussion}
+\subfile{conclusion}
+
+
+\begin{frame}[allowframebreaks]{references}
+  \printbibliography{}
+\end{frame}
+
+\end{document} 
