@@ -1,0 +1,82 @@
+\documentclass[presentation]{subfiles}
+
+% \makeatletter\let\frametextheight\beamer@frametextheight\makeatother
+
+\begin{document}
+
+\begin{frame}<-10>[label=framing_turntable]
+
+    \vspace{1.5em}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+
+    \vspace{1em}
+
+    
+    \only<-2>{\includegraphics[width=\textwidth]{figures/sketches/boundary_0.pdf}}
+    
+    \only<3>{\includegraphics[width=\textwidth]{figures/sketches/boundary_1.pdf}}
+    
+    \only<4>{\includegraphics[width=\textwidth]{figures/sketches/boundary_2.pdf}}
+    
+    \only<5>{\includegraphics[width=\textwidth]{figures/sketches/boundary_3.pdf}}
+    
+    \only<6>{\includegraphics[width=\textwidth]{figures/sketches/boundary_4.pdf}}
+    
+    \only<7>{\includegraphics[width=\textwidth]{figures/sketches/boundary_5.pdf}}
+    
+    \only<8>{\includegraphics[width=\textwidth]{figures/sketches/boundary_lines.pdf}}
+
+    \only<9->{\includegraphics[width=\textwidth]{figures/sketches/boundary_range.pdf}}
+
+
+\end{column}
+
+\begin{column}{.5\textwidth}
+
+
+\begin{itemize}\itemsep 1.5em \parskip 0pt
+
+\visible<2->{
+
+\item[] \onslide<-9>{Code} \\ \visible<11->{Instructions}
+
+\item[] \onslide<-9>{Loss functions} \\ \visible<11->{Incentives}
+
+\item[] \onslide<-9>{Training data} \\ \visible<11->{Precedents}
+
+}
+
+\end{itemize}
+
+
+\begin{center}
+\vspace{1em}
+
+\only<10>{\alert{\strong{\scshape \large filling in the gaps}}}
+
+\only<11>{\alert{\strong{\scshape \large street-level bureaucrats fill in the gaps}}}
+
+
+\end{center}
+
+\end{column}
+\end{columns}
+
+
+\end{frame}
+
+
+\begin{frame}[standout]
+``filling in the gaps'' isn't unique to algorithms
+\end{frame}
+
+\begin{frame}[standout]
+
+{\huge street-level bureaucrats}
+
+likewise fill in the gaps between policies and implementation
+\end{frame}
+
+
+\end{document}
