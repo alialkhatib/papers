@@ -1,0 +1,23 @@
+\documentclass[presentation]{subfiles}
+\onlyinsubfile{
+  \bibliography{references}
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+\renewcommand{\onlyinsubfile}[1]{}
+
+}
+
+\begin{document}
+
+
+\section{Piecework\\
+{\hfill\footnotesize\citeauthor{pieceworkCrowdworkGigwork} @ \citefield{pieceworkCrowdworkGigwork}{series}}}
+\subfile{piecework/introduction}
+\subfile{piecework/piecework-simple}
+\subfile{piecework/piecework-complex}
+
+\againframe<3>{theory_evaluation}
+
+\subfile{piecework_takeaway}
+
+\end{document}

@@ -1,0 +1,215 @@
+\documentclass[presentation]{subfiles}
+\onlyinsubfile{
+  \bibliography{references}
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+\renewcommand{\onlyinsubfile}[1]{}
+
+}
+
+\begin{document}
+
+\section{Unintentional Parallels}
+
+
+
+
+
+\begin{frame}{\hspace{0.5em}Anthropology\only<2->{\hspace{9em}Computer Science}}
+
+  \begin{columns}
+  \begin{column}{0.5\textwidth}
+  5 years studying Anthropology
+
+  \begin{itemize}
+    \item Archaeological digs up and down the Americas
+    \item {Ethnographic fieldwork} of Quantified Self
+    \visible<2->{\item ``Nothing new under the sun''}
+  \end{itemize}
+  \end{column}
+  
+  \begin{column}{0.5\textwidth}
+  \visible<3->{5 years studying Computer Science
+    
+  \begin{itemize}
+      \item People studying {crowdsourcing and gig work}
+      \item People studying {artificial intelligence}
+      \visible<4>{\item Everything old is new again}
+    \end{itemize}}
+  \end{column}
+  \end{columns}
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}<1>[standout,label=juxtapose]
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{center}
+        {\large nothing new under the sun}
+      \end{center}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{center}
+        \onslide<1>{\large everything old is new again}
+      \end{center}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}<-6>[t,label=pastProjects]
+\frametitle{
+  \hspace{0.5em}
+  \visible<1->{
+    \small National Domestic Workers' Alliance
+  }
+  \only<4-9>{
+    \hspace{7.5em}
+    {\small TurkerNation}
+  }
+}
+  
+  \begin{columns}
+  \visible<2->{
+    \begin{column}[T]{0.5\textwidth}
+      \begin{center}
+        \textbf{\textsc{Alia}}
+      \end{center}
+    
+
+      Allowing workers to
+      book clients,
+      communicate with each other, and
+      make decisions about how the platform should operate
+
+  \end{column}
+}
+
+  \visible<5-10>{
+    \begin{column}[T]{0.5\textwidth}
+    \only<-9>{
+          \begin{center}
+            \textbf{\textsc{Vitae}}
+          \end{center}
+    
+          Giving crowd workers the ability to stand behind collective reputations, and attract more skilled, lucrative work
+        }
+  \only<10-12>{
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/news/alia_portable_benefits_cropped.png}
+  }
+  \end{column}}
+  \end{columns}
+
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+  \begin{center}
+    \only<3-12>{
+      \visible<3-6,7-11>{
+        \only<3-6>{
+          \strong{Worker--owned cooperative}
+        }
+
+        \only<7->{
+          \onslide<0>{
+            Worker--owned cooperative
+          }
+          \visible<8->{
+
+            \strong{Relief from precarity}
+          }
+        }
+      }
+      % \only<7-11>{
+        
+      % }
+    }
+  \end{center}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  \begin{center}
+    \only<6-9>{
+      \visible<6,7-10>{
+        \only<6>{
+          \strong{Digital hiring hall}
+        }
+        \only<7->{
+          \onslide<0>{
+            Digital hiring hall
+          }
+          \visible<8->{
+
+            \strong{Solidarity}
+          }
+        }
+      }
+    }
+  \end{center}
+\end{column}
+
+\end{columns}
+
+\visible<9>{
+  \vspace{1em}
+  \begin{center}
+    \strong{Solutions to underlying social issues}
+  \end{center}
+}
+\end{frame}
+
+
+
+\begin{frame}<1>[label=thesis] % {Underlying patterns}
+  \begin{center}
+    We design technical and social systems by \alert<-5>{recognizable references}
+    \\\only<2->{
+    and we can use this to understand systems, and to inform our actions.
+
+    \visible<3->{
+    \vspace{2em}
+
+    We can draw from a much deeper well of scholarship than Computer Science to recognize the patterns we're recreating in \alert<-5>{ostensibly} novel technical systems.}
+    }
+  \end{center}
+\end{frame}
+
+
+
+
+\againframe<7-10>{pastProjects}
+
+
+\againframe<2-3>{thesis}
+
+% \againframe<10-12>{pastProjects}
+
+
+
+% \begin{frame}
+%     I'll illustrate this by showing that we can draw from the well of historical scholarship to identify the unintentional patterns that we recreate in ostensibly novel technical systems.
+% \end{frame}
+
+
+\begin{frame}<-4>[label=roadmap]{New technologies, old metaphors}
+
+    \begin{itemize}
+      \item<+,3-5>[] \alert<4>{Artificial Intelligence \hfill Street--level bureaucracies
+            \\\hfill{\footnotesize \textsc{\textbf{CHI 2019}}} {\scriptsize(Best Paper)}}
+      
+      \vspace{1em}
+
+      \item<+,3,5-6>[] \alert<6>{Crowd work systems \hfill Piecework
+            \\\hfill{\footnotesize \textsc{\textbf{CHI 2017}}} {\scriptsize(Honorable Mention)}}
+    \end{itemize}
+
+\end{frame}
+
+\end{document}

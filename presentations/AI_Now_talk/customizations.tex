@@ -1,0 +1,34 @@
+%!TEX root = ./presentation.tex
+
+\newcommand{\soutthick}[1]{%
+  \renewcommand{\ULthickness}{2.4pt}%
+     \sout{#1}%
+  \renewcommand{\ULthickness}{.4pt}% Resetting to ulem default
+}
+
+\setbeamercolor{normal text}{%
+    fg=Cool Grey,
+    bg=White
+  }
+
+\setbeamercolor{palette primary}{fg=Fog, bg=Dark Red}
+\setbeamercolor{palette secondary}{bg=Dark Red, bg=Fog}
+\setbeamercovered{transparent}
+\setbeamercolor{frametitle}{bg=Dark Red,fg=Fog}
+\hypersetup{colorlinks,linkcolor=Cardinal Red,urlcolor=Cardinal Red,citecolor=Cardinal Red}
+\setbeamercolor{alerted text}{fg=Bright Red}
+\setbeamertemplate{caption}{\insertcaption}
+
+
+\setsansfont[BoldFont={Source Sans Pro Bold},
+              Numbers={OldStyle}]{Source Sans Pro}
+\setmainfont[BoldFont={Source Serif Pro Semibold},
+              Numbers={OldStyle}]{Source Serif Pro}
+\setmonofont{Source Code Pro}
+
+
+\metroset{titleformat=smallcaps,numbering=none}
+% \setbeamertemplate{frame footer}{\textsc{\insertshortauthor~(\textbf{\insertshortinstitute})}}
+
+
+\newenvironment{mystepwiseitemize}{\begin{itemize}[<+-| alert@+>]}{\end{itemize}}

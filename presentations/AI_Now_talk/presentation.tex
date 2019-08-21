@@ -1,0 +1,124 @@
+\documentclass[aspectratio=169,12pt]{beamer} % or 14 or 17 or 20
+
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs}
+\usepackage{appendixnumberbeamer,cleveref,fancybox,geometry}
+\usepackage{pgfcalendar,pgfornament,svg,subfiles,chronosys,cancel}
+\usepackage{xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+\usepackage{calc,environ}
+
+
+\usetikzlibrary{positioning,arrows,automata}
+\usepackage[outline]{contour}
+\usepackage[citestyle=authoryear,
+            autocite=footnote,
+            backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\usepackage[normalem]{ulem}
+
+\bibliography{references}
+
+\usetheme{metropolis}
+
+
+\title{Street--Level Algorithms}
+\subtitle{Using Intellectual Arbitrage to Study Technical Systems}
+\author[Ali Alkhatib]{{Ali Alkhatib}\\
+\href{http://twitter.com/_alialkhatib}{@\_alialkhatib} || \href{mailto:ali.alkhatib@cs.stanford.edu}{ali.alkhatib@cs.stanford.edu}}
+
+% \institute[Practice Talk --- please don't share!]{{\normalsize AI Now Institute}}
+
+\date{August 16, 2019}
+\date{\today}
+
+
+
+
+% feedback from Mark
+% 1. Intro is a bit too much about you. I feel like you could say the same thing with a more general frame and it would be more impactful.
+% 2. You use terms a lot before you introduce them. I think this can be ok, but you're doing it almost too much for a listener to grab hold of early parts of your talk.
+% 3. Your light text is too light. Its hard to see on the screen.
+% 4. Claims around 18 are not general about ML systems. Many kinds of systems do what you're saying they don't. I don't think that's bad, but I think the example is a little high level for it to avoid criticism
+% 5. There was a question about the implications of demonetization for the platform
+% 6. Segue between parts could be refined. :-)
+% 7. I think piecework needs a result for it to tie in at the right level.
+% 8. I like the frame and think you have a chance to press on this a bit more. I think you open a little light with it, and skip it in the segue. But, you can make it a strong and core thread for the talk.
+% 9. Being more clear about the theoretical parallel being drawn, on the basis that you're a recovering anthropologist would help people see the importance of that insight both at the specific levels and as a general technique.
+% 10. I feel like the technical systems part of the intro could be done a little faster. It feels like its contributing to the overall argument less than the time it takes.
+% 11. Overlapping text on slides should be fixed.
+
+
+% okay, so why has this been irritating me for 5 years? this has been bothering me, i think, for a reason that i can only crystallize right now: our broader culture, more than ever, is coming to understand quite deeply how the institutions that we've constructed, and their histories, and the injustices in society that we wish to address, are tied together so tightly that they're inseparable. it's not a coincidence that so many people of color are in prison - it's the result of how we engineered the criminal justice system, to be racist, to control the bodies of people of color, and to keep them (side note for justine: us? we're not white. huh) subjugated.
+
+% as we come to appreciate this, i want to make sure we don't let the design of technical systems slip by. i told you at the outset that i think we design by recognizable references, and i think it's more important than it's ever been that we push aside people at the table to make sure we have space at these discussions, because the consequences of racist, sexist, or even passively uncritical institutions seem always to leave scars that last generations. perhaps forever.
+
+% to be clear, i'm not saying that we should not be building systems, or that AI shouldn't exist, or any of that. but that if anyone wants to build technical systems that have any bearing on our lives, then they should approach that task with the kind of solemnity and intention that we bring to the construction of government, or leave it to those who will
+
+
+
+
+
+\input{colors}
+\input{customizations}
+
+
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+% \notinsubfile{}
+
+
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\def\stackalignment{l}
+\def\stacktype{S}
+
+\subfile{introduction}
+
+
+\section{Street--Level Algorithms\\
+{\hfill\footnotesize\citeauthor{streetLevelAlgorithms} @ \citefield{streetLevelAlgorithms}{series}}}
+
+\subfile{SLA/introduction}
+\subfile{SLA/street-level_bureaucracy}
+\subfile{SLA/street-level_algorithms}
+\subfile{SLA/reflexivity_in_bureaucracy_and_algorithms}
+\subfile{SLA/youtube_content_moderation}
+\subfile{SLA/quality_control_in_crowd_work}
+\subfile{SLA/algorithmic_bias_in_justice}
+
+\subfile{SLA/implications}
+\subfile{SLA/discussion}
+
+
+\subfile{takeaways}
+
+\againframe<5-6>{roadmap}
+
+
+\subfile{piecework-section}
+
+% \subfile{piecework/cognition}
+
+% \subfile{piecework/closing}
+
+\section{Concluding}
+
+\subfile{conclusion}
+
+% \subfile{piecework/contact}
+
+
+\begin{frame}[allowframebreaks]{references}
+  \printbibliography{}
+\end{frame}
+
+\end{document} 
