@@ -1,0 +1,68 @@
+\documentclass[aspectratio=169,10pt,nopagenumbers]{beamer} % or 14 or 17 or 20
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,multicol}
+\usepackage{pgfcalendar,pgfornament,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+  
+\usetikzlibrary{positioning}
+\usepackage[outline]{contour}
+\usepackage[citestyle=authoryear-comp,backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\usepackage[normalem]{ulem}
+\bibliography{references}
+\usetheme[numbering=none]{metropolis}
+
+
+
+
+\input{colors}
+\input{customizations}
+
+
+
+
+\title{({Summer}) Reading with Friends}
+\subtitle{\textit{Seeing Like a State} (and a lot about trees (not binary trees; like bark trees))}
+\author{Ali Alkhatib}
+\institute[RWF]{Reading With Friends}
+
+\date{\today}
+
+
+
+
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+
+\setbeamercolor{normal text}{bg=Light Sandstone,fg=Sky}
+\begin{frame}
+\titlepage
+\end{frame} 
+
+
+\setbeamercolor{normal text}{bg=Fog,fg=Black}
+
+
+\subfile{intro}
+
+\subfile{slas}
+
+\subfile{forests}
+\subfile{connection}
+
+
+\subfile{credits}
+
+
+
+
+
+
+
+
+\end{document} 

@@ -1,0 +1,103 @@
+\documentclass[presentation]{subfiles}
+
+
+\begin{document}
+\section{algorithmic bias in justice}
+
+\begin{frame}\frametitle{algorithmic bias in justice}
+
+\begin{columns}
+\begin{column}{0.6\textwidth}
+
+Algorithmic systems predict whether defendants are likely to appear at their court date, recommending the level at which to set bail.
+
+\onslide<2>{These algorithms reflect and amplify racial biases in society~(\cite{buolamwini2018gender,lambrecht2018algorithmic,thebault2015avoiding}).}
+
+\end{column}
+
+\begin{column}{0.4\textwidth}
+\includegraphics[width=\textwidth]{figures/propublica.png}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+  
+  \begin{columns}[t]
+
+  \begin{column}{0.32\textwidth}
+    \begin{flushright}
+    {\Large \strong{Behavior}}
+
+    \only<1>{Defendant's situation and behavior}
+    \only<2->{Defendants from many different jurisdictions, environments, backgrounds}
+    % \only<3->{massive amounts of creative information work}
+    \end{flushright}
+  \end{column}
+
+  \begin{column}{0.36\textwidth}
+
+  \vspace{2em}
+  
+  \includegraphics[width=\textwidth]{figures/sketches/arrows.pdf}
+
+  \begin{center}
+  {\Large \strong{Judgment}}
+
+
+  \only<1>{Should this defendant be eligible to go free on bail?}
+
+  % \only<2>{Is the factory worker doing the work correctly, or do they need assistance?}
+
+
+  \end{center}
+  \end{column}
+  
+  \begin{column}{0.32\textwidth}
+  \begin{flushleft}
+  {\Large\only<1>{\strong{Bureaucrats}}
+    \only<2->{\strong{Algorithm}}}
+
+    \only<1>{Judges}
+
+    \only<2->{Algorithmic judges tasked with predicting whether defendants will return for trial}
+
+    % \only<3->{foreman tasked almost exclusively with accepting or rejecting work}
+  \end{flushleft}
+  \end{column}
+  \end{columns}
+
+\only<2->{
+\begin{columns}[t]
+\begin{column}{0.1\textwidth}
+\end{column}
+\begin{column}{0.15\textwidth}
+\onslide<2>{\strong{Ideally}}
+
+
+\onslide<3>{\strong{In reality}}
+\end{column}
+
+\begin{column}{0.75\textwidth}
+\onslide<2>{Account for the circumstances of defendants' environments}
+
+
+\onslide<3>{Re-enact old cases, even if new  intersectional ones arise}
+\end{column}
+\end{columns}
+}
+
+\end{frame}
+
+\begin{frame}{takeaways}
+  
+\alert{Here we have something new}: a street-level bureaucrat interacting with a street-level algorithm. Bureaucrats can resist or buffer the algorithm’s recommendations when needed~(\cite{doi:10.1177/2053951717718855,Veale:2018:FAD:3173574.3174014}).
+
+Even a perfectly fair, transparent, and accountable algorithm will make errors of generalization in cases at the margin. Bureaucrats reason by extension from precedent and case law. How should an algorithm reason?
+
+
+\end{frame}
+
+
+\end{document}

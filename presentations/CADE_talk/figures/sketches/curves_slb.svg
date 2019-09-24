@@ -1,0 +1,69 @@
+
+<svg width="1264px" height="354px" viewBox="0 0 1264 354" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(-297.000000, 1.000000)">
+            <g id="Group-2-Copy-3" transform="translate(1287.000000, 0.000000)">
+                <g id="Group" fill-rule="nonzero" stroke="#979797" stroke-linecap="square" stroke-width="3">
+                    <path d="M1.5,0.5 L1.5,272.5" id="Line"></path>
+                    <path d="M272,272 L0,272" id="Line-Copy"></path>
+                </g>
+                <text id="+" font-family="Avenir-Heavy, Avenir" font-size="28" font-weight="600" fill="#979797">
+                    <tspan x="33" y="199">+</tspan>
+                </text>
+                <text id="+-copy" font-family="Avenir-Heavy, Avenir" font-size="28" font-weight="600" fill="#979797">
+                    <tspan x="77" y="146">+</tspan>
+                </text>
+                <text id="+-copy-2" font-family="Avenir-Heavy, Avenir" font-size="28" font-weight="600" fill="#979797">
+                    <tspan x="157" y="130">+</tspan>
+                </text>
+                <text id="-" font-family="Avenir-Heavy, Avenir" font-size="35" font-weight="600" fill="#979797">
+                    <tspan x="245" y="88">-</tspan>
+                </text>
+                <path d="M13.5664062,182.726562 C34.0585938,150.885417 57.2395833,129.003906 83.109375,117.082031 C99.6849083,109.443337 125.501628,98.6367187 157.957031,98.6367187 C176.489069,98.6367187 238.253906,98.6367187 271.105469,117.082031" id="Path-2" stroke="#427FBA" stroke-width="3" fill-rule="nonzero"></path>
+                <text id="Make-decision" font-family="Avenir-Heavy, Avenir" font-size="28" font-weight="600" fill="#424141">
+                    <tspan x="2" y="307">Make decision</tspan>
+                </text>
+            </g>
+            <g id="Group-2-Copy-2" transform="translate(957.666667, 0.000000)">
+                <g id="Group" fill-rule="nonzero" stroke="#979797" stroke-linecap="square" stroke-width="3">
+                    <path d="M1.5,0.5 L1.5,272.5" id="Line"></path>
+                    <path d="M272,272 L0,272" id="Line-Copy"></path>
+                </g>
+                <path d="M13.5664062,182.726562 C34.0585938,150.885417 57.2395833,129.003906 83.109375,117.082031 C99.6849083,109.443337 125.501628,98.6367187 157.957031,98.6367187 C176.489069,98.6367187 238.253906,98.6367187 271.105469,117.082031" id="Path-2" stroke="#427FBA" stroke-width="3" fill-rule="nonzero"></path>
+                <text id="Refine-decision-boun" font-family="Avenir-Heavy, Avenir" font-size="28" font-weight="600" fill="#424141">
+                    <tspan x="0" y="307">Refine decision </tspan>
+                    <tspan x="0" y="345">boundary</tspan>
+                </text>
+                <circle id="Oval" stroke="#979797" stroke-width="3" fill-rule="nonzero" cx="42" cy="192" r="8"></circle>
+                <circle id="Oval-Copy" stroke="#979797" stroke-width="3" fill-rule="nonzero" cx="86" cy="137" r="8"></circle>
+                <circle id="Oval-Copy-2" stroke="#979797" stroke-width="3" fill-rule="nonzero" cx="166" cy="121" r="8"></circle>
+                <circle id="Oval-Copy-3" stroke="#979797" stroke-width="3" fill-rule="nonzero" cx="254" cy="81" r="8"></circle>
+            </g>
+            <g id="Group-2-Copy" transform="translate(628.333333, 0.000000)">
+                <g id="Group" fill-rule="nonzero" stroke="#979797" stroke-linecap="square" stroke-width="3">
+                    <path d="M1.5,0.5 L1.5,272.5" id="Line"></path>
+                    <path d="M272,272 L0,272" id="Line-Copy"></path>
+                </g>
+                <path d="M13.5664062,182.726562 C55.0273437,171.960937 95.8033854,152.44401 135.894531,124.175781 C175.985677,95.9075521 221.295573,87.3945312 271.824219,98.6367187" id="Path-2" stroke="#427FBA" stroke-width="3" fill-rule="nonzero"></path>
+                <text id="New-points-arrive" font-family="Avenir-Heavy, Avenir" font-size="28" font-weight="600" fill="#424141">
+                    <tspan x="0" y="307">New points arrive</tspan>
+                </text>
+                <circle id="Oval" stroke="#979797" stroke-width="3" fill-rule="nonzero" cx="42" cy="192" r="8"></circle>
+                <circle id="Oval-Copy" stroke="#979797" stroke-width="3" fill-rule="nonzero" cx="86" cy="137" r="8"></circle>
+                <circle id="Oval-Copy-2" stroke="#979797" stroke-width="3" fill-rule="nonzero" cx="166" cy="121" r="8"></circle>
+                <circle id="Oval-Copy-3" stroke="#979797" stroke-width="3" fill-rule="nonzero" cx="254" cy="81" r="8"></circle>
+            </g>
+            <g id="Group-2" transform="translate(299.000000, 0.000000)">
+                <g id="Group" fill-rule="nonzero" stroke="#979797" stroke-linecap="square" stroke-width="3">
+                    <path d="M1.5,0.5 L1.5,272.5" id="Line"></path>
+                    <path d="M272,272 L0,272" id="Line-Copy"></path>
+                </g>
+                <path d="M13.5664062,182.726562 C55.0273437,171.960937 95.8033854,152.44401 135.894531,124.175781 C175.985677,95.9075521 221.295573,87.3945312 271.824219,98.6367187" id="Path-2" stroke="#427FBA" stroke-width="3" fill-rule="nonzero"></path>
+                <text id="Existing-decision-bo" font-family="Avenir-Heavy, Avenir" font-size="28" font-weight="600" fill="#424141">
+                    <tspan x="0" y="308">Existing decision</tspan>
+                    <tspan x="0" y="346">boundary</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

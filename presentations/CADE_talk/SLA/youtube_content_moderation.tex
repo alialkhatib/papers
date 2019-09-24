@@ -1,0 +1,205 @@
+\documentclass[presentation]{subfiles}
+
+
+\begin{document}
+
+\section{youtube demonetization}
+
+\begin{frame}\frametitle{youtube demonetization algorithm}
+    YouTube enforces many of its policies algorithmically:
+
+    \begin{itemize}
+      \item<+> copyright
+      \item<+-> advertiser guidelines
+      \begin{itemize}
+        \item<3-> controversial issues
+        \item<3-> dangerous substances
+        \item<3-> harmful acts
+        \item<3-> inappropriate language
+        \item<3-> sexually suggestive content
+      \end{itemize}
+    \end{itemize}
+      \visible<4->{YouTubers can still upload, but \alert{the algorithm} determines their eligibility to earn
+
+      Demonetized videos earn no money for the YouTuber}
+\end{frame}
+
+\begin{frame}[standout]
+but the demonetization algorithm makes mistakes
+\end{frame}
+
+
+\begin{frame}\frametitle{LGBTQ youtubers getting demonetized}
+
+
+  \begin{columns}
+  \begin{column}{0.48\textwidth}
+
+    \only<1>{\vspace{2em}}
+
+    \includegraphics[width=\textwidth]{figures/demonetization.jpg}
+
+  \end{column}
+
+  \begin{column}{0.48\textwidth}
+
+  \only<1>{
+
+  Videos about \alert<1>{gender identity} are not necessarily about \alert<1>{sex} at all.
+  
+  \vspace{1em}
+
+  \alert{The algorithm} learned to associate gendered terms with sex because the training data had that association.
+
+  \vspace{1em}
+
+  In these videos, that association doesn't exist.
+  }
+
+  \only<2>{
+    
+    \vspace{1em}
+    
+    \includegraphics[width=\textwidth]{figures/sketches/gender.pdf}
+  
+  }
+
+  \end{column}
+  \end{columns}
+
+\end{frame}
+
+
+
+\begin{frame}\frametitle{false negatives}
+  
+  % \framesubtitle{YouTube has made mistakes in the other direction, too}
+
+\begin{columns}
+\begin{column}{0.6\textwidth}
+\includegraphics[width=\textwidth]{figures/yt_fail/peppa.jpg}
+\end{column}
+\begin{column}{0.3\textwidth}
+Videos of children's character Peppa Pig being tortured in the dentist's office were, by all appearances, monetized normally
+
+\vspace{1em}
+
+In some cases they were included in YouTube Kids
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+
+\begin{frame}
+  
+  \begin{columns}[t]
+
+  \begin{column}{0.32\textwidth}
+    \begin{flushright}
+    {\Large \strong{Behavior}}
+
+    \only<1>{User-created videos}
+    \only<2>{Street performances (``buskers'')}
+    \only<3->{Millions of  street performances}
+    \end{flushright}
+  \end{column}
+
+  \begin{column}{0.36\textwidth}
+
+  \vspace{2em}
+  
+  \includegraphics[width=\textwidth]{figures/sketches/arrows.pdf}
+
+  \begin{center}
+  {\Large \strong{Judgment}}
+
+
+  \only<1>{Does this video look similar to previous videos that were  demonetized?}
+
+  \only<2>{Is this performance pushing the envelope, or does it cross a line ?}
+
+
+  \end{center}
+  \end{column}
+  
+  \begin{column}{0.32\textwidth}
+  \begin{flushleft}
+  {\Large\only<1,3->{\strong{Algorithm}}
+    \only<2>{\strong{Bureaucrat}}}
+
+    \only<1>{YouTube demonetization}
+
+    \only<2>{Police tasked with enforcing busking ordinances in cities}
+
+    \only<3->{Quasi-police force tasked with  making street performance  judgments at massive scale}
+  \end{flushleft}
+  \end{column}
+  \end{columns}
+
+\only<3->{
+\begin{columns}[t]
+\begin{column}{0.1\textwidth}
+\end{column}
+\begin{column}{0.15\textwidth}
+\onslide<3>{\strong{Ideally}}
+
+~
+
+\onslide<4>{\strong{In reality}}
+\end{column}
+
+\begin{column}{0.75\textwidth}
+\onslide<3>{Recognize new situations and navigate them culturally and contextually appropriately}
+
+\onslide<4>{Trained on yesterday's data, before today's cultural movements began}
+\end{column}
+\end{columns}}
+
+\end{frame}
+
+
+\begin{frame}{takeaways}
+  
+  It's unlikely we can avoid these problems algorithmically
+
+\begin{itemize}
+  \item Having \alert{more training data} would not have helped us avoid this problem
+  \item Experimentation and provocation is often the \alert{point} of performance and art
+  \item Street--level algorithms can only adapt \alert{after} they make the wrong call
+\end{itemize}
+
+\end{frame}
+
+
+% \begin{frame} 
+
+% \vspace{2em}
+  
+%   \begin{columns}
+%   \begin{column}{0.4\textwidth}
+
+%   \includegraphics[width=\textwidth]{figures/ios/wrong_call_1.png}
+  
+%   \end{column}
+%   \begin{column}{0.4\textwidth}
+  
+%   \includegraphics[width=\textwidth]{figures/ios/wrong_call_2.png}
+  
+%   \end{column}
+%   \end{columns}
+
+% \vspace{1em}
+
+% \begin{center}
+% YouTube makes a lot of \alert{wrong calls} in critical, marginal cases
+% \end{center}
+
+
+% \end{frame}
+
+
+
+\end{document}

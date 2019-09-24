@@ -1,0 +1,246 @@
+\documentclass[presentation]{subfiles}
+\onlyinsubfile{
+  \bibliography{references}
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+\renewcommand{\onlyinsubfile}[1]{}
+
+}
+% \setbeamersize{text margin left=0cm, text margin right=0cm}
+% \setbeamersize{text margin left=0cm}
+
+\begin{document}
+
+\section{Everything old is new again}
+
+
+\begin{frame}{on-demand work} % \frametitle{The beginnings of something frustrating}
+
+    \visible<+->{
+    \begin{columns}
+      \begin{column}[t]{0.5\textwidth}
+        \centering
+        gig work
+
+        \vspace{0.5em}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+        \centering
+        crowd work
+        \end{column}
+      \end{columns}
+      }
+
+\visible<+->{
+  \begin{columns}[onlytextwidth]
+
+    \begin{column}{.25\textwidth}
+      \includegraphics[width=\textwidth]{../common_figures/uber.png}
+    \end{column}
+    \begin{column}{.25\textwidth}
+      \includegraphics[width=\textwidth]{../common_figures/postmates.png}
+    \end{column}
+
+    \begin{column}{.25\textwidth}
+      \includegraphics[width=\textwidth]{../common_figures/amt.png}
+    \end{column}
+    \begin{column}{.25\textwidth}
+      \includegraphics[width=\textwidth]{../common_figures/upwork.png}
+    \end{column}
+
+
+    
+  \end{columns}
+  }
+
+\end{frame}
+
+
+
+
+% \begin{frame}<1>[standout,label=juxtapose]
+%   \begin{columns}
+%     \begin{column}{0.5\textwidth}
+%       \begin{center}
+%         {\large nothing new under the sun}
+%       \end{center}
+%     \end{column}
+%     \begin{column}{0.5\textwidth}
+%       \begin{center}
+%         \onslide<1>{\large everything old is new again}
+%       \end{center}
+%     \end{column}
+%   \end{columns}
+% \end{frame}
+
+\begin{frame}<-6>[t,label=pastProjects]
+\frametitle{
+  % \hspace{1em}
+  \visible<1->{
+    Gig Work
+  }
+  \only<4-9>{
+    \hspace{10.5em}
+    {Crowd Work}
+  }
+}
+  
+  \begin{columns}
+  \visible<2->{
+    \begin{column}[T]{0.5\textwidth}
+      \begin{center}
+        \textbf{\textsc{Alia}} % \\{\small(National Domestic Workers' Alliance)}}}
+      \end{center}
+    
+
+      Allowing workers to
+      book clients,
+      communicate with each other, and
+      make decisions about how the platform should operate
+
+  \end{column}
+}
+
+  \visible<5-10>{
+    \begin{column}[T]{0.5\textwidth}
+    \only<-9>{
+          \begin{center}
+            \textbf{\textsc{Vitae}} % \\{\small(TurkerNation)}}}
+          \end{center}
+    
+          Giving crowd workers the ability to stand behind collective reputations, and attract more skilled, lucrative work
+        }
+  \only<10-12>{
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/news/alia_portable_benefits_cropped.png}
+  }
+  \end{column}}
+  \end{columns}
+
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+  \begin{center}
+    \only<3-12>{
+      \visible<3-6,7-11>{
+        \only<3-6>{
+          \strong{Worker-owned cooperative}
+        }
+
+        \only<7->{
+          \onslide<0>{
+            Worker-owned cooperative
+          }
+          \visible<8->{
+
+            \strong{Relief from precarity}
+          }
+        }
+      }
+      % \only<7-11>{
+        
+      % }
+    }
+  \end{center}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  \begin{center}
+    \visible<6-9>{
+      \visible<6,7-10>{
+        \only<6>{
+          \strong{Digital hiring hall}
+        }
+        \only<7->{
+          \onslide<0>{
+            Digital hiring hall
+          }
+          \visible<8->{
+
+            \strong{Solidarity}
+          }
+        }
+      }
+    }
+  \end{center}
+\end{column}
+
+\end{columns}
+
+\visible<9>{
+  \vspace{1em}
+  \begin{center}
+    \strong{Solutions to underlying social issues}
+  \end{center}
+}
+\end{frame}
+
+
+
+\begin{frame}<0>[label=thesis] % {Underlying patterns}
+  \begin{center}
+    \alert<+>{}
+    Everything we do is situated within cultural and historical backdrops.
+
+    If we're serious about ethics and justice, we need to be as serious
+    about \alert<+>{understanding those histories}
+    as we are
+    about \alert<+>{imagining potential futures}.
+      % In order to design for justice, we need to understand these contexts.
+
+    \vspace{2em}
+
+    \visible<+->{
+      Thinking along these lines forces us to confront how we participate in violent, oppressive systems and practices}\visible<+->{, but that can inspire us.}
+
+    % We design technical and social systems by \alert<-5>{recognizable references}
+    % \\\visible<2->{
+    % and we can use this to understand systems, and to inform our actions.
+
+    % \visible<3->{
+    % \vspace{2em}
+
+    % We can draw from a much deeper well of scholarship than Computer Science to recognize the patterns we're recreating in \alert<-5>{ostensibly} novel technical systems.}
+    % }
+  \end{center}
+\end{frame}
+
+
+
+
+\againframe<7-10>{pastProjects}
+
+
+\againframe{thesis}
+
+% \againframe<10-12>{pastProjects}
+
+
+
+% \begin{frame}
+%     I'll illustrate this by showing that we can draw from the well of historical scholarship to identify the unintentional patterns that we recreate in ostensibly novel technical systems.
+% \end{frame}
+
+
+\begin{frame}<-5>[label=roadmap]{new technologies, old metaphors}
+
+    \begin{itemize}
+      \item<1-6,8,10>[] \alert<5>{On-Demand work \hfill Piecework
+            \\\hfill{\footnotesize \textsc{\textbf{CHI 2017}}} {\scriptsize(Honorable Mention)}}
+      
+      \vspace{1em}
+
+      \item<2-4,6-8,10>[] \alert<7>{Artificial Intelligence \hfill Street-level bureaucracies
+            \\\hfill{\footnotesize \textsc{\textbf{CHI 2019}}} {\scriptsize(Best Paper)}}
+
+      \vspace{1em}
+
+      \item<3-4,6,8-10>[] \alert<9>{``Human-Centered AI'' \hfill \textit{Seeing Like a State}\\~}
+
+
+    \end{itemize}
+
+\end{frame}
+
+\end{document}
