@@ -1,0 +1,111 @@
+\documentclass[aspectratio=169,12pt]{beamer} % or 14 or 17 or 20
+
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs}
+\usepackage{appendixnumberbeamer,cleveref,fancybox}
+% \usepackage[margin=0in]{geometry}
+
+\usepackage{pgfcalendar,pgfornament,svg,subfiles,chronosys,cancel}
+\usepackage{xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+\usepackage{calc,environ}
+
+
+\usetikzlibrary{positioning,arrows,automata}
+\usepackage[outline]{contour}
+\usepackage[citestyle=authoryear,
+            autocite=footnote,
+            backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\usepackage[normalem]{ulem}
+
+\bibliography{references}
+
+\usetheme{metropolis}
+
+
+\title{Street--Level Algorithms}
+\subtitle{and Seeing the Forest for the Trees in AI}
+\author[Ali Alkhatib]{{Ali Alkhatib}\\
+\href{http://twitter.com/_alialkhatib}{@\_alialkhatib} || \href{mailto:ali.alkhatib@cs.stanford.edu}{ali.alkhatib@cs.stanford.edu}}
+
+% \institute[Practice Talk --- please don't share!]{{\normalsize AI Now Institute}}
+
+\date{September 23, 2019}
+\date{\today}
+
+
+
+
+
+
+\input{colors}
+\input{customizations}
+
+
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+% \notinsubfile{}
+
+
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\def\stackalignment{l}
+\def\stacktype{S}
+
+\subfile{introduction}
+
+
+\subfile{piecework-section}
+\subfile{piecework-coda}
+
+\againframe<5-7>{roadmap}
+
+
+\section{Street--Level Algorithms\\
+{\hfill\footnotesize\citeauthor{streetLevelAlgorithms} @ \citefield{streetLevelAlgorithms}{series}}}
+
+\subfile{SLA/introduction}
+\subfile{SLA/street-level_bureaucracy}
+\subfile{SLA/street-level_algorithms}
+\subfile{SLA/reflexivity_in_bureaucracy_and_algorithms}
+\subfile{SLA/youtube_content_moderation}
+\subfile{SLA/quality_control_in_crowd_work}
+\subfile{SLA/algorithmic_bias_in_justice}
+
+\subfile{SLA/implications}
+\subfile{SLA/discussion}
+
+
+\againframe<7-9>{roadmap}
+
+\subfile{forests}
+
+
+\subfile{seeing_like_a_state/forests}
+
+\againframe<6>{thesis}
+
+\subfile{seeing_like_a_state_implications}
+
+
+% \section{}
+
+\subfile{conclusion}
+
+% \subfile{piecework/contact}
+
+
+\begin{frame}[allowframebreaks]{references}
+  \printbibliography{}
+\end{frame}
+
+\end{document} 

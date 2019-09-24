@@ -1,0 +1,40 @@
+# PAPER [`15 minutes (+5 for Q&A)`]
+
+    format:
+    entry [section time] [running total (for major sections)]
+
+
+## Intro [`1 minute`] [`1`]
+- Open problems in crowdsourcing: complexity, decomposition, relationships [`?`]
+- Piecework! [`?`]
+
+## Wait what's piecework again [`1 minute`] [`2`]
+
+## Some case studies: [`3 minutes`] [`5`]
+- airy's computers [`1`]
+- domestic/farmhand labor [`0.5`]
+- matchstick girls [`1`]
+- industrial workers [`0.5`]
+
+## Complexity limits [`3 minutes`] [`8`]
+- what did crowdsourcing say? [`0.5`]
+- what did piecework say? [`1`]
+- comparisons? [`1`]
+- implications? [`0.5`]
+
+## Decomposition limits [`3 minutes`] [`11`]
+- what did crowdsourcing say? [`0.5`]
+- what did piecework say? [`1`]
+- comparisons? [`1`]
+- implications? [`0.5`]
+
+## Worker relationships [`3 minutes`] [`14`]
+- what did crowdsourcing say? [`0.5`]
+- what did piecework say? [`1`]
+- comparisons? [`1`]
+- implications? [`0.5`]
+
+## Discussion [`1 minute`] [`15`]
+- this is a very tricky thing to do, predicting the future [`?`]
+- anyway let's predict the future: utopian/dystopian visions [`?`]
+- Research agendas! go go gadget contextual analysis [`?`]

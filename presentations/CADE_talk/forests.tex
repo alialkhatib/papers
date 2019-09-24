@@ -1,0 +1,77 @@
+\documentclass[presentation]{subfiles}
+\onlyinsubfile{
+  \bibliography{references}
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+\renewcommand{\onlyinsubfile}[1]{}
+
+}
+% \setbeamersize{text margin left=0cm, text margin right=0cm}
+% \setbeamersize{text margin left=0cm}
+
+
+\begin{document}
+
+\section{Seeing the Forest for the Trees}
+
+\begin{frame}{human-centered ai}
+
+  \begin{columns}[b,onlytextwidth]
+  \begin{column}[b]{0.33\textwidth}
+  \begin{figure}
+  \includegraphics<+->[width=0.9\textwidth]{figures/news/HAI_launch}
+  \end{figure}
+  \end{column}
+
+  \begin{column}[b]{0.33\textwidth}
+  \begin{figure}
+  \includegraphics<+->[width=0.9\textwidth]{figures/news/anthro_intelligence_post}
+  \end{figure}
+  \end{column}
+
+  \begin{column}[b]{0.33\textwidth}
+  % \begin{figure}
+\end{column}
+
+
+
+\end{columns}
+
+\begin{tikzpicture}[overlay]
+
+
+\visible<+->{
+  \node[xshift=-7cm,yshift=-5cm] at (current page.north east) (img00)                 {\includegraphics[width=0.25\textwidth]{figures/HAI_post/IMG_0077.png}};
+}
+
+\visible<+->{
+  \node [above right=-6cm and -2cm of img00] (img01) {\includegraphics[width=0.25\textwidth]{figures/HAI_post/IMG_0078.png}};
+}
+
+
+\visible<+->{
+  \node [below right=-5cm and -2.5cm of img01] (img02) {\includegraphics[width=0.25\textwidth]{figures/HAI_post/IMG_0079.png}};
+}
+
+
+\visible<+->{
+  \node [above right=-5cm and -2cm of img02] (img03) {\includegraphics[width=0.25\textwidth]{figures/HAI_post/IMG_0080.png}};
+}
+
+
+\end{tikzpicture}
+
+\end{frame}
+
+
+
+\begin{frame}[standout]
+
+\only<1>{``Human-Centered'' AI is a symptom of a problem}
+
+\only<2->{AI-centered research tends to see the world from a centralizing perspective}
+
+\end{frame}
+
+
+\end{document}
