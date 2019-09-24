@@ -1,21 +1,3 @@
-% \newcommand\Wider[2][5em]{%
-% \makebox[\linewidth][c]{%
-%   \begin{minipage}{\dimexpr\textwidth+#1\relax}
-%   \raggedright#2
-%   \end{minipage}%
-%   }%
-% }
-
-
-% \newcommand\Wider[2][3em]{%
-% \makebox[\linewidth][c]{%
-%   \begin{minipage}{\dimexpr\textwidth+#1\relax}
-%   \raggedright#2
-%   \end{minipage}%
-%   }%
-% }
-
-
 \newcommand{\soutthick}[1]{%
     \renewcommand{\ULthickness}{2.4pt}%
        \sout{#1}%
@@ -45,95 +27,8 @@
 \setmonofont{Source Code Pro}
 
 
-\metroset{titleformat=smallcaps,numbering=counter}
+\metroset{titleformat=smallcaps,numbering=none}
 
 
 \newenvironment{mystepwiseitemize}{\begin{itemize}[<+-| alert@+>]}{\end{itemize}}
 
-
-% \newlength{\metropolis@frametitle@padding}
-% \setlength{\metropolis@frametitle@padding}{2.2ex}
-% \newcommand{\metropolis@frametitlestrut@start}{
-%   \rule{0pt}{\metropolis@frametitle@padding +%
-%     \totalheightof{%
-%       \ifcsdef{metropolis@frametitleformat}{\metropolis@frametitleformat X}{X}%
-%     }%
-% }% }
-% \newcommand{\metropolis@frametitlestrut@end}{
-%   \rule[-\metropolis@frametitle@padding]{0pt}{\metropolis@frametitle@padding}
-% }
-% \defbeamertemplate{frametitle}{plain}{%
-%   \nointerlineskip%
-%   \begin{beamercolorbox}[%
-%       wd=\paperwidth,%
-%       sep=0pt,%
-%       leftskip=\metropolis@frametitle@padding,%
-%       rightskip=\metropolis@frametitle@padding,%
-%     ]{frametitle}%
-%   \metropolis@frametitlestrut@start%
-%   \insertframetitle%
-%   \nolinebreak%
-%   \metropolis@frametitlestrut@end%
-%   \end{beamercolorbox}%
-% }
-% \setbeamertemplate{frametitle continuation}{%
-%   \usebeamerfont{frametitle}
-%   \romannumeral \insertcontinuationcount
-% }
-
-% \setbeamertemplate{frametitle}{
-%   \nointerlineskip%
-%   \begin{beamercolorbox}[%
-%       wd=\paperwidth,%
-%       sep=0pt,%
-%       leftskip=\metropolis@frametitle@padding,%
-%       rightskip=\metropolis@frametitle@padding,%
-%     ]{frametitle}%
-%   \metropolis@frametitlestrut@start%
-%   \hspace{5mm}\insertframetitle%
-%   \nolinebreak%
-%   \metropolis@frametitlestrut@end%
-%   \end{beamercolorbox}%
-%   % hi\insertframetitle
-% }
-
-
-% \setbeamertemplate{title}{
-% \raggedright%
-% \linespread{1.0}%
-% \inserttitle%
-% \par%
-% \vspace*{0.5em}
-% }
-
-
-% \setbeamertemplate{title page}{
-%   \begin{minipage}[b][\paperheight]{\textwidth}
-%     \ifx\inserttitlegraphic\@empty\else\usebeamertemplate*{title graphic}\fi
-%     \hspace*{-2em}\makebox[0pt][l]{%
-%       \raisebox{-\totalheight}[0pt][0pt]{%
-%       \includegraphics[width=\paperwidth]{figures/darkfog.png}}
-%     }%
-%     \vfill%
-%     \ifx\inserttitle\@empty\else\usebeamertemplate*{title}\fi
-%     \ifx\insertsubtitle\@empty\else\usebeamertemplate*{subtitle}\fi
-%     \usebeamertemplate*{title separator}
-%     \ifx\beamer@shortauthor\@empty\else\usebeamertemplate*{author}\fi
-%     \ifx\insertdate\@empty\else\usebeamertemplate*{date}\fi
-%     \ifx\insertinstitute\@empty\else\usebeamertemplate*{institute}\fi
-%     % \includegraphics[width=\paperwidth]{figures/highgray.png}
-%     % \pgfuseimage{mybackground}
-%     \vfill
-%     \vspace*{1mm}
-%   \end{minipage}
-% }
-
-
-% \NewEnviron{fiftyfifty}[1][]{%
-% {\newgeometry{left=0mm, right=0em, top=0em, bottom=0em}
-% \begin{frame}[b]{#1}
-% \vspace{-5mm}
-% \BODY
-% \end{frame}
-% \resetgeometry
-% }}
