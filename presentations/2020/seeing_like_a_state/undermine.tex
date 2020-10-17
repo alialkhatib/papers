@@ -1,0 +1,31 @@
+\documentclass[presentation]{subfiles}
+\onlyinsubfile{
+  \bibliography{../../references}
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+  % \externaldocument{./connection}
+\renewcommand{\onlyinsubfile}[1]{}
+
+}
+
+
+\begin{document}
+
+
+\begin{frame}{ways to undermine a police state}
+
+\begin{tikzpicture}[overlay]
+
+  \node[xshift=4cm,yshift=0cm] at (current page.south west)  (def1)          {\includegraphics[width=0.7\textwidth]{figures/ai_defeaters/lasers.jpg}};
+
+
+  \node<2->[above right=-8cm and -5cm of def1]  (def2)          {\includegraphics[width=0.4\textwidth]{figures/ai_defeaters/clothing.jpg}};
+
+
+  \node<3>[right=-2cm of def2]  (def3)  {\includegraphics[width=0.6\textwidth]{figures/ai_defeaters/makeup.jpeg}};
+
+\end{tikzpicture}
+
+\end{frame}
+
+\end{document}

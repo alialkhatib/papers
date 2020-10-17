@@ -1,0 +1,95 @@
+\documentclass[main]{subfiles}
+
+\onlyinsubfile{
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+}
+
+
+
+\begin{document}
+
+
+\begin{frame}[standout]
+  Let's start way back
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Henrietta Lacks}
+    
+\begin{columns}
+\begin{column}{0.6\textwidth}
+\centering
+
+Patient at Johns Hopkins
+
+\visible<2->{Cell tissues taken without her consent
+
+\emph{the first immortal cell line}}
+
+\visible<3->{Still in use today, nearly 70 years later}
+
+\visible<4->{
+  Family not told for decades
+}
+
+\visible<5->{
+
+\vspace{2em}
+Involved in
+
+{\small \hfill Polio vaccine \hfill genetic research \hfill COVID research}
+
+\begin{tikzpicture}
+
+
+  \node (HeLa_polio) {\includegraphics[width=0.35\textwidth]{figures/HeLa_polio.jpeg}};
+
+  \node [right=0cm of HeLa_polio] (HeLa_genome) {\includegraphics[width=0.35\textwidth]{figures/HeLa_genome.jpg}};
+  
+  \node [right=0cm of HeLa_genome] (HeLa_COVID) {\includegraphics[width=0.4\textwidth]{figures/HeLa_COVID.jpg}};
+
+
+\end{tikzpicture}
+}
+
+
+
+\end{column}
+\begin{column}{0.35\textwidth}
+\centering
+
+\visible<1->{\includegraphics[width=0.7\textwidth]{figures/henrietta_lacks.jpg}}
+
+\visible<2->{\includegraphics[width=0.7\textwidth]{figures/HeLa_cell_culture.jpg}}
+
+
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}[standout]
+    
+So what?
+
+\end{frame}
+
+\begin{frame}{Google Facial Recognition}
+
+\begin{columns}
+\begin{column}{0.3\textwidth}
+    \includegraphics[width=\textwidth]{figures/google_fr/college_campuses.jpeg}
+\end{column}
+\begin{column}{0.3\textwidth}
+    \includegraphics[width=\textwidth]{figures/google_fr/atlanta_homeless.jpeg}
+\end{column}
+\begin{column}{0.3\textwidth}
+    \includegraphics[width=\textwidth]{figures/google_fr/consent.jpeg}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\end{document}

@@ -1,0 +1,137 @@
+\documentclass[presentation]{subfiles}
+\onlyinsubfile{
+  \bibliography{../../references}
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+  % \externaldocument{./connection}
+\renewcommand{\onlyinsubfile}[1]{}
+
+}
+
+
+\begin{document}
+
+
+\begin{frame}[b]{Frustrations of reductive systems}
+  \centering
+  \includegraphics[width=0.5\textwidth]{./figures/steps.png}
+
+\end{frame}
+
+
+\begin{frame}{dangers of ``thick description''}
+  
+
+\begin{tikzpicture}[overlay]
+
+
+\visible<+->{
+  \node[xshift=2cm,yshift=-1cm] at (current page.south west)  (img00)                 {\includegraphics[width=0.4\textwidth]{./figures/health_data/weight.png}};
+}
+
+\visible<+->{
+  \node [above right=-3cm and -2cm of img00] (img01) {\includegraphics[width=0.4\textwidth]{./figures/health_data/standhours.png}};
+}
+
+\visible<+->{
+  \node [below right=-2cm and -4cm of img01] (img02)  {\includegraphics[width=0.4\textwidth]{./figures/health_data/workout_time}};
+  }
+
+
+  \visible<+->{
+  \node [above right=-2cm and -2cm of img02] (img03)  {\includegraphics[width=0.4\textwidth]{./figures/health_data/heart_rate.png}};
+  }
+
+\end{tikzpicture}
+
+\end{frame}
+
+
+\begin{frame}[plain]
+  
+\begin{tikzpicture}[overlay]
+
+\visible<1->{
+
+  \only<1-2>{
+  \node[xshift=4cm,yshift=-5cm] at (current page.south west)  (img00)                 {\colorbox{white}{\includegraphics[width=0.6\textwidth]{./figures/sdc_frustration.pdf}}};
+  
+  \node<2>[above right=-12cm and -6cm of img00]  (img00b)                 {\colorbox{white}{\includegraphics[width=0.6\textwidth]{./figures/SDC_efficiency}}};
+  }
+  
+  % \only<1>{}
+
+  \only<3->{\node[xshift=4cm,yshift=0cm] at (current page.south west)  (img00)                 {\includegraphics[width=0.6\textwidth]{./figures/urbanization_cars.jpg}};}
+}
+
+\visible<4->{
+  \only<4-5>{\node [above right=-12cm and -4cm of img00] (img01) {\colorbox{white}{\includegraphics[width=0.6\textwidth]{./figures/clinical_AI.pdf}}};
+  
+  \node<5>[below right=-8cm and -7cm of img01] (img01b) {\colorbox{white}{\includegraphics[width=0.6\textwidth]{./figures/imperfect_AI.pdf}}};
+  % \node [above right=-5cm and -4cm of img00] (img01c) {\colorbox{white}{\includegraphics[width=0.6\textwidth]{./figures/face_reading.pdf}}};
+  }
+
+  \only<6->{\node [above right=-8cm and -4cm of img00] (img01) {\includegraphics[width=0.6\textwidth]{./figures/tuskegee_experiment.jpg}};}
+}
+
+\visible<7->{
+
+\only<7-8>{\node [above right=-14cm and -9cm of img00] (img06) {\colorbox{white}{\includegraphics[width=0.6\textwidth]{./figures/evaluating_AI_justice.pdf}}};
+  
+  \node<8>[below right=-10cm and -4cm of img06] (img06b) {\colorbox{white}{\includegraphics[width=0.6\textwidth]{./figures/perceptions_justice_AI.pdf}}};
+  }
+
+  \only<9->{\node [above right=-7.5cm and -8.5cm of img00] (img06c) {\includegraphics[width=\textwidth]{./figures/jim_crow_segregated_fountain.jpg}};}
+
+
+  % \node [below right=-2cm and -4cm of img01] (img02)  {\includegraphics[width=0.4\textwidth]{}};
+  }
+
+
+  % \visible<+->{
+  % \node [above right=-2cm and -2cm of img02] (img03)  {\includegraphics[width=0.4\textwidth]{}};
+  % }
+
+\end{tikzpicture}
+
+
+\end{frame}
+
+
+
+
+\begin{frame}<1>[label=provocation,standout]
+\visible<1-2>{what does a world look like that is built uncritically on historical foundations of greed, exploitation, and harm?
+
+\onslide<1>{{\itshape \normalsize how do we \alert{perform} for algorithmic audiences right now?}}
+}
+
+\visible<2>{\rule{\textwidth}{1pt}
+
+what would a world look like that is built intentionally with those histories in mind?}
+\end{frame}
+
+\notinsubfile{\againframe<8>{thesis}}
+
+% \begin{frame}{ways to undermine a police state}
+
+% \begin{tikzpicture}[overlay]
+
+%   \node[xshift=4cm,yshift=0cm] at (current page.south west)  (def1)          {\includegraphics[width=0.7\textwidth]{figures/ai_defeaters/lasers.jpg}};
+
+
+%   \node<2->[above right=-8cm and -5cm of def1]  (def2)          {\includegraphics[width=0.4\textwidth]{figures/ai_defeaters/clothing.jpg}};
+
+
+%   \node<3>[right=-2cm of def2]  (def3)  {\includegraphics[width=0.6\textwidth]{figures/ai_defeaters/makeup.jpeg}};
+
+% \end{tikzpicture}
+
+% \end{frame}
+
+\againframe<1-2>[standout]{provocation}
+
+\end{document}
+
+
+

@@ -1,0 +1,57 @@
+\documentclass[aspectratio=169,10pt]{beamer} % or 14 or 17 or 20
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,multicol}
+\usepackage[fontsize=18]{pdfpcnotes}
+\usepackage{pgfcalendar,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+\usetikzlibrary{positioning}
+\usepackage[outline]{contour}
+\usepackage[citestyle=authoryear-comp,backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\usepackage[normalem]{ulem}
+\bibliography{references}
+\usetheme[numbering=none]{metropolis}
+
+
+
+\input{colors}
+\input{customizations}
+
+
+
+
+\title{Missing the Forest for the Trees}
+\subtitle{how we measure and lose track of what matters}
+\author{Ali Alkhatib}
+\institute[CADE]{University of San Francisco Center for Applied Data Ethics}
+
+\date{\today}
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+
+% \setbeamercolor{normal text}{bg=Light Sandstone,fg=Sky}
+\logo{\raisebox{-1cm}{\includegraphics[width=0.3\textwidth]{./usfca_wide_svg}}\hspace*{0.05\textwidth}}
+
+\begin{frame}
+\titlepage
+\end{frame} 
+\logo{}
+
+
+\setbeamercolor{normal text}{bg=White,fg=Black}
+
+\subfile{forests}
+
+\section{hollowing out a \alert{social} ecology}
+\subfile{r2}
+
+
+\subfile{digital_contact_tracing}
+
+
+\end{document}

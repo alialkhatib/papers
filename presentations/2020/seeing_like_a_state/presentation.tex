@@ -1,0 +1,80 @@
+\documentclass[aspectratio=169,10pt,nopagenumbers]{beamer} % or 14 or 17 or 20
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,multicol}
+\usepackage[fontsize=18]{pdfpcnotes}
+\usepackage{pgfcalendar,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+\usetikzlibrary{positioning}
+\usepackage[outline]{contour}
+\usepackage[citestyle=authoryear-comp,backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\usepackage[normalem]{ulem}
+\bibliography{../../references}
+\usetheme[numbering=none]{metropolis}
+% \setbeameroption{show notes on second screen=bottom} % 
+% \setbeameroption{show notes on second screen}
+
+
+
+\input{colors}
+\input{customizations}
+
+
+
+
+\title{Losing the Forest for the Trees}
+\subtitle{How we Measure and Lose Track of Things}
+\author{Ali Alkhatib}
+% \institute[USF]{University of San Francisco}
+
+\date{\today}
+
+
+
+\newcommand*{\firstthesis}[1][0]{We turn our \alert<#1>{messy world into data} to reason about it and to inform actions}
+% \newcommand{\firstthesis}{We turn \alert{information} into \alert{data} into \alert{knowledge} that we act upon}
+
+\newcommand*{\secondthesis}[1][0]{That's becoming a growing problem as we build systems \alert<#1>{directly out of that data}}
+\newcommand*{\thirdthesis}[1][0]{People respond to that; \alert<#1>{we perform for the algorithms} that dictate our lives}
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+
+% \setbeamercolor{normal text}{bg=Light Sandstone,fg=Sky}
+\logo{\raisebox{-1cm}{\includegraphics[width=0.3\textwidth]{./figures/logo/usfca_wide.eps}}\hspace*{0.05\textwidth}}
+\begin{frame}
+\titlepage
+\pnote{well well well argh}
+\end{frame} 
+\logo{}
+
+\setbeamercolor{normal text}{bg=White,fg=Black}
+
+
+
+
+
+\subfile{slas}
+\subfile{forests}
+
+\subfile{connection}
+
+\subfile{measurement}
+
+\section{where we are}
+\subfile{whereweare}
+
+\subfile{sla}
+
+
+\section{where we're going}
+\subfile{implications}
+
+
+
+\subfile{credits}
+\end{document} 
