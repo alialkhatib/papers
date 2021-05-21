@@ -1,0 +1,56 @@
+\documentclass[presentation]{subfiles}
+\onlyinsubfile{
+  \bibliography{references}
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+\renewcommand{\onlyinsubfile}[1]{}
+
+}
+
+\begin{document}
+
+\begin{frame}<0>[label=AINowTakeaways]{\hspace{1.5em}Street--level algorithms\only<3->{\hspace{7.5em}Piecework}}
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{center}
+  \alert{Street--level algorithms} can create and act on decision boundaries like street--level bureaucrats.
+  
+\vspace{2em}
+
+  But they can't {reflect} on new circumstances, and {update} their decision boundaries, like people can.
+  \end{center}
+\end{column}
+
+
+\begin{column}{0.5\textwidth}
+\only<2>{
+% \begin{center}
+%   {\large Let's pause}
+
+%   \vspace{2em}
+
+%   Any questions to clarify at this point?
+%   \end{center}
+}
+\only<3->{
+\begin{center}
+  Technology can help enhance cognition;
+  but AIs are poor evaluators, let alone producers, of creative work.
+
+  \vspace{2em}
+
+  People may deploy AI in these ways anyway. \alert{Piecework} should inform our critiques of these efforts.
+  \end{center}
+}
+\end{column}
+\end{columns}
+
+
+\end{frame}
+
+% \againframe<-3>{AINowTakeaways}
+
+\end{document}
+
+
