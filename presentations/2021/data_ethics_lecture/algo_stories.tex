@@ -1,0 +1,114 @@
+\documentclass[main]{subfiles}
+
+\onlyinsubfile{
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+}
+
+\begin{document}
+
+
+
+\begin{frame}[t,label=fail]
+\begin{tikzpicture}
+
+% \only<+->{}
+
+\only<+->{
+  \node                      (img00)                 {\includegraphics[width=0.5\textwidth]{figures/news/verge_lgbtq_youtube.png}};
+}
+
+\only<+->{
+  \node [above right=-2.5cm and 1cm of img00] (img01) {\includegraphics[width=0.4\textwidth]{figures/news/google_bullying.png}};
+}
+
+\only<+->{
+  \node [below=1.5cm of img01] (img02)  {\includegraphics[width=0.48\textwidth]{figures/news/rec_run_world_zeynep.png}};
+  }
+
+\only<+->{
+  \node [above left=-3.5cm and 0.5cm of img02] (img03)  {\includegraphics[width=0.48\textwidth]{figures/news/insta_lesbian.png}};
+}
+
+\only<+->{
+  \node [above right=-2.25cm and -3cm of img03] (img04) {\includegraphics[width=0.4\textwidth]{figures/news/algo_cops.png}};
+}
+
+\only<+->{
+  \node [below right=-0.5cm and -1cm of img04] (img05) {\includegraphics[width=0.4\textwidth]{figures/news/ai_cameras.png}};
+}
+
+\only<+->{
+  \node [left=0.25cm of img05] (img06) {\includegraphics[width=0.4\textwidth]{figures/news/tay.png}};
+}
+
+\only<+->{
+  \node [above=0cm of img05] (img07) {\includegraphics[width=0.4\textwidth]{figures/news/tay_autopsy.png}};
+}
+
+\only<+->{
+  \node [above left=-2cm and -4cm of img06] (img08) {\includegraphics[width=0.4\textwidth]{figures/news/yt_children.png}};
+}
+
+\only<+->{
+  \node [below right=-2cm and 0cm of img08] (img09) {\includegraphics[width=0.4\textwidth]{figures/news/racist_algos.png}};
+}
+
+\only<+->{
+  \node [above left=-1.5cm and 0cm of img09] (img10) {\includegraphics[width=0.4\textwidth]{figures/news/tricked_tesla.png}};
+}
+
+\only<+->{
+  \node [below right=-3cm and 2cm of img10] (img11) {\includegraphics[width=0.4\textwidth]{figures/news/something_wrong.png}};
+}
+
+\only<+->{
+  \node [above left=-10cm and 2cm of img11] (img12) {\includegraphics[width=0.4\textwidth]{figures/news/ACLU.png}};
+}
+
+\only<+->{
+  \node [right=2cm of img12] (img13) {\includegraphics[width=0.4\textwidth]{figures/news/clearview.png}};
+}
+
+
+
+
+\only<+->{
+  \node [above left=-13cm and 2cm of img13] (img15) {\includegraphics[width=0.4\textwidth]{figures/news/atlanticGoogleHeadline.PNG}};
+}
+
+% \only<+->{
+%   \node [left=-6cm of img15] (img16) {\includegraphics[width=0.4\textwidth]{figures/news/atlanticGoogleSnippet.PNG}};
+% }
+
+\only<+->{
+  \node [above left=-6cm and -13cm of img15] (img17) {\includegraphics[width=0.9\textwidth]{figures/news/atlanticGoogleFacesDesktop.png}};
+}
+
+
+\only<+->{
+  \node [above right=-5cm and -6cm of img17] (img19) {\includegraphics[width=0.4\textwidth]{figures/news/vergeHalo.PNG}};
+}
+
+
+\only<+->{
+  \node [above left=-13cm and -5cm of img19] (img20) {\includegraphics[width=0.4\textwidth]{figures/news/onezeroHalo.PNG}};
+}
+
+
+
+\only<+->{
+  \node [below left=-14cm and 1cm of img20] (img21) {\includegraphics[width=0.4\textwidth]{figures/news/twitterAITrustworthiness.PNG}};
+}
+
+\only<+->{
+  \node [above right=-15cm and -5cm of img21] (img22) {\colorbox{white}{\includegraphics[width=0.7\textwidth]{figures/news/CHI_eye_tracking.pdf}}};
+  
+}
+
+
+\end{tikzpicture}
+
+\end{frame}
+
+\end{document}

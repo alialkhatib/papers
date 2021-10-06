@@ -1,0 +1,53 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\begin{frame}
+
+\begin{tikzpicture}[overlay]
+
+
+\visible<+->{
+  \node[xshift=1cm] (img00)                 {\only<-6>{\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4822.png}}\only<7->{\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4822_grayed.png}}};
+}
+
+\visible<+->{
+  \node [above right=-8cm and -1.5cm of img00] (img01) {\only<-6>{\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4823.png}}\only<7->{\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4823_grayed.png}}};
+}
+
+
+\visible<+->{
+  \node [below right=-8cm and -1.5cm of img01] (img02) {\only<-6>{\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4824.png}}\only<7->{\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4824_grayed.png}}};
+}
+
+
+\visible<+->{
+  \node [above right=-8cm and -1.5cm of img02] (img03) {\only<-6>{\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4825.png}}\only<7->{\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4825_grayed.png}}};
+}
+
+\visible<+->{
+  \node [below right=-8cm and -1.5cm of img03] (img04) {\only<-6>{\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4826.png}}\only<7->{\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4826_grayed.png}}};
+}
+
+\visible<+->{
+    \node [above right=-8cm and -1.5cm of img04] (img05) {
+    \only<-6>{\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4827.png}}\only<7->{\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4827_grayed.png}}
+    };
+  % \only<7->{\node [opacity=0.6, above right=-8cm and -1.5cm of img04] (img05) {\includegraphics[width=0.25\textwidth]{../figures/digital_contact_tracing/IMG_4827.png}};}
+}
+
+\visible<+->{
+  \node [above right=  -3cm and -3.5cm of img00] (img06) {\includegraphics[width=0.3\textwidth]{../figures/soc_med_dct/aa.png}};
+  \node [below right = -3cm and  0cm of img06] (img07) {\includegraphics[width=0.3\textwidth]{../figures/soc_med_dct/cg.png}};
+  \node [below right =  0cm and -4.5cm of img06] (img08) {\includegraphics[width=0.3\textwidth]{../figures/soc_med_dct/ab.png}};
+  \node [below right = -4cm and  1cm of img08] (img09) {\includegraphics[width=0.3\textwidth]{../figures/soc_med_dct/ah.png}};
+  \node [above right = -2cm and  1cm of img09] (img10) {\includegraphics[width=0.3\textwidth]{../figures/soc_med_dct/et.png}};
+  \node [below right =  0cm and -4cm of img10] (img11) {\includegraphics[width=0.3\textwidth]{../figures/soc_med_dct/kc.png}};
+}
+
+
+\end{tikzpicture}
+
+\end{frame}
+
+\end{document}

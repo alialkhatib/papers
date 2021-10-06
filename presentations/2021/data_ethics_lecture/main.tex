@@ -1,0 +1,111 @@
+\documentclass[aspectratio=169,10pt]{beamer} % or 14 or 17 or 20
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,multicol}
+% \usepackage[fontsize=18]{pdfpcnotes}
+\usepackage{pgfcalendar,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+\usetikzlibrary{positioning}
+\usepackage[outline]{contour}
+\usepackage[citestyle=authoryear-comp,backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\usepackage[normalem]{ulem}
+\bibliography{references}
+\usetheme[numbering=none]{metropolis}
+
+
+
+\input{colors}
+\input{customizations}
+
+
+
+
+\title{A \alert{Brief} Chat about Data Ethics}
+% \subtitle{\emph{emphasis on ``brief''}}
+\author{Ali Alkhatib}
+\institute[CADE]{Center for Applied Data Ethics}
+
+\date{\today}
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+
+
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+
+% \setbeamercolor{normal text}{bg=Light Sandstone,fg=Sky}
+\logo{\raisebox{-1cm}{\includegraphics[width=0.3\textwidth]{./usfca_wide_svg}}\hspace*{0.05\textwidth}}
+
+\begin{frame}
+\titlepage
+\end{frame} 
+\logo{}
+
+
+\setbeamercolor{normal text}{bg=White,fg=Black}
+\subfile{history}
+
+
+\subfile{roadmap}
+
+
+\subfile{data_collection}
+\subfile{data_use}
+
+
+
+% \subfile{forest_talk/main}
+
+% \section{Unintended Impacts}
+
+% \section{Ecologies}
+
+% \subfile{forest_talk/forests}
+
+% \section{hollowing out a \alert{social} ecology}
+\subfile{forest_talk/r2}
+
+
+\subfile{forest_talk/digital_contact_tracing}
+
+\subfile{addenda}
+
+
+\subfile{slas}
+
+
+
+\begin{frame}[standout]
+
+\visible<+->{what do we \alert<1>{measure}}
+
+\visible<+->{and what does it mean we \alert<2>{overlook}}
+
+\end{frame}
+
+
+\subfile{future}
+
+
+
+\begin{frame}
+\printbibliography
+\end{frame}
+
+% \subfile{roadmap}
+
+
+
+% \subfile{forests}
+
+% \section{hollowing out a \alert{social} ecology}
+% \subfile{r2}
+
+
+% \subfile{digital_contact_tracing}
+
+
+\end{document}
