@@ -1,0 +1,92 @@
+\documentclass[presentation]{subfiles}
+\onlyinsubfile{
+  \bibliography{references}
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+\renewcommand{\onlyinsubfile}[1]{}
+}
+\begin{document}
+
+\section{Failure in design research}
+
+\begin{frame}{on-demand work}
+
+    \visible<+->{
+    \begin{columns}
+      \begin{column}[t]{0.5\textwidth}
+        \centering
+        Gig work
+        \vspace{0.5em}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+        \centering
+        Crowd work
+        \end{column}
+      \end{columns}
+      }
+
+\vspace{2em}
+
+\visible<+->{
+  \begin{columns}
+
+    \begin{column}{.25\textwidth}
+      \includegraphics[width=\textwidth]{common_figures/uber.png}
+    \end{column}
+    \begin{column}{.25\textwidth}
+      \includegraphics[width=\textwidth]{common_figures/doordash.png}
+    \end{column}
+
+    \begin{column}{.25\textwidth}
+      \includegraphics[width=\textwidth]{common_figures/amt.png}
+    \end{column}
+    \begin{column}{.25\textwidth}
+      \includegraphics[width=\textwidth]{common_figures/upwork.png}
+    \end{column}
+  \end{columns}
+  }
+\end{frame}
+
+\subfile{intro/intro-past-projects}
+
+\begin{frame}[label=thesis] % {Underlying patterns}
+  \begin{center}
+    \alert<+>{}
+    % {\Large \bfseries We can bring seemingly new phenomena into sharp focus using tools and theories developed to study {bureaucratic power} and administrative violence.}
+    {\Large \bfseries New technologies, or old violence?}
+    
+    \vspace{1em}
+    
+    \visible<2->{\large If we're serious about ethics and justice, we need to be as serious
+        about \alert<+>{understanding those histories and power dynamics}
+        as we are
+        about \alert<+>{imagining potential futures}.}
+    
+    \vspace{2em}
+    
+    \visible<+->{
+      Thinking along these lines forces us to confront how we participate in violent, oppressive systems and practices}\visible<+->{, but that can inspire us.}
+  \end{center}
+\end{frame}
+
+% \againframe{thesis}
+
+\begin{frame}[standout]
+\visible<2>{Finding, translating, and applying theories}
+\end{frame}
+
+
+\begin{frame}<-3>[label=roadmap]{new technologies, old metaphors}
+    \begin{itemize}
+      \item<1-6,8,10>[] \alert<5>{On-Demand Work \hfill Piecework
+            \\\hfill{\footnotesize \textsc{\textbf{CHI 2017}}}}
+      \vspace{1em}
+      \item<2-4,6-8,10>[] \alert<7>{Artificial Intelligence \hfill Street-level bureaucracies
+            \\\hfill{\footnotesize \textsc{\textbf{CHI 2019}}}}
+      \vspace{1em}
+      \item<3-4,6,8-10>[] \alert<9>{\hfill To Live in Their Utopia
+            \\\hfill{\footnotesize \textsc{\textbf{CHI 2021}}}}
+    \end{itemize}
+\end{frame}
+
+\end{document}

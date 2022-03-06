@@ -1,0 +1,274 @@
+\documentclass[presentation]{subfiles}
+
+
+\begin{document}
+
+\begin{frame}[t,shrink=30]\frametitle{outline}
+
+\begin{itemize}
+  \item[30s] algo systems have been making people really angry
+  \item[1m]  we keep asking them to make decisions between data points we give them
+  \item[1m]  but filling in the gaps isn't something only algos do
+  \item[1m]  \alert{bureaucrats} rely on enormous bodies of guidelines, policies, laws, etc\dots to figure out if and how to apply rules
+  \item[1m]  We're going to \dots [promise of the talk] \dots~and we'll call those agents \alert{street-level algorithms}.
+  \item[1m]  background on street level bureaucracies
+  \item[1m]  \strong{so what's going wrong?}
+  \item[1m]  review the moment of decision
+  \item[1m]  Let's talk case studies / roadmap
+  \item[1m]  youtube: case study intro
+  \item[1m]  youtube: the parallel
+  \item[1m]  youtube: the insight
+  \item[1m]  what does reflexivity give us that algorithms don't have?
+  \item[1m]  other case studies: wage theft
+  \item[1m]  other case studies: racist judicial system
+  \item[1m]  ???
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{algo systems have been making people really angry}
+screenshots?
+
+ideas for screenshot stories
+\begin{itemize}
+  \item youtube demonetization
+  \item judicial bias in the courts
+  \item wage theft
+  \item hiring discrimination
+  \item self--driving cars
+  \item other ideas?
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}\frametitle{we keep asking them to fill in the gaps}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+  
+  \only<+>{\includegraphics[width=\textwidth]{figures/sketches/unlabeled.pdf}}
+  
+  \only<+>{\includegraphics[width=\textwidth]{figures/sketches/labeled.pdf}}
+  
+  \only<+>{\includegraphics[width=\textwidth]{figures/sketches/boundaries.pdf}}
+  
+  
+  
+  
+\end{column}
+
+% \only<8>{
+% \begin{column}{0.5\textwidth}
+% \end{column}
+% }
+
+\end{columns}
+\end{frame}
+
+
+\begin{frame}\frametitle{but filling in the gaps isn't something only algos do}
+
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+  
+  
+  \only<+>{\includegraphics[width=\textwidth]{figures/sketches/labeled.pdf}}
+  
+  \only<+>{\includegraphics[width=\textwidth]{figures/sketches/legislation.pdf}}
+
+  \only<+>{\includegraphics[width=\textwidth]{figures/sketches/labeled_legislation.pdf}}
+
+  \only<+>{\includegraphics[width=\textwidth]{figures/sketches/labeled_legislation_decision_boundary.pdf}}
+  
+  
+  
+  
+  
+\end{column}
+
+% \only<8>{
+\begin{column}{0.5\textwidth}
+\end{column}
+% }
+
+\end{columns}
+% \end{frame}
+
+
+\end{frame}
+
+
+\begin{frame}\frametitle{bureaucrats rely on guidelines, policies, laws, etc\dots}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{we're going to \dots [promise of the talk];}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{background on street level bureaucracies}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{so what's going wrong?}
+
+\end{frame}
+
+
+\begin{frame}[t]\frametitle{review the moment of decision}
+
+\begin{columns}[T]
+\begin{column}{0.15\textwidth} % step 1
+\onslide<1>{
+
+\only<1>{\includegraphics[width=\textwidth]{figures/sketches/mod_1.pdf}}
+
+\only<2->{\includegraphics[width=\textwidth]{figures/sketches/mod_1_fade.pdf}}
+
+\only<1>{\includegraphics[width=\textwidth]{figures/sketches/mod_1.pdf}}
+
+\only<2->{\includegraphics[width=\textwidth]{figures/sketches/mod_1_fade.pdf}}
+
+\begin{center}
+{\footnotesize The agent gets trained}
+\end{center}
+
+}
+
+\end{column}
+
+\begin{column}{0.15\textwidth}
+\onslide<2-4>{
+
+\only<2>{\includegraphics[width=\textwidth]{figures/sketches/mod_2a.pdf}}
+
+\only<3>{\includegraphics[width=\textwidth]{figures/sketches/mod_2b.pdf}}
+
+\only<4>{\includegraphics[width=\textwidth]{figures/sketches/mod_2c.pdf}}
+
+\only<5->{\includegraphics[width=\textwidth]{figures/sketches/mod_2_fade.pdf}}
+
+
+
+
+
+\only<2>{\includegraphics[width=\textwidth]{figures/sketches/mod_2a.pdf}}
+
+\only<3>{\includegraphics[width=\textwidth]{figures/sketches/mod_2b.pdf}}
+
+\only<4>{\includegraphics[width=\textwidth]{figures/sketches/mod_2c.pdf}}
+
+\only<5->{\includegraphics[width=\textwidth]{figures/sketches/mod_2_fade.pdf}}
+
+\visible<2->{
+\begin{center}
+{\footnotesize New data shows up}
+\end{center}
+}
+
+
+}
+
+\end{column}
+
+\begin{column}{0.15\textwidth}
+\onslide<5>{
+
+\only<5->{\includegraphics[width=\textwidth]{figures/sketches/mod_algo_1.pdf}}
+
+\only<5->{\includegraphics[width=\textwidth]{figures/sketches/blank.pdf}}
+
+}
+
+\end{column}
+
+\begin{column}{0.15\textwidth}
+\onslide<6>{
+
+\only<6->{\includegraphics[width=\textwidth]{figures/sketches/mod_2_bureau_mod.pdf}}
+
+\only<6->{\includegraphics[width=\textwidth]{figures/sketches/mod_algo_2.pdf}}
+
+
+}
+
+\end{column}
+
+\begin{column}{0.15\textwidth}
+\onslide<7>{
+
+
+\only<7->{\includegraphics[width=\textwidth]{figures/sketches/mod_bureau_red.pdf}}
+
+\only<7->{\includegraphics[width=\textwidth]{figures/sketches/mod_algo_red.pdf}}
+
+}
+
+\end{column}
+
+\begin{column}{0.15\textwidth}
+\onslide<8>{
+
+\only<8->{\includegraphics[width=\textwidth]{figures/sketches/mod_algo_3.pdf}}
+
+\only<8->{\includegraphics[width=\textwidth]{figures/sketches/blank.pdf}}
+
+}
+\end{column}
+
+
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{let's talk case studies / roadmap}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{youtube: case study intro}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{youtube: the parallel}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{youtube: the insight}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{what does reflexivity give us that algorithms don't have?}
+
+\end{frame}
+
+
+
+\begin{frame}\frametitle{other case studies: wage theft}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{other case studies: racist judicial system}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

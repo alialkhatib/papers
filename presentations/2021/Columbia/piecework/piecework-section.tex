@@ -1,0 +1,47 @@
+\documentclass[presentation]{subfiles}
+\onlyinsubfile{
+  \bibliography{references}
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+\renewcommand{\onlyinsubfile}[1]{}
+
+}
+
+\begin{document}
+
+
+\subfile{introduction}
+\subfile{piecework-simple}
+\subfile{piecework-complex}
+
+
+\begin{frame}<-3>[label=theory_evaluation]
+
+\only<-2>{\renewcommand{\baselinestretch}{1.5}
+  \begin{tabular}{p{0.9\textwidth}}
+{\large\itshape\onslide<-1>{Conceptualization is directed toward the task of generating interpretations of matters already in hand [\dots] But that does not mean that} \onslide<-2>{theory} \onslide<-1>{has only to fit (or, more carefully, to generate cogent interpretations of) realities past; it also} \onslide<-2>{has to survive --- intellectually survive --- realities to come}.}
+  \end{tabular}
+\renewcommand{\baselinestretch}{1}
+
+  \hfill-- \cite{geertz2008thick}}
+
+\only<3>{
+\centering
+
+\vspace{2em}
+\alert{Good theories give us analytical power}
+
+for the past
+
+for the present
+
+\alert{for realities to come}}
+
+
+\end{frame}
+
+% \againframe<3>{theory_evaluation}
+
+\subfile{piecework_takeaway}
+
+\end{document}

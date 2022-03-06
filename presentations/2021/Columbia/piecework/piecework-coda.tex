@@ -1,0 +1,108 @@
+\documentclass[presentation]{subfiles}
+\onlyinsubfile{
+  \bibliography{references}
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+\renewcommand{\onlyinsubfile}[1]{}
+
+}
+
+
+\begin{document}
+
+
+\begin{frame}[standout]
+
+\visible<+->{What happened with piecework?}
+
+\visible<+->{a labor movement that defined the \nth{20} century}
+
+\end{frame}
+
+
+
+
+\begin{frame}[plain]
+
+\begin{center}
+  \begin{columns}[onlytextwidth]
+  
+  \begin{column}{0.335\textwidth}
+  \visible<2->{\includegraphics[width=\textwidth]{../../common_figures/photo/1888_match_girl_strike.jpg}}
+
+  \visible<3->{\includegraphics[width=\textwidth]{../../common_figures/photo/pickets}}
+  \end{column}
+
+
+  \begin{column}{0.36\textwidth}
+  \visible<1->{\includegraphics[width=\textwidth]{../../common_figures/photo/Matchgirl_strikers}}
+\end{column}
+
+
+\begin{column}{0.305\textwidth}
+  \visible<4->{\includegraphics[width=\textwidth]{../../common_figures/pieceworkers}}
+  
+  \visible<5->{\includegraphics[width=\textwidth]{../../common_figures/photo/train_workers}}
+\end{column}
+
+  \end{columns}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}[plain]
+
+
+\centering \alert{\strong{\LARGE \scshape What's happening today?}}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{tikzpicture}
+
+
+\visible<+->{
+  \node                      (img00)                 {\includegraphics[width=0.4\textwidth]{figures/gigworkers_protesting.jpg}};
+}
+
+\visible<+->{
+  \node [below right=-2cm and 0cm of img00] (img01) {\includegraphics[width=0.4\textwidth]{figures/New-York-California-independent-contractors-Uber-Lyft.jpg}};
+}
+
+\visible<+->{
+  \node [below left=-3cm and -4cm of img01] (img02)  {\includegraphics[width=0.6\textwidth]{figures/lead_720_405.jpg}};
+  }
+
+
+  \visible<+->{
+  \node [right=-2cm of img02] (img03)  {\includegraphics[width=0.4\textwidth]{figures/ab5}};
+  }
+
+  \visible<+->{
+  \node [left=0cm of img03] (img04)  {\includegraphics[width=0.4\textwidth]{figures/news/prop_22.jpeg}};
+  }
+
+  \visible<+->{
+  \node [right=-3cm of img04] (img05)  {\includegraphics[width=0.4\textwidth]{figures/news/lina_khan.jpeg}};
+  }
+
+\end{tikzpicture}
+
+\end{frame}
+
+
+
+
+
+  % \includegraphics[width=\textwidth]{}
+
+% \end{frame}
+
+
+\end{document}
+
+
+

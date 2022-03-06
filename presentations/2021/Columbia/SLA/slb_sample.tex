@@ -1,0 +1,50 @@
+\documentclass[presentation]{subfiles}
+\onlyinsubfile{
+  \bibliography{references}
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+  \renewcommand{\onlyinsubfile}[1]{}
+}
+
+\begin{document}
+
+\begin{frame}{street-level bureaucrats}
+
+  \begin{columns}
+  \only<-5>{
+  \only<-4>{\begin{column}{0.23\textwidth}}
+  \only<5>{\begin{column}{\textwidth}}
+    \vbox to 0.4\textheight{
+
+\vfill
+
+  They're the \only<5>{part of a bureaucratic institution that the public interacts with.}
+
+  \visible<1->{\onslide<1-4>{\alert<1>{police}}}
+
+  \visible<2->{\onslide<2-4>{\alert<2>{teachers}}}
+
+  \visible<3->{\onslide<3-4>{\alert<3>{judges}}}
+
+  \visible<4->{\onslide<4-4>{\alert<4>{clerks}}}
+
+\vfill
+
+}
+  \end{column}}
+  \only<-4>{\begin{column}{0.7\textwidth}
+  \vbox to 0.7\textheight{
+
+  \only<1>{\includegraphics[width=\textwidth]{figures/photos/police-cropped.jpg}}
+  \only<2>{\includegraphics[width=\textwidth]{figures/photos/teacher-cropped.jpg}}
+  \only<3>{\includegraphics[width=\textwidth]{figures/photos/judge-cropped.jpg}}
+  \only<4>{\includegraphics[width=\textwidth]{figures/photos/clerk-cropped.jpg}}
+
+  }
+  
+  \end{column}}
+  \end{columns}
+\end{frame}
+
+
+\end{document}

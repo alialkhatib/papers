@@ -1,0 +1,76 @@
+\documentclass[presentation]{subfiles}
+\onlyinsubfile{
+  \bibliography{references}
+  \usepackage{tikz}
+  \usetikzlibrary{positioning}
+\renewcommand{\onlyinsubfile}[1]{}
+
+}
+
+\begin{document}
+
+
+\subfile{./algo_stories}
+
+\subfile{./research_prompt}
+
+\subfile{./framing}
+
+\subfile{./slb_sample}
+
+\againframe<11->{framing_turntable}
+
+
+\begin{frame}\frametitle{a deep well to draw from}
+    
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+{\citeauthor{lipsky1980street} formalized our conceptualization of ``street-level bureaucracies'' in
+\citeyear{lipsky1969toward} \& \citeyear{lipsky1980street}, drawing focus from elected officials toward the people who \alert{turn policies into action}.}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=\textwidth]{figures/books/slb_lipsky.png}
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{figures/books/irp.png}
+\end{center}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{where power becomes manifest}
+
+  Street-level bureaucrats are enormously influential
+
+  \begin{itemize}
+    \item Street-level bureaucrats \alert<2,5->{mediate} the organizations' success
+    \item Street-level bureaucrats must make \alert<3,5->{in-the-moment} decisions
+    \item Street-level bureaucrats have substantial \alert<4,5->{domain expertise}
+  \end{itemize}
+
+\end{frame}
+
+% \begin{frame}\frametitle{checkered history}
+
+% % \begin{itemize}
+
+% % Bureaucrats and bureaucracy are not evil: they provide role-based accountability, not red tape.
+
+% Many bureaucrats believe in the causes of the organizations in which they work, and
+% do so with an earnest effort to provide the institution's services.
+
+% However, bureaucrats also instantiate and reify prejudicial biases and power~(\cite{corbett2017algorithmic}).
+
+% For now, we will focus on the structural roles bureaucrats serve, and discuss their challenges later.
+% % \end{itemize}
+
+% \end{frame}
+
+
+
+\subfile{./halfhalf}
+
+
+
+\end{document}
