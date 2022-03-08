@@ -1,0 +1,28 @@
+%!TEX root=./presentation.tex
+
+\newcommand{\soutthick}[1]{%
+    \renewcommand{\ULthickness}{2.4pt}%
+       \sout{#1}%
+    \renewcommand{\ULthickness}{.4pt}% Resetting to ulem default
+}
+
+\setbeamercovered{transparent}
+
+\setbeamertemplate{section in toc}[sections numbered]
+
+\setbeamertemplate{caption}{\insertcaption}
+
+
+\setsansfont[BoldFont={Source Sans Pro Bold},
+              Numbers={OldStyle}]{Source Sans Pro}
+\setmainfont[BoldFont={Source Serif Pro Semibold},
+              Numbers={OldStyle}]{Source Serif Pro}
+\setmonofont{Source Code Pro}
+
+
+\metroset{titleformat=smallcaps } % ,numbering=counter}
+\setbeamerfont{standout frame}{size=\HUGE}
+
+
+
+\newenvironment{mystepwiseitemize}{\begin{itemize}[<+-| alert@+>]}{\end{itemize}}
