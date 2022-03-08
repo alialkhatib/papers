@@ -2,307 +2,394 @@
 
 ## Intro?
 
-Hi everyone, as Dr. Patton said, my name's Ali Alkhatib, and I'm the director for the Center for Applied Data Ethics. And I'm so excited to get to speak to you all today because I want to share something that's been frustrating me for a while, and now more than at any point in my career I feel like I have the language I've been looking for to talk about it.
+Hi everyone, as Dr. Patton said, my name's Ali Alkhatib, and I'm the director for the Center for Applied Data Ethics. And I'm so excited to get to speak to you all today because I want to share something that's been frustrating me for a while, and now more than at any other point in the past I feel like I've found the vocabulary and structure I've been looking for to talk about this stuff.
 
 The most concise way I can say what's been frustrating me - so concise that I'll need to spend the next 40 or so minutes trying to unpack it - is to say that...
 
-**The colonizing power of AI, and to an extent HCI and design thinking, has enabled researchers to trade one kind of problem for another, largely for our own benefit, and often to the detriment of the people we're supposed to be accountable to.**
+**AI has this colonizing power. And that colonizing power, found in AI and to an extent in HCI and in design thinking, has enabled researchers in those fields to do what I call a kind of "problem space arbitrage", trading one kind of problem for another. We've been doing this largely on our own terms, for our own benefit, often to the detriment of the people we're supposed to be accountable to.**
 
-This was where I started. Something about that analysis felt... insufficient, so I got caught up trying to figure out this thread of thinking. It felt so knotted up and twisted, and I felt tangled up in this frustrating and sinking fact, that I've spent years desperately trying to work this knot apart as it pulled me deeper into the metaphorical water.
+This was where I started. Something about that analysis felt... insufficient, so I got caught up trying to pull on this thread. It felt so knotted up and twisted, and I felt tangled up in this frustrating and sinking fact. And I ended up spending years desperately trying to work this knot apart as it pulled me deeper into the metaphorical water.
 
-But that's why I'm so relieved, and excited, to talk about this stuff with you today; because I think I've finally basically untangled it, and I want to lay this out so that we can talk about it together and figure out where to go from here. And, I don't know, if any part of this looks like a knot that you've been carrying around, maybe something I say here will help you untangle yours.
+But that's why I'm so relieved, and excited, to talk about this stuff with you today; because I think I've finally kind of untangled it, and I want to lay this out so that we can talk about it together and figure out where to go from here. And, I don't know, if any part of this looks like a knot that you've been carrying around, maybe something I say here will help you untangle yours.
 
+So to tell this story, I'm going to tell you about a couple of papers that were instructive in getting me to this knot in the first place: first I'll tell you about street-level algorithms, and about the kinds of administrative violence that algorithmic systems cause, and how that lens brings a bunch of stuff into sharp focus. And I'll tell you about how that theory translation work can be a helpful tool for framing and bringing things in the world into focus.
 
-So to tell this story, I'm going to tell you about a couple of papers that were instructive in getting to the knot: first I'll tell you about street-level algorithms, and about the kinds of administrative violence that algorithmic systems cause, and how that lens brings a bunch of stuff into sharper focus. And I'll tell you about how that theory translation work can be a helpful tool for making sense of the world.
+And then I'll tell you about how frameworks - how translation work itself - can become toxic and harmful when we try to use it to rewrite the world in our own terms. I'll tell you about "To Live in Their Utopia", the paper I wrote that describes this tendency for centralizing - often administrative, but in my argument, algorithmic - systems to impose their own models of the world upon us, and how the power we allow them to wield enables profound harm upon the most marginalized communities.
 
-And then I'll tell you about how frameworks - how translation work itself - can become toxic and harmful when we try to use it to rewrite the world in our own vocabulary. I'll tell you about "To Live in Their Utopia", the paper I wrote that describes this tendency for centralizing systems to impose their own models of the world upon us, and how the power we allow them to wield enables profound harm upon the most marginalized communities.
-
-That realization on my part helped me make sense of a lot of work I've done up till now:
+Together, these papers tell two parts of a story. They helped me make sense of a lot of work I've done up till now:
 
 - reframing crowd work and gig work as a reformulation of piecework;
 - deconstructing the digital contact tracing proposals that Google and Apple rushed out in 2020; and
-- critiquing how academia ascribes authority to *certain* kinds of knowledge, especially to the detriment and ultimately the erasure of lived experience and knowledge
+- critiquing how academia ascribes authority to *certain* kinds of knowledge, especially to the detriment and ultimately the erasure of lived experience and knowledge.
 
 So the talk is going to look like this:
 
-1. I'm going to tell you about **street-level algorithms** and **to live in their utopia**, because to me these are very much two parts of the same story, and because these were the pieces that I think got me to confront the knot I was talking about earlier, and start to disentangle it, and gave me a perspective on a lot of what I've done in general.
-2. Then I'm going to reflect on some of **my past work through this lens** I didn't have before, and how the things I was writing about and the ways I was writing about them came into focus *for me* in a way that they didn't before.
-3. And then, since I can, I'm going to talk about how **the stuff I'm doing *right now*** factors into all this. Because it's really neat when you come up with an analytical lens that brings past things into perspective and into focus, and then you turn it around and try to use it on totally new stuff and it brings all this new stuff into a new perspective with all of these sharp edges to it.
+1. I'm going to tell you about **street-level algorithms** and **to live in their utopia**, because to me these are very much two parts of the same story, and because these were the pieces that I think got me to the knot, and start to disentangle it, and gave me a new perspective on my own work.
+2. Then I'm going to reflect on some of **my past work through this lens** that I didn't have before, and how the things I was writing about and the ways I was writing about them came into focus *for me* with hindsight in a way that they didn't before.
+3. And then, since I can, I'm going to talk about how **the stuff I'm doing *right now*** factors into all of this. Because one of the things I tend to do when I revisit how I frame and think about my work is to see how that framing informs my plans. Does it bring everything into the picture in a new way? Do things that seemed not to be along the same plane suddenly come into focus together thanks to this framing? The short answer to both of these questions is "yes", and we'll talk about it today.
 
 But, before I begin...
 
-> As I was writing this whole talk, I realized that every time I introduced a paper I wrote, or a project I worked on, it started with "So there I was, frustrated about...". I'm going to say right now that I do what my advisor and I jokingly called "rage-based research"; something frustrates me, and I get so frustrated by it that I get over the writer's block and anxiety and everything else and I start actually searching for words. I'm not apologizing for being **frustrated** with a world that could be better and must be better... but I will apologize for not looking up "frustrated" in a thesaurus. I'm sure it'll get... exasperating, vexing, and aggravating. Okay I'm done, sorry.  
+> As I was writing this whole talk, I realized that every time I introduced a paper I wrote, or a project I worked on, it started with "So there I was, frustrated about...". I'm going to say right now that I do what my advisor and I jokingly called "rage-based research"; something frustrates me, and I get so frustrated by it that I get over the writer's block and anxiety and everything else and I start actually searching for words. I'm not apologizing for being **frustrated** with a world that could be better and must be better... but I will apologize for not looking up "frustrated" in a thesaurus. I'm sure it'll get... exasperating, vexing, and aggravating.
 
-
-### Street-Level Algorithms & To Live in Their Utopia
+Okay I'm done, sorry.
 
 ## street-level algorithms
-So a while back I was trying to figure out what frameworks and languages would give HCI researchers the traction they need to appropriately situate the socially consequential roles that algorithmic systems occupy. Another way of saying that is, I was watching a lot of YouTube and hearing from a lot of content creators about how the algorithm that demonetizes videos for being "advertiser-unfriendly" would make these incomprehensible decisions to demonetize journalistic coverage of white supremacist content and to demonetize people talking about their gender identities, while readily monetizing content that superficially appeared kid-friendly, but was in fact extremely problematic and in some cases very violent. These algorithmic systems were making what seemed like capricious decisions that made a kind of marginal understandable sense. But these decisions were clearly absurd when taken in as a whole. I felt that if we could come up with a socially grounded framework to discuss this frustrating phenomenon, we might be able to finally build more just algorithmic systems on more solid ontological foundations
+So a while back I was trying to figure out what frameworks and languages would give HCI researchers and people out in the world the traction they need to situate and explain a lot of the consequential things that algorithmic systems were doing.
 
-So Michael Bernstein and I ended up writing about "street-level algorithms", riffing on this idea Michael Lipsky introduced some 50 years ago about "street-level bureaucracies". In his book, he writes about how all the power of a bureaucratic institution is kind of nebulous, and that it truly coalesces at the level of street-level bureaucrats, where police make a decision to pull someone over *or not*, where a judge decides to let someone out on bail *or not*, where a clerk makes a decision about whether to accept a copy of a document or an expired document *or not*. Where, and importantly *how*, a street-level bureaucrat applies rules is enormously important. It's important because there are so many administratively defensible ways to go about doing one's job, and so the decision that a person makes about which rules to apply, or which rules to overlook, become very pointed decisions about whether to help or hinder a person's case.
+Another way of saying that is, I was watching a lot of YouTube and hearing from a lot of content creators about how "The Algorithm" - this system that demonetizes videos for being "advertiser-unfriendly" - was making these incomprehensible decisions to demonetize things like journalistic coverage of white supremacist content, or trans people talking about their gender identities, while readily monetizing content that superficially appeared appropriate for kids, but was in fact extremely problematic and in some cases very violent.
 
-These are all examples of street-level bureaucrats exercising **discretion** in varied ways to ultimately try to work toward some underlying goal within the context of the bureaucracy. If police actually pulled everyone over for driving even one mile per hour over the speed limit, people would be extremely frustrated - in the UK, speed trap cameras are the subject of fairly significant antipathy. Overly rigid applications of bureaucratic rules have even been used in the past as a form of protest, slowing down work simply by doing absolutely everything the person is supposed to do.
+These algorithmic systems were making what seemed like capricious decisions that made a kind of marginal understandable sense. But these decisions were clearly absurd when taken in as a whole. I felt that if we could come up with a socially grounded framework to discuss this thing where algorithmic systems made the wrong calls at the margins, we might be able to finally build more just algorithmic systems on more solid ontological foundations
 
+So Michael Bernstein and I ended up writing about what we called "street-level algorithms", riffing on this idea Michael Lipsky introduced some 50 years ago about "street-level bureaucracies". In his book, he writes about how all the power of a bureaucratic institution is kind of nebulous, and that it truly coalesces at the level of street-level bureaucrats,
 
-Street-level bureaucrats can enforce the spirit of the law and other regulations by making decisions in the moment about the mitigating or extenuating circumstances that make every case they handle a little bit unique. And unique in ways that they couldn't have necessarily anticipated or codified in advance. They make these choices informed by a world of nuanced caveats in a "moment of decision", reflecting on their role and the roles and purposes of the institution whose power they wield.
+- where police make a decision to write someone a ticket *or not*,
+- where a judge decides to let someone out on bail *or not*,
+- where a clerk makes a decision about whether to accept a copy of a document or an expired ID *or not*.
 
-They both *have to* and *can* make decisions given mitigating circumstances and other factors precisely because their job is to fill in the gaps between explicit instructions & precedent, vs the reality of the world as the street-level bureaucrat encounters it. It would be impossible to work from a comprehensive set of instructions, and so the street-level bureaucrat's **discretion** ultimately decides whether and how rules are enforced at all.
+Where, and importantly *how*, a street-level bureaucrat applies rules is enormously important. It's important because there are so many administratively defensible ways to go about doing one's job, and so the decision that a person makes about which rules to apply, or which rules to overlook, become very pointed decisions about what to do in marginal or extenuating circumstances.
 
-So... the way we framed AIs as making classifications and whatnot in the "moment of decision" had a lot of similar qualities: these AIs are trained - so are bureaucrats; they experience routine and unique cases - so do bureaucrats; their decisions are (or should be) subject to auditing - same with bureaucrats.
+These are all examples of street-level bureaucrats exercising **discretion** in varied ways to ultimately try to work toward some underlying goal within the context of the institution.
 
-The question we were trying to answer in the paper was "so... what's going wrong?"; if street-level bureaucracies serves as an analytically powerful tool to make sense of algorithmic systems, then where's the discontinuity, if there is one at all? What makes street-level algorithms meaningfully different from street-level bureaucracies?
+If police actually pulled over every person speeding even marginally over the speed limit, people would get extremely frustrated - in the UK, speed trap cameras are the subject of fairly significant antipathy and the targets of sabotage.
 
-The answer we arrived at was that street-level bureaucrats are capable of doing things that street-level algorithms simply are not: reflection, discretion, empathy, and, crucially: growth in the very same moment of decision.
+Overly rigid applications of bureaucratic rules have even been used in the past as a form of protest, slowing down work simply by doing absolutely everything the bureaucrat is nominally supposed to do.
 
-What was wrong with street-level algorithms was that when they even learned from novel situations, it was only *after* they made the wrong call, got found making the wrong call, and got retrained. That "loop-and-a-half delay" meant that there was fundamentally no way for algorithmic systems designed as they are today to grow and change with society, the way street-level bureaucrats at least are able to.
+Street-level bureaucrats can enforce the spirit of the law and other regulations by making decisions in the moment about the mitigating or extenuating circumstances that make every case they handle a little bit unique. Unique in ways that they couldn't have necessarily anticipated or codified in advance.
 
-This lens actually proved really useful. We found it elicited the texture of a bunch of problems that we could articulate as problems, but didn't have really good ways to talk about:
+They make these choices informed by a world of nuanced caveats in a "moment of decision", reflecting on their role and the roles and purposes of the institution whose power manifests on the ground only as a result of the street-level bureaucrat's action or inaction.
+
+They both *have to* and *can* make decisions given mitigating circumstances and other factors precisely because their job is to **fill in the gaps** between explicit instructions & precedent,
+
+vs the reality of the world as the street-level bureaucrat encounters it.
+
+It would be impossible to work from a comprehensive set of instructions, and so the street-level bureaucrat's **discretion** ultimately decides how rules are enforced, or if they're enforced at all.
+
+So... the way we framed AIs as making classifications and whatnot in the "moment of decision" had a lot of similar qualities to the qualities Lipsky wrote about with street-level bureaucrats:
+
+- AIs are trained - so are bureaucrats;
+- AIs experience routine and unique cases - so do bureaucrats;
+- AIs make decisions about cases for which perfectly identical matches don't exist - bureaucrats too;
+
+The question we were trying to answer in the paper was "so... what's going wrong?"; if the framework of street-level bureaucracies serves as an analytically powerful tool to make sense of algorithmic systems, then where's the discontinuity, or is there even one?
+
+What, if anything, makes street-level algorithms meaningfully different from street-level bureaucracies?
+
+The answer we arrived at was that street-level bureaucrats can do something that street-level algorithms can't.
+
+What was wrong with street-level algorithms was that when they learned from novel situations, it was only *after* they made the wrong call, got found making the wrong call, and got retrained. That "loop-and-a-half delay" meant that there was fundamentally no way for algorithmic systems designed as they are today to grow and change with society, the way street-level bureaucrats at least are able to.
+
+What street-level algorithms cannot do, which street-level bureaucrats can, is reflect on the situation in front of them and learn in the precise moment of decision. Street-level algorithms are doomed to this loop-and-a-half delay.
+
+This way of framing these problems - as a space in which street-level algorithms operate relatively unchecked - and the insights about where street-level algorithms differ from street-level bureaucrats offered a lot of leverage on a range of problems we were kind of struggling to make sense of. We talked about
 
 - YouTube content moderation;
 - Quality control in crowd work; and
-- Algorithmic bias in the judicial system, especially in bail setting
+- Algorithmic bias in bail-setting in the criminal legal system
 
-In each of these cases, the pattern we wanted to illustrate was pretty similar:
+In each of these cases, the pattern had a surprisingly similar quality to it:
 
-You have all of this training data. And you feed this data into your machine learning system, so your learning system generates a model - a decision boundary of however many dimensions - that it uses to classify things going forward. It can generate any number of boundaries, and the key is that the way you've implemented things mostly determines how it fills in the gaps between data points used to train.
+You have all of this training data. And you feed this data into your machine learning system, so your learning system generates a model - a decision boundary of however many dimensions - that it uses to classify things going forward. It can generate any number of boundaries, and the key is that the way you've implemented things mostly determines how it fills in the gaps between various data points used to train.
 
-Street-level bureaucracies do the same kinds of things; they learn regulations, they learn policies, they learn about past cases that inform how they're supposed to do their jobs. But there's no resource in the world that gives them explicit instructions about every possible situation that has arisen and will arise in the future. They just have to *fill in the gaps*.
+Street-level bureaucracies do the same kinds of things; they learn regulations, they learn policies, they learn precedent: they learn about past cases that inform how they're supposed to do their jobs. But there's no resource in the world that gives them explicit instructions about every possible situation that has arisen and will arise in the future. They just have to *fill in the gaps*.
+
+And street-level algorithms functionally produce a similar kind of interpolated decision boundary, just... computationally.
 
 In both cases, you have all of these clear examples motivating the decision boundary in the model. The model might be a mental model, or a computational model, but it's a model of how to make decisions.
 
-So you send them out into the world, and they use the models they've generated to inform their actions.
+So they get trained, and you send them out into the world, and they use the models they've generated to inform their actions.
 
-but as time goes on.. people change, and culture changes, and the envelope of propriety and acceptability and circumstances all get pushed and shifts around.
+but as time goes on.. people change, and culture changes, and the envelope of propriety and acceptability and circumstances all get pushed and shifted around. People find new ways to express themselves and learn new things about themselves, and from the bottom all the way on up... culture ends up being a constantly moving target.
 
-
-Street-level bureaucrats, humans who live in society, change as they're exposed to new things, and as they experience new cases. And, crucially, people are capable of changing their mental model of the world as they experience the world, constantly updating how they deal with situations.
+Street-level bureaucrats, humans who live in society, change as they experience new things. And, crucially, people are capable of changing their mental model of the world as they experience the world, constantly updating how they deal with situations in the moment.
 
 Here's the crux of the issue: algorithmic systems can't do that; they're always dealing with this "loop and a half delay" that we talked about earlier. The thing where they encounter a marginal case, make the wrong call, and *only then* get corrected and retrained.
 
-and the result of that is that these systems, in settings of tremendous sensitivity and consequence for peoples' lives, are always slow, or even frozen, in a state more representative of the past than of the present, and forget about any hope or even notion of a better future to imagine or work towards.
+and the result of that is that these systems, in settings of tremendous sensitivity and consequence for peoples' lives, are always slow, sometimes totally even frozen, in a state more representative of the past than of the present, and forget about any hope or even notion of a better future to imagine or work towards.
 
 Chris Gilliard, who you might know on Twitter as Hypervisible, said it really well in a recent Wired op-ed when he wrote that algorithmic systems are "... designed to bring the past into the future, and thereby prevent the world from changing".
 
-So you could look at YouTube demonetizing trans YouTubers, and see - as those YouTubers discovered on their own through experimentation with the system - that the demonetization algorithm seemed to be conflate sex and gender together. The classification system appeared to be trained on data from a time that drew no meaningful distinction between sexuality and gender identity. As a result, YouTubers found their content demonetized when they used terms related to gender identity in their titles and descriptions *just as though it would have if they had used sexually explicit language*.
+So you could look at YouTube demonetizing the content of trans YouTubers, and see - as those YouTubers discovered on their own through experimentation with the system - that the demonetization algorithm seemed to be conflating sex and gender together.
 
-All this is not to say that YouTube's classification was justifiable, but that this is not surprising; historical documents - even legal documents up until *not that long ago* - conflated sexuality and gender. If one were to train a model on these public data, I would expect that model to fail trans people and people discussing gender - but *not* sexuality - fairly often by conflating them with sexually explicit material.
+The classification system appeared to be trained on data from a time that didn't offer a meaningful distinction between sexuality and gender identity. As a result, YouTubers found their content demonetized when they used terms related to gender identity in their titles and descriptions *just as though the system would have treated them if they had used sexually explicit language*.
 
-And you could look at other domains as well;
+All this is not to say that YouTube's classification was justifiable, but that this is not surprising; historical documents - even legal documents up until *not that long ago* - conflated sexuality and gender. If one were to train a model on these public data, I would expect that the model would fail people discussing gender fairly often by conflating them with sexually explicit material.
 
-You could look at creative crowdsourcing work and see how asking crowdworkers to offer creative responses is going to be fraught with challenge. crowdworkers are deeply familiar with algorithmic work evaluation, and so they recognize how dicey a proposition it is to engage in any kind of creativity when the audience is effectively a fossil in the amber of past data. creativity in crowdsourcing isn't a challenge; the challenge is changing a culture that's correctly learned that most of the time they'll get punished for offering a creative or innovative answer.
+In the paper we talked about other domains as well:
 
-And you could look at the state of the legal system and the outcomes of algorithmic bail-recommendation systems. Systems trained on stacks of data that reflect a carceral system born out of white supremacy and specifically anti-Blackness, criminalizing Blackness and making the punishments for those crimes - the labels for those defendants - much more severe. So, unsurprisingly, Black men and women faced much higher bail rates when the rate was set or even suggested by an AI. The system cannot imagine a different future - a better, more liberated future - because it's trained on old data. It will always be a loop and a half behind.
+You could look at creative crowdsourcing work and see how asking crowdworkers to offer creative responses to prompts is going to be fraught with challenge.
 
----
+crowdworkers know algorithmic work evaluation, and so they know how dicey a proposition it is to engage in any kind of creativity when the audience is effectively a computational fossil trapped in the amber of past data.
 
-In all of these examples, these systems fail to grow and become better as a result of the data that trained them. Because they can't really get better; they can just be more precise about being bad. If AI reflects anything about human intelligence or even humanity itself, they reflect what we are when we give up on growth and bettering ourselves - when we look at everything we've done and we say that we should stay there, trapped in the past.
+creativity in crowdsourcing isn't a challenge; the challenge is changing a culture of workers who have justifiably inferred that most of the time they'll get punished for offering a creative or innovative answer.
 
+And you could look at the state of the legal system and the outcomes of algorithmic bail-recommendation systems. Systems trained on stacks of data that reflect a carceral system born out of white supremacy and specifically anti-Blackness, criminalizing Blackness and making the punishments for those crimes - the labels for those defendants - much more severe.
 
-And part of the challenge, honestly, is that recognizing who are "marginal" isn't necessarily some easy question. Recognizing when a street-level algorithm is dealing with a case involving an especially vulnerable or historically marginalized person would require operationalizing the dimensions of marginalization in a way that's sometimes orthogonal to the marginalization itself. If the state has administratively erased a group, diffusing them into myriad other groups and denying them their honest, shared identity, then it's not necessarily obvious how a system trained on the state's data would recognize the underlying pattern of people being systematically harmed.
+So, unsurprisingly, algorithmic systems trained on past crime data set much higher bail rates for Black defendants than for white defendants. The system cannot imagine a different future - a better, more liberated future - because it's trained on old data. It will always be a loop-and-a-half behind. It will always reflect a history that we are trying to build *away* from.
 
+In all of these examples, these systems fail to grow and become better as a result of the data that trained them. Because they can't really get better; they can just be more precise about being bad. If AI reflects anything about human intelligence or even humanity itself, it reflects what we are when we give up on growth and bettering ourselves - when we look at everything we've done and we say that we should stay there, trapped in the past.
+
+And part of the challenge, honestly, is that recognizing who are "marginal" isn't necessarily some easy question.
+
+Recognizing when a street-level algorithm is dealing with a case involving an especially vulnerable or historically marginalized person might mean operationalizing dimensions that are orthogonal to the marginalization itself.
+
+By that I mean... If the state has administratively erased a group, diffusing them into myriad other groups and denying them their honest, shared identity, then it's not necessarily obvious how a system trained on the state's data would recognize the underlying pattern of people being systematically harmed.
 
 ## utopia
 And... this was a big part of what led me to write "to live in their utopia".
 
-I said the street-level algorithms paper was only one part of the story; after we wrote that paper I felt... frustrated, again - about this bigger picture of how entire systems don't just make the wrong call at the margins, but how these systems marginalize in the first place. How do cases - how do *people* - get "marginalized"? or rather, what processes, or what systems, do the marginalizing?
+I said that the "street-level algorithms" paper was only one part of the story; after we wrote that paper I felt... frustrated, again - about this bigger picture of how entire systems don't just make the wrong call at the margins, but how these systems marginalize in the first place.
 
-I ended up digging into and writing about how the design of data-driven systems to model the world in particular ways creates these representations of the world that makes sense by the very limited logic of a computational model, but don't really represent the complexity, the depth, or the nuance of life as we experience it.
+How do cases - how do *people* - get "marginalized"? or rather, what processes, or what systems, **do** this marginalizing?
+
+I ended up digging into and writing about how the design of data-driven systems to model the world creates these representations of the world that all make sense by the very limited logic of those computational models, but don't really represent the complexity, the depth, or the nuance of life as we experience it.
 
 And, borrowing from anthro theory, I made the case that in the interest of supporting data-driven systems like AI, we were
 
-1. administratively reordering the world;
-2. elevating the belief and faith in AI as a better arbiter than we can be;
-3. giving algorithmic systems the power to make life-altering decisions about people; and
-4. weakening the civil discourse around AI and governance
+1. administratively reordering the world to make things more legible to computational systems;
+2. elevating the belief and faith in AI as a better arbiter of difficult questions;
+3. giving algorithmic systems the power to make life-altering decisions in answer to those questions; and
+4. weakening the civil discourse around AI and governance to make questioning the arbiter even harder to conceive of, let alone do.
 
 I wrote about all of these cases, where we could talk about how the world was being re-shaped, ceded to algorithmic systems, how our lives were getting subsumed by the decisions of AIs, and how discourse around governance was weakening as AI's grip on governance got stronger. I wrote about
 
-- autonomous vehicles and GPS systems trying to navigate through and around the world;
-- body scanning technologies trying to flag "suspicious" people at airport security;
-- the computational evaluation of PhD program applicants, trying to identify the best candidates for admission.
+- autonomous vehicles and GPS systems;
+- body scanning technologies and computer vision; and
+- the automated evaluation of PhD applicants.
 
 (I won't talk about all of them in this talk, but we can talk more about them later)
 
-I wrote that these systems start by "making sense of the world" and then they "make the world make sense"; I want you to keep those ideas in mind as we get to the latter half.
+I wrote that these systems start by "making sense of the world", so let's start with how they do that through a very particular representation of the world as data.
 
-Let's start with how they "make sense of the world" through a very particular representation of the world in data.
 
-These representations of the data are... well, let's just say it: dumb. They're not just imprecise or inaccurate; they're just clueless about the broader context of the world in important ways.
+So let's use step count data as an example. I don't know how many of you use a fitbit, apple watch, or other similar device, but these things typically track your activity and *boy, are they stupid*
 
-So like... Step count data that suddenly drops for a few weeks might seem to represent something terrible or at least *bad* has happened; but they shouldn't necessarily. There are plenty of reasons that someone might suddenly stop taking 10,000 steps - like, for instance, if you moved across state lines while the CDC was recommending that you self-quarantine for some period of time.
+They're not just imprecise or inaccurate; they're just clueless about the broader context of the world in important ways.
+
+Like, if your step count suddenly drops for a few weeks, it might seem to represent something terrible or at least *bad* has happened; but it shouldn't necessarily. There are plenty of reasons that someone might suddenly stop taking 10,000 steps per day - like, for instance, if you moved across state lines during a pandemic, and if the CDC recommended that people self-quarantine after crossing state lines.
 
 Like, this actually happened. I moved across the country in 2020, and in an effort to follow the directions the CDC was offering at the time, I quarantined myself for 2 weeks as soon as I got off the plane.
 
-I went from running 3 to 6 miles every single day, to... shuffling around a living room, for literally weeks at a time.
+I went from running 3 to 6 miles every single day, to... shuffling around a living room, for like, weeks at a time.
 
-*We can talk about whether that advice should have included refraining from outdoor exercise away from people - like jogging alone in rural areas - but I'm not going to have that conversation right now; the point is I followed the guidelines*
+*We can talk about whether that advice should have included refraining from outdoor exercise away from people - like jogging alone in a small town - but I'm not going to have that conversation right now; the point is I followed the guidelines*
 
-My step counts immediately fell through the floor, which isn't surprising. All the numbers my watch tracked started to trend in the bad directions or whatever. All the encouragement my watch gave me turned desperate and pleading. I was fine. But to hear my watch tell it, I was on the precipice of some kind of awful spiral.
+My step counts immediately fell through the floor, which isn't surprising. All the numbers my watch tracked started to trend in the bad directions. All the encouragement my watch gave me turned desperate and pleading. I was fine. But to hear my watch tell it, I was on the precipice of some kind of awful spiral.
 
+What's odd is that even the devices that track or can juxtapose your location by GPS data... don't. Or if they have any sense of where you are, they obviously don't correlate any of that with whatever the public health recommendations are at that time.
 
-What's odd is that even the devices that track or can juxtapose your location by GPS data... don't. Or if they have any sense of where you are, they obviously don't correlate any of that with whatever the public health recommendations are at that time. When there were fires all over California rendering the Air Quality Index somewhere in the hazardous range, watch alerts begging the wearer to go for a run outdoors to hit a few targets seemed... dopey.
+When there were fires all over California making the Air Quality Index somewhere in the hazardous range, watch alerts begging you to go for a run outdoors to hit a few targets seems... pretty ill-advised.
 
-Now, why should my watch know that the CDC makes any particular recommendation? Maybe it shouldn't. And maybe it would be weird for it to recognize that imposing a move goal or a step count target in the days after traveling would probably be dubious, if not obviously dangerous.
+Now, why should my watch know that the CDC makes any particular recommendation? Maybe it shouldn't. And maybe it would be weird for it to recognize that imposing a move goal or a step count target in the days after traveling would probably be dubious, if not dangerous.
 
-By itself, it's just... well, dumb. The system tells me I failed, it makes me feel bad... But that's all it is; maybe for a few days I look at these graphs and I feel bad that my step counts dropped off and my activity streak has been broken and all of that. But that's it.
+By itself, it's just silly and dumb. The system tells me I failed, it makes me feel bad... But that's all it is; maybe for a few days I look at these graphs and I feel bad that my step counts dropped off and my activity streak has been broken and all of that. But that's it.
 
-In *To Live in Their Utopia*, my problem wasn't that my Apple Watch didn't cut me any slack on my Move streak because I moved in the middle of a pandemic. And that's not when problems really arise.
+I said in the paper that reordering the world to accommodate an algorithmic view of things is one of the first things that go wrong that all together cause tremendous harm, and is definitely happening here, as it had been for decades arguably.
 
-I said in the paper that reordering the world to accommodate an algorithmic view of things is one of the first warning signs, and is definitely happening here, as it had been for decades arguably. If you only get credit for steps, then you're living according to a fairly ableist paradigm. But that notion emphasizing ambulatory exercise is fairly entrenched.
+If you only get credit for taking steps, then you're living according to a fairly ableist paradigm - one that can be hard to escape. But that notion emphasizing ambulatory exercise is fairly entrenched.
 
-And I also wrote in the paper that broadly believing that the system you use just... *knows* what you need more than you do (a worryingly common refrain), reflects that second warning sign about elevating algorithmic systems as truer arbiters of knowledge than ourselves.
+And I think arguably the second issue - where we elevate a system beyond scrutiny because it "knows more than we do" - is certainly something that comes up.
 
-Things really take a turn when that third warning comes up - the critique about giving these systems power to punish you for failing to live by the rules and assumptions of the algorithmic world.
+In my paper, *To Live in Their Utopia*, my problem wasn't that my Apple Watch didn't cut me any slack on my fitness streaks because I moved in the middle of a pandemic. It wasn't even that it kept insisting that I never take a rest day.
 
-So when people use devices like Amazon Halo, which pins your insurance premium to activity tracker data, people with disabilities now have to fight this system for consequential life-or-death stakes. Their access to healthcare is predicated on and mediated by how convincingly they can convince an algorithm that they're behaving healthily. An algorithm with a functionally lopsided sense of activity and exercise.
+My critique was that things really go sideways when that third issue I talked about comes up - the critique about giving these systems power to punish you for failing to live by the rules and assumptions of the algorithmic world.
 
-And for absolutely everyone, this should still be concerning: these systems have some thin projections of your life as data but that has no idea what your life really **is**.
+So when people use fitness tracking devices like Amazon Halo, which offers to pin your insurance premium to activity tracker data through a partnership between Amazon and insurance companies, people with disabilities now have to fight this system for consequential life-or-death stakes.
 
-They make decisions that cause you material harm because the system insists upon you its representation of the world - it insists upon you the AI's utopia, where the patterns it's generated and the goals it's generated all make sense in the barren wasteland that it has constructed computationally, but that doesn't look anything like the world you actually live in.
+Their access to healthcare is predicated on and mediated by how persuasively they can convince an algorithm that they're being "active". An algorithm with a functionally lopsided sense of what "activity" and "exercise", to say nothing of "healthiness", even is.
 
-In the paper, I called it "Their Utopia", because machine learning generates a model of the world where the things it has observed make a kind of sense, even if that's not entirely justified. Everything follows rules that the system has created and integrated into the model. Even if that model includes rules like "more steps == more fitness" or "less weight == good".
+And for absolutely everyone, this should still be concerning: these systems have little more than thin projections of your life as data but that offers no real insight what your life really **is**.
 
-This is the third bit, distilled: when you fail to live in their Utopia - when you fail to hit the step counts or decide to take a break from a system that doesn't have any concept of rest days - when you fail or refuse to live in the Utopia of their construction, they punish you for it in whatever way they can. And, **increasingly, these algorithmic systems have the means to make that punishment really hurt.**
+These systems insist upon you their representations of the world - they insist *their utopia*, where the patterns an ML system has generated and the goals it's generated all make sense in the barren wasteland that it has constructed computationally, but that doesn't necessarily look anything like the world you actually live in.
+
+And, empirically, the places where the world doesn't actually look like the model tend to correlate with wealth, with race, with power; autonomous vehicle technologies trained almost exclusively in Palo Alto or San Francisco and then deployed to Jakarta have been the subject of really insightful critique by people like Rida Qadri, and others.
+
+In the paper, I called it "Their Utopia", because machine learning systems generate a model of the world where the things they observe get twisted to make a kind of sense, even if that's not entirely justified.
+
+Everything ultimately follows rules that the system has created and integrated into the model. Even if that model includes rules like "more steps == more fitness" or "less weight == good".
+
+So, as Sara Wachter-Boetcher has pointed out, when your smart weight scale accurately reflects that you've lost weight, and it congratulates you, it doesn't understand what miscarriage means or how devastating that celebratory notification can be.
+
+This is the third bit, distilled: when you fail to live in their Utopia - when you fail to hit the step counts or decide to take a break from a system that doesn't have any concept of rest days - whenever you don't live in the Utopia of their construction, they punish you for it in whatever ways are available.
+
+And, **increasingly, these algorithmic systems have the means to make that punishment really hurt because they have access to dimensions of our lives that can devastate us.**
 
 They go from "making sense of the world" to "making the world make sense" by whatever means necessary, even if it means crushing anomalies. even if you are an anomaly by its galling, limited sense of the world.
 
-The Utopia paper ends with an admittedly pushy design recommendation to undermine the power of systems and to build in ways for people to escape from these oppressive systems. Because the power dynamic itself is a major mediating factor in whether systems produce absurd results in the first place.
+The Utopia paper ends with an admittedly pushy design recommendation to undermine the power of systems and to build in ways for people to escape from these oppressive regimes.
 
-If you're using a music streaming service and its recommendations are terrible - even absurd - you can often give feedback on that recommendation and get better suggestions going forward. Because the relationship between you and the system is relatively open-ended - both your ability to ignore the recommendations entirely, as well as your (maybe debatable) freedom to go to another streaming service - offers a check on the tendency of the system to drift into absurdity.
+Because the power dynamic itself is a major mediating factor in whether systems produce absurd results in the first place.
 
-But in the environment of Amazon Halo, where you have vanishingly limited power over something like Amazon, or the health insurance company with which they collaborate for this product... what options does a wearer have to escape the absurd recommendations of an algorithm with unchecked power?
+To use a light example: If you're using a music streaming service and its recommendations are terrible, you can often give feedback and get better suggestions going forward. Because the relationship between you and the system is relatively open-ended - both your ability to ignore the recommendations, as well as your (maybe limited) freedom to go to another streaming service - offers a check on the tendency of the system to drift into absurdity.
+
+But in the environment of that fitness tracker I mentioned before, Amazon Halo, where you have vanishingly limited power over something like Amazon, or the health insurance company with which they collaborate for this product... what options does a wearer have to escape the absurd recommendations of an algorithm with unchecked power? When it mediates your access to health care?
 
 I will say, in one case several years ago, that teachers in West Virginia answered that question: when faced with the possibility of being forced to wear activity trackers as a prerequisite to getting health insurance from their employer, they went on strike and successfully defeated that proposal.
 
-
-
-
 ## thesis
-So... that's how I got here. I had written these two papers - a paper that felt like breathing in, followed by one that felt like breathing out; with them together, I tried to make sense of the absurd constructions of the world that algorithmic systems manifest and impose on people. And I was starting to recognize that the common feature in all of these things was that I was looking at them *through* computers.
+So... that's how I got here. I had written these two papers; together, I tried to make sense of the absurd constructions of the world that algorithmic systems manifest and impose on people. And I was starting to recognize that the common feature in all of these things was that I was looking at them *through* computers.
 
-Well, that sounds dumb. Let me explain
+That probably sounds dumb - I can explain.
 
 I was struggling with this instance of a thing where we turned all of these very complicated problems with histories and personal stories and mitigating factors - risk management, creditworthiness, public assistance allocation, and more... - into these computational things.
 
 In all of these examples, the thing I was so mad about was that HCI researchers - or computing researchers or design researchers or what have you - all of us looked at a problem and said "that seems intractable and hard; I wonder if I'll be able to make more progress on it if I can turn it into something else."
 
-There's this thing like "**problem space arbitrage**" where you agree to take on a few new problems if it means translating the thing you're stuck with into a domain that's more tractable for you. You take a penalty - "a few new problems" - but if you're going to make progress on the original ones, then maybe you come out ahead because you're actually dealing with something you know how to handle.
+It's what I called "**problem space arbitrage**" at the very start of this talk; where you agree to take on a few new problems if it means turning the thing you're stuck with into a form that you're more familiar with. You take a penalty - "a few new problems" - but if you're going to make progress on the original ones, then maybe you come out ahead because you're actually dealing with something you know how to handle.
 
+And so we turn issues of tremendous complexity into game theory formulations and matching algorithms and all that. And we do it because we have these neat theorems and proofs that show how we can provide an upper bound of the complexity of this problem if we can recast it as a technical problem and not a social one.
 
-And so we turn issues of tremendous complexity into game theory formulations and matching algorithms and all that. And we do it because we have these neat theorems and proofs that show how we can provide an upper bound of the complexity of this problem if we can recast it as a technological problem and not a social one.
+That's the trick; if we do this *problem space arbitrage* of all of our current problems and end up with technical versions of those problems, then - yes - we will take a bit of a penalty in the exchange to get it into the domain we know. But... the hope is that once it's here as an engineering problem, we'll be able to make a lot more progress on it and come out ahead.
 
-That's the trick; if we do this problem space arbitrage of all of our current problems for technical versions of those problems, then - yes - we will take a bit of a penalty translating it into the domain we know. But... the hope is that once it's here as an engineering problem, we'll be able to make a lot more progress on it and end up ahead.
+This isn't even that unique to CS, to be honest; I think every field tries to make sense of things in the terms and vocabularies of their given discipline; economists frame a lot of things as econ problems, for instance.
 
-This isn't even that unique to CS, to be honest; I think every field tries to make sense of things in the terms and vocabulary of their discipline; economists frame a lot of things as econ problems, for instance.
+Here's my problem: by translating everything into technical constructions, we've ended up with all these **new** problems related to the implementation of systems that are really complicated, technical, and opaque.
 
-Here's my problem: by translating everything into technical constructions, we've ended up with all these **new** problems related to the implementation of systems that are really complicated, technical, and often opaque.
+So we're not just dealing with the decades and centuries of violence, exploitation, and oppression that we've been so reluctant to confront that now mentioning it will get you fired in some schools.
 
-So we're not just dealing with the decades and centuries of violence, exploitation, and oppression that we've been so reluctant to confront that now mentioning it will get you fired in some schools. Now we're dealing with that *and* we're dealing with neural networks and other elaborate machine learning technologies that are difficult for us, professionals who make these things, to reason and talk about.
+Now we're dealing with that *and* we're dealing with neural networks and other elaborate machine learning technologies that are difficult for us, professionals who make these things, to reason and talk about.
 
-But it gets worse; complex technical systems implicitly call for technical expertise to speak authoritatively about them. So in addition to the original problem, and in addition to the new problem of complex technical contraptions, we have this third problem where we've framed all of this as something for technical experts and *not for people experiencing harm* to speak about.
+But it gets worse; complex technical systems implicitly call for technical expertise to speak authoritatively about them.
 
-For an example of this, take a look at Sasha Costanza-Chock's writing on #TravelingWhileTrans, where they write about the demeaning experience of going through millimeter wave technology scanners, being classified as anomalous by the system, and having to step aside for additional scrutiny and violation. As they wrote in their piece, it's enough to discourage one from traveling.
+So in addition to the original problem, and in addition to the new problem of complex technical contraptions, we have this third problem where we've framed all of this as something for technical experts and *not for people experiencing harm* to speak about.
 
-To challenge the injustice of being misgendered at the airport, you have to describe the discriminatory way TSA agents have treated you. But now, with this computer vision technology, you also have to be able to document the technical details of how the computer vision system reads an image and conceptualizes a gender binary.
+For an example of this, take a look at Sasha Costanza-Chock's writing on #TravelingWhileTrans, where they write about the demeaning experience of going through millimeter wave technology scanners, being classified as anomalous by the system, and having to step aside for additional scrutiny. As they wrote in their piece, it's enough to discourage one from traveling.
 
-The world is fortunate for Sasha Costanza-Chock's existence and their writing that works through various aspects of this problem, but that shouldn't be a prerequisite to challenge and overcome harm. We've gone from having one problem to *still* having that problem, and now also dealing with gatekeeping behind technical knowledge.
+To challenge the injustice of being misgendered at the airport like this, Sasha had to describe the discriminatory way TSA agents treated them. But now, with this computer vision technology, they also had to be able to document the technical details of how the computer vision system reads an image and conceptualizes a gender binary. To be listened to, to be legible to *even a small community of* HCI and AI researchers, they had to become relatively sound authority on the technical side of things.
 
+The world is fortunate for Sasha Costanza-Chock's existence and their writing that works through various aspects of this problem, but that shouldn't be a prerequisite to challenge and overcome harm. We've gone from having one problem to *still* having that problem, and now also dealing with gatekeeping behind technical knowledge surrounding an obscuring problem.
 
-What I was beginning to understand was that I had been writing about the world as an AI saw it, but that there was this layer beneath that. The layer beneath that was the world as Computer Science saw it, and how that paradigm informed "street-level algorithms" and "to live in their utopia". that everything had been rendered into puzzles that i was now deconstructing and trying to make sense of, but that the puzzles were not the real, lived world for literally anyone.
+What I was beginning to understand was that I had been writing about the world as an AI saw it, but that there was this layer beneath that. The layer beneath that was the world as Computer Science saw it, and how that paradigm informed "street-level algorithms" and "to live in their utopia".
 
+That everything had been rendered into puzzles that i was now deconstructing and trying to make sense of, but that the puzzles were not the real, lived world for literally anyone.
 
 ## Oh huh, so that puts things in perspective maybe?
 
-Once I appreciated that, I think a lot of frustrations I had with HCI and with computer science came into focus all at once.
+Once I appreciated that, I think a lot of frustrations I had with HCI and with computer science came into focus all at once. It was like I had found the place from which to frame my view of the landscape, and things finally lined up in a way that they didn't seem to before.
 
-Things I had written and worked on in the past - piecework, digital contact tracing, even a critique I wrote about Stanford's HAI while I was a PhD student there - all of them started to make microcosmic sense as indexing those harms that I talked about before:
+Things I had written and worked on in the past - piecework, digital contact tracing, even a critique I wrote about Stanford's HAI while I was a PhD student there - all of them started to make sense as indexing those harms that I talked about before:
 
 1. misunderstanding what is fundamentally a human problem;
-2. insisting on translating that human problem into something to compute and optimize in a world that doesn't exist anymore, if it ever did; and then
-3. shifting attention and notions of expertise from the people who live through these systems to the people who *build* these systems, crowding out and even erasing the people surviving that harm as experts of their own oppression unless they "learn to code"
-
+2. insisting on translating that human problem into something to compute and optimize, even if it means taking on all these new complicating problem; and
+3. shifting attention and notions of expertise from the people who live through these systems to the people who *build* these systems, crowding out and even erasing the people surviving that harm as experts of their own oppression unless they "learn to code".
 
 ### Piecework
-5 or 6 years ago I worked with Michael Bernstein and Margaret Levi to propose that HCI researchers look at crowdsourcing and gig work as instantiations of this older phenomenon called "piecework".
+5 or 6 years ago I worked with Michael Bernstein and Margaret Levi - two incredible minds in two totally distinct fields - to propose that HCI researchers look at crowdsourcing and gig work as instantiations of this older phenomenon called "piecework".
 
-We were frustrated - here we go again - with what seemed like a lot of parallels between the open questions in crowdsourcing and the history of piecework from more than a hundred years ago. It seemed as though so many questions - about the deconstruction of work, about workers' relationship with the labor they're doing, and more - were all so obviously resonant with wells of texts that we could have been drawing from.
+We were frustrated - here we go again - with what seemed like a lot of parallels between the open questions in crowdsourcing and the history of piecework from more than a hundred years ago. It seemed as though so many questions - about the deconstruction of work, about relationships workers had with the labor they're doing, and more - were all so obviously resonant with wells of texts that we could have been drawing from.
 
-So we outlined the emergence of piecework in the late 19th and early 20th century as a feature on the landscape of history - a story of labor and of tension between workers and management who wished to impose aggressive time tracking and piecewise compensation on workers. And I'm proud of all of the individual comparisons and analyses we did in the paper - of course, go read it and all that - but the thing that stuck with me was this basic idea that an array of technical problems had, all along, been this human problem with a deep history and rich story that I felt wasn't getting enough attention in the wider crowd work and "on-demand labor" world.
+So we outlined the emergence of piecework in the late 19th and early 20th century as a feature on the landscape of history - a story of labor and of tension between workers and management.
 
-In that paper, I hope I illustrated how much you can learn if you start by digging further into the history of the place or phenomenon that you're trying to understand. That a centrally historical analysis of something like gig work can reveal so much insight - and tell you so many stories of struggle and courage and resilience - and that you can carry that with you to understand how the landscape ended up with the features on the horizon.
+And I'm proud of all of the individual comparisons and analyses we did in the paper - of course, go read it and all that - but the thing that stuck with me was this basic idea that an array of technical problems had, all along, been this human problem with a deep history and rich story that I felt wasn't getting enough attention in the area Michael and I were working in.
 
-Because as designers it's easy to think only about the landscape as it exists today and more specifically imagine how it *could* exist tomorrow. It's easy *not* to think about how the landscape and the horizon came to look the way it does. But it's important - as important as your imagination - because a radically new future can only really be radical if you know what history you're breaking away from.
+In that paper, I hope I illustrated how much you can learn if you start by digging further into the history of the place or phenomenon that you're trying to understand. That a centrally historical analysis of something like gig work can reveal so much insight - and tell you so many stories of struggle and courage and resilience - and that you can carry that with you to understand how the landscape ended up with particular features on the horizon.
 
-So I was starting to appreciate the piecework paper in a way that I wasn't appreciating it before, because
-while I felt like it made a point,
+Because as designers it's easy to think only about the landscape as it exists today and more specifically imagine how it *could* exist tomorrow. It's easy *not* to think about how the landscape and the horizon came to look the way it does. But it's important - as important as your ability to imagine the future - to understand the past, because a radically new future can only be radical if you know what history you're breaking away from.
 
-I wasn't as sure at first if it was contributing the way everything else I had published was contributing to this much bigger, more complex picture that I was working on.
-
-But it was; I can't think of a better paper that I could have written at the time that told this story of the history of piecework in a way that was relevant to HCI researchers, and also planted a seed in the ground
-
-The piecework paper illustrated how we had these challenges that were all human - challenges about labor, about dignity, about worker power - and we did that "problem space arbitrage" and ended up with task sequencing and task load index surveys.
-
+The piecework paper illustrated how we had these challenges that were all human - about labor, about dignity, about worker power - and we did that "problem space arbitrage" and ended up with sequencing microtasks, and NASA TLX surveys... I would argue we started to lose perspective on the central human problem.
 
 ### Digital Contact Tracing
 And that's important, because if you start to lose perspective of what the problem is and get caught up in the technical challenges that only superficially seem tethered to the human problem, you might end up working on a technological problem that has long since come undone and drifted away from the human problems underneath.
 
+I think that's what happened when Google and Apple floated digital contact tracing proposals.
 
-and you end up with proposals like the digital contact tracing projects that Google and Apple each floated. You can take similar lessons here as with piecework; that there was this human problem that we had lost sight of, and in its place was a series of technical challenges that didn't respect the real lived fears and challenges that people faced.
+As little as anyone knew in February and March in 2020, people were starting to come around to the fact that contact tracing would be an important way to figure out how the virus is spreading - and to contact people to give them a chance to self-quarantine until they were confident they weren't sick as well.
 
-Now, to be fair, in March 2020 people were scared, knew vanishingly little about COVID-19, and everyone was looking for ways to help. With the growing understanding that contact tracing would be an important way to figure out how the virus is spreading - and to contact people to give them a chance to self-quarantine until they were confident they weren't sick as well - attention turned to scaling up contact tracing efforts.
+So Google and Apple quickly worked to propose *digital* contact tracing schemes to obviate the need for human contact tracers, but they wanted to avoid many of the privacy concerns that obviously emerge when you use a person's smartphone to constantly track your location.
 
-Google and Apple quickly suggested digital contact tracing schemes that worked via bluetooth rather than GPS, and only kept track of *who you were around* for certain intervals of time. The insight for this rather tricky puzzle was that you could identify that two people had been around each other if their phones had the same signifying tokens, without either person ever actually speaking with each other. Our phones would routinely broadcast tokens for other phones to record, and we in turn would record the tokens other people's phones sent out. If at some point later, someone tested positive for COVID-19, they could signal that all of their tokens should be considered red flags, and everyone who happens to have those tokens would know that they had been exposed.
+What they came up with worked via bluetooth rather than GPS, and only kept track of *who you were around* for certain intervals of time.
 
-It really is a neat little solution to a rather challenging technical puzzle. But it was also deeply misguided.
+The insight for this rather tricky puzzle was that you could identify that two people had been around each other if their phones had the same signifying tokens, without either person ever actually speaking with each other.
 
-For one thing, when people from marginalized groups talk about fear for their privacy, they're often not talking about arbitrary GPS coordinates as much as they're talking about *being associated with another person*.
-In 2020 during protests against anti-Black violence, rumors circulated that Minnesota police were using digital contact tracing to flag anyone who had been *around* other protestors for any meaningful amount of time.
+Our phones would routinely broadcast tokens for other phones to record, and we in turn would record the tokens other people's phones sent out.
 
-The point here isn't to litigate digital contact tracing, but to underline how the impulse to design and introduce technical solutions to a human problem like *trust* does nothing about the issue of trust, and introduces a litany of technical issues.
+If at some point later, someone tested positive for COVID-19, they could signal that all of their tokens should be considered red flags, and everyone who happened to have those tokens - without knowing *who* - would know that they had been exposed.
+
+It really is a neat little solution to a rather challenging technical puzzle. But that's kind of the problem.
+
+For one thing, when people from marginalized groups talk about fear for their privacy, they're generally not talking about arbitrary GPS coordinates as much as they're talking about *being associated with another person*.
+
+In 2020 during protests against anti-Black violence, rumors circulated that Minnesota police were using digital contact tracing systems to flag anyone who had been *around* other protestors for any meaningful amount of time.
+
+The point here isn't to litigate digital contact tracing, but to underline how the impulse to design and introduce technical solutions to the first problem you see miss so many central issues, and introduce so many technical problems that now we have to prioritize because they insist their urgency upon us.
 
 So I was so frustrated - there it is, keeps coming up - that I wrote about all these issues that came to mind back in March or April of 2020:
 
 - frustrations like... that privacy is so much more complicated and sensitive than the proposals seemed to acknowledge;
 - that the places of immense risk were overwhelmingly, then and now, the places and people where these technologies wouldn't work; and
-- that the effort that would go into these non-solutions would distract us from what we needed to be advocating for - that we needed to demand real investment into people doing outreach and doing compassionate human labor.
+- that the effort that would go into these non-solutions would distract us from what we needed to be advocating for - that we needed to demand real investment into people doing outreach and human contact tracing, as difficult as it is.
 
-In the time since then, Google and Apple deployed their digital contact tracing tools. And what happened was frustratingly predictable:
+In the time since then, Google and Apple deployed their digital contact tracing tools. And what happened since then was frustratingly predictable:
 
 - Myriad vulnerable groups were left out of these systems entirely
-- A lot of vulnerable groups have utterly lost trust in these systems, causing even more people to opt out or attempt to defeat or mislead the systems that didn't work amazingly in the first place because Bluetooth proximity isn't actually that great a proxy for air circulation; and
+- A lot of vulnerable groups have utterly lost trust in these systems, causing even more people to opt out or attempt to defeat or mislead the systems;
+- technical issues related to bluetooth's shortcomings became urgent, pressing problems that demanded attention ahead of so much else;
 - these systems were and continue to be red herrings for the real work that governments at various levels in the US and around the world are still unwilling to commit to
 
 So now instead of having a contact tracing problem, we have a contact tracing problem... all of these privacy problems, and trust problems, and accuracy problems.
 
-The digital contact tracing post felt essentially like a reflection on how we have this monumental problem - the spread of COVID-19 and the suffering that it entails - and rather than committing to the obvious human-centered solutions, we embraced the technological solution.
-And now, 2 years later, we *still* have a tremendous contact tracing problem involving investment in the human labor, trust in the system and process, and myriad other things; and now we also have all of these technical 
+The digital contact tracing post felt essentially like a reflection on how we have this monumental problem - the spread of COVID-19 and the suffering that it entails - and rather than committing to the obvious human-centered solutions, we embraced the technological solution and called that human-centered because... I don't know.
 
-And there's one last thing...
+And now, 2 years later, we *still* have a tremendous contact tracing problem involving investment in the human labor, trust in the system and scientific process, and myriad other things; and now we also have all of these technical issues.
 
 ### HAI and knowledge
 
-just having all of these new problems wouldn't be the worst thing; I mean, arguably it's bad, but what really makes this situation so much worse is that seizing control of the vocabulary and discourse, turning it into a technical challenge for technical experts, creates an environment where the people deciding which members of the community are valid, legible, and worthy of inclusion falls to the technical experts who have co-opted the many human problems and re-defined the terms of our discourse.
+Just having all of these new problems wouldn't be the worst thing; I mean, arguably it's bad, but what really makes this situation so much worse is that seizing control of the vocabulary and discourse,
 
-The discourse around the safety of schools, prisons, myriad workplaces... Apple and Google have effectively pushed all of those aside on the promise that technology would eventually smooth all those issues over. Somehow.
+turning it into a technical challenge,
 
-And that was why I was so frustrated with Stanford's Human-Centered AI institute. Because as an organization based in the power of Computer Science - at Stanford, no less - the HAI's first steps were to bring in philosophy professors, bring in corporate investors and venture capital... but not bring in community members or community leaders in areas like Palo Alto or East Palo Alto, let alone in any area at all.
+creates an environment where the technical experts who design these systems don't just chair the panel and decide who else gets to sit on the panel, but they also decide who's let into the room in the first place.
 
+The discourse around the safety of schools, prisons, myriad workplaces... Apple and Google have effectively pushed all of those aside on the promise that technology would eventually smooth all those issues over.
 
-Again, I could make the point about missing the human story of the origins of HCI and AI - the staggering military investment that underwrote Silicon Valley and eventually Stanford's status as a leader in engineering and Computer Science. It would be incredibly remiss to go without mentioning at least that much.
+Somehow.
 
-And I could talk about how the reformulation of so many human questions would lead to a landscape of new problems that made even seeing the original issues more and more difficult. How arguments about metrics of fairness turn a conversation about a person's freedom hinging on a bail-recommendation AI into something confounding and technical rather than stunningly obvious.
+And that was why I was so frustrated with Stanford's Human-Centered AI institute. Because as an organization based in the power of Computer Science - at Stanford, no less - the HAI's first steps were to bring in Philosophy & Computer Science professors, solicit corporate investors and venture capital... but not to prioritize community members or community leaders in areas like Palo Alto or East Palo Alto, let alone in any area at all.
 
-But that's not what the HAI later became microcosmic of, to me at least. To me, the HAI became representative of what it looks like to have not asked for a seat at the table, but instead to have bought the table and to become the mediator of who gets to be at the table in the first place. And the consequence of that is that discourse is overwhelmingly dominated by people who are, if not technical themselves, then at least *legible* to Computer Science.
+Again, I could make the point about missing the human story of the origins of HCI and AI - the staggering military investment that underwrote Silicon Valley and eventually Stanford's status as a leader in engineering and Computer Science.
+
+It would be remiss to go without mentioning at least that much.
+
+And I could talk about how the reformulation of so many human questions would lead to a landscape of new problems that made even seeing the original issues more and more difficult.
+
+How arguments about metrics of fairness turn a conversation about a person's freedom hinging on an algorithmic bail-recommendation into something confounding and technical rather than stunningly obvious.
+
+But that's not what the HAI later became microcosmic of, to me at least. To me, the HAI became representative of what it looks like to have not asked for a seat at the table, but instead to have bought the table and to become the mediator of who gets to be at the table in the first place.
+
+And the consequence of that is that discourse is overwhelmingly dominated by people who are, if not technical themselves, then at least *legible* to Computer Science, with all of its financial entanglements and commitments.
 
 This is tremendously harmful, for a handful of reasons:
 
-1. the discourse we end up with is bland and incremental; by effectively erasing radical voices because they're not legible to the hegemon, oftentimes the best we can hope for is that someone embedded in power and with a vested interest in the system stumbles upon what becomes for them a revelation. but even that's wishful. the more likely outcome is committees that study problems and make recommendations at the margins, doing as little as possible to change the larger structure because everyone's literally invested in the success of the companies and worldviews that have caused and continue to cause so much harm.
+1. the discourse we end up with is bland and weak; by effectively erasing radical voices because they're not legible to the hegemon,
 
-2. it weakens society broadly; it should be a scandal when a decision that changes the trajectory of our lives gets made by someone else without our input. and yet... the bearing that the public seems to have toward computational systems rendering decisions about all of us is less about the principle of our autonomy and more about the outcomes. i pin this on technocrats who have browbeaten society into accepting technology as a better arbiter of consequential issues than humans, and i think trading "consequential human issues" for "tricky puzzles" doesn't resolve the human issue, but probably mollifies us unjustly.
+we often end up with committees of incremental thinkers who study problems and make recommendations at the margins,
 
----
+doing as little as possible to change the larger structure.
 
-[JZ: again...i'd like a clearer connection to your thesis. because it's there, and in this case not only is the HAI instantiating the thesis across its multiple constituent projects, but it's also ...facilitating the power dynamic that realises the thesis or whatever. i think that's an important thing to dwell on.]
+Because everyone's literally invested in the success of the companies and worldviews that have caused and continue to cause so much harm.
+
+Why would anyone recommend that we do anything that really existentially threatens the existence and autonomy of Facebook, or Meta, or Google, or Amazon, or any of these tech companies that pour so much money into departments through faculty that now the department's future appears to be entangled in the company's future?
+
+A kind of solidarity of capital and oppression.
+
+2. it weakens society broadly; it should be a scandal when a decision that changes the trajectory of our lives gets made by someone else without our input.
+
+and yet... the bearing that the public seems to have toward computational systems rendering decisions about all of us is less about the principle of our autonomy and more about the outcomes.
+
+i pin blame here on technocrats who have browbeaten the public into accepting technology as a better arbiter of consequential issues than humans,
+
+and i think trading "consequential human issues" for "tricky puzzles" doesn't resolve the human issue, but probably mollifies us unjustly.
+
+These institutes participate in the warning signals I outlined earlier:
+
+1. the algorithmic reordering of the world to make things more legible to computing;
+2. the elevation of computational, algorithmic knowledge as better than human knowledge;
+3. the endorsement of computational systems to make consequential decisions about people's lives, and finally, crucially
+4. the formation of institutes that implicitly and explicitly draw conversations about our future up into the ivory towers, underwritten by corporate interests, gates kept closed by academic culture.
+
+The roles academics end up playing in portraying human problems as a subject of discourse only for those with technical expertise is not just damning in its harm, but strikes me as a betrayal of the public.
+
+We owe everything we have to the
 
 ## a different future?
 
