@@ -389,8 +389,6 @@ These institutes participate in the warning signals I outlined earlier:
 
 The roles academics end up playing in portraying human problems as a subject of discourse only for those with technical expertise is not just damning in its harm, but strikes me as a betrayal of the public.
 
-We owe everything we have to the
-
 ## a different future?
 
 Phew. I didn't want to stop on a note about an organization that I wrote negatively about - it feels bad and I just don't like to end on a negative thought. And I realized that the timing was such that I could finally talk about what I've been working on at CADE, and how I hope to advance this perspective about the kinds of problems that AI and data driven systems create and exacerbate.
@@ -403,6 +401,5 @@ My hope is to bring together a group of people who basically see all of the stuf
 
 Obviously I want to support their work and all that, but that's not all they're going to be doing. I want students coming out of their programs to have the opportunity to face this reality: that the data they're working with - whether they go into academia, or government, or private industry - that all of it represents so much more messiness than the data may suggest, and that entire lives are fleetingly represented in as little as a row of data on a table. I want them to understand that the data ethics issues they encounter are human issues projected onto a data structure, and that one role they can occupy to do real, meaningful good, is to do tear down the constructed nonsensical excuses that obstruct that fact.
 
-[JZ: one last "relate this to your thesis" plea lol. point by point how does your vision for CADE either enact or refute the points of the thesis?]
 
-I think I'm done, and I have tons of time, so I'd love to hang out and answer any questions if anyone has any. But first, thank you all for coming to my talk, feel free to contact me here or here or here. Okay, let's chat.
+So I'd love to hang out and answer any questions if anyone has any. But first, thank you all for coming to my talk, feel free to contact me here or here or here. Okay, let's chat.
