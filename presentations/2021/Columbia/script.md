@@ -2,7 +2,7 @@
 
 ## Intro?
 
-Hi everyone, as Dr. Patton said, my name's Ali Alkhatib, and I'm the director for the Center for Applied Data Ethics. And I'm so excited to get to speak to you all today because I want to share something that's been frustrating me for a while, and now more than at any other point in the past I feel like I've found the vocabulary and structure I've been looking for to talk about this stuff.
+Hi everyone, as Dr. Patton said, my name's Ali Alkhatib, and I'm the director for the Center for Applied Data Ethics. And I'm so excited to get to speak to you all today because I want to share some stuff that's been frustrating me for a while, and now more than at any other point in the past I feel like I've found the vocabulary and structure I've been looking for to talk about this stuff.
 
 The most concise way I can say what's been frustrating me - so concise that I'll need to spend the next 40 or so minutes trying to unpack it - is to say that...
 
@@ -16,7 +16,7 @@ So to tell this story, I'm going to tell you about a couple of papers that were 
 
 And then I'll tell you about how frameworks - how translation work itself - can become toxic and harmful when we try to use it to rewrite the world in our own terms. I'll tell you about "To Live in Their Utopia", the paper I wrote that describes this tendency for centralizing - often administrative, but in my argument, algorithmic - systems to impose their own models of the world upon us, and how the power we allow them to wield enables profound harm upon the most marginalized communities.
 
-Together, these papers tell two parts of a story. They helped me make sense of a lot of work I've done up till now:
+Together, these papers helped me see the work I've done up till now in a new light:
 
 - reframing crowd work and gig work as a reformulation of piecework;
 - deconstructing the digital contact tracing proposals that Google and Apple rushed out in 2020; and
@@ -391,15 +391,21 @@ The roles academics end up playing in portraying human problems as a subject of 
 
 ## a different future?
 
-Phew. I didn't want to stop on a note about an organization that I wrote negatively about - it feels bad and I just don't like to end on a negative thought. And I realized that the timing was such that I could finally talk about what I've been working on at CADE, and how I hope to advance this perspective about the kinds of problems that AI and data driven systems create and exacerbate.
+Phew. I hate to end on a negative note - it feels bad and a little depleting of motivation. And I realized that the timing of this talk was such that I could finally talk about what I've been working on at the Center for Applied Data Ethics, and how I hope to advance this perspective about the kinds of problems that AI and data driven systems create and exacerbate.
 
 So, let's talk about future stuff really briefly:
 
-I'm getting ready to hire a number of data ethics fellows, and hope eventually to hire more, whose work all center around the people who are forced to endure oppressive systems like the ones I talked about in my papers about street-level algorithms, to live in their utopia, and elsewhere. Together, we're all going to be designing a relatively involved curriculum of Data Ethics that offers a much deeper dive into some vignettes to illustrate broader patterns of power, violence, and oppression, and to try to find ways to investigate and study those in whatever configurations arise.
+I'm getting ready to hire a number of data ethics fellows, and hope eventually to hire more, whose work all center around the people who are made to endure oppressive systems like the ones I talked about in my papers about street-level algorithms, to live in their utopia, and elsewhere. Together, we're all going to be designing a relatively involved curriculum of Data Ethics that offers a much deeper dive into vignettes of domains to illustrate broader patterns of power, violence, and oppression, and to try to find ways to investigate and study those in whatever configurations arise.
 
-My hope is to bring together a group of people who basically see all of the stuff that I've been talking about - and more - as matters of public consequence; as human problems that all of us deserve a seat at the table for. Labor, environmental crisis, refugee and humanitarian crises, and so much more... the projection of technology onto these issues as "x for social good" is an effort to re-cast the underlying human challenge in a futile effort to find an easy solution to what is inescapably a monumental challenge.
+The goal of this curriculum is to get students to stop thinking that there are static maxims that they can memorize, jargon that they can rattle off to be certified in DEI or whatever. Instead, I want students minds to be turned toward the dimension of power, and of the many, many innovative ways that power manifests to coerce and oppress people.
 
-Obviously I want to support their work and all that, but that's not all they're going to be doing. I want students coming out of their programs to have the opportunity to face this reality: that the data they're working with - whether they go into academia, or government, or private industry - that all of it represents so much more messiness than the data may suggest, and that entire lives are fleetingly represented in as little as a row of data on a table. I want them to understand that the data ethics issues they encounter are human issues projected onto a data structure, and that one role they can occupy to do real, meaningful good, is to do tear down the constructed nonsensical excuses that obstruct that fact.
+My hope is that students will come away from these classes with an undercurrent of a sense that every story they see or hear or even tell in rows of datasets is truthfully much more complex and often more pressing than the data can convey. That to do data ethics at all, you have to face and interrogate the aspects of the data that can't be encoded into a dataset.
+
+I want those students to understand that the data ethics issues they encounter are human issues projected onto a data structure, and that one role they can occupy to do real, meaningful good, is to do tear down the constructed nonsensical excuses that obstruct that fact.
+
+Not just because this "problem space arbitrage" belies the true nature of the problem they're going to deal with, and not just because this arbitrage creates new dimensions of problems that we now have to deal with, but because the very act of unilaterally and hegemonically translating problems into our own vocabulary means distancing the people affected by these problems from the discussions that are most important to them.
+
+And I should say that I'm hardly alone, if it's not too presumptuous to say. I'd like to point out a new organization, the Distributed Artificial Intelligence Research institute (DAIR), founded by Timnit Gebru (whom Google fired and then smeared in the public with obviously specious claims about her work and the work of her team). DAIR is explicit about confronting the gross inequities and injustices that AI manifests and exacerbates, and crucially works toward imagining a better future. I have no illusion that my ideas are innovative or novel; so much of my thinking comes either directly or indirectly from people like Timnit, Chris Gilliard, and others I mentioned in this talk, but also Ruha Benjamin, Safiya Noble, Angela Davis, Sara Ahmed, Deb Raji, Niloufar Salehi, Khadijah Abdurahman, Lilly Irani, Mar Hicks... the point right now is to say that I didn't cite all these people explicitly in this talk because the way I framed this talk was retrospectively on my work, but my work is nothing but the product of abolitionist, feminist thinkers who believe in a better future, despite all the evidence and experience that tells them how naive that is, and who work toward that future.
 
 
 So I'd love to hang out and answer any questions if anyone has any. But first, thank you all for coming to my talk, feel free to contact me here or here or here. Okay, let's chat.
