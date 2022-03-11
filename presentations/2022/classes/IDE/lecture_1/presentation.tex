@@ -1,0 +1,245 @@
+\documentclass[aspectratio=43,17pt]{beamer} % or 14 or 17 or 20
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,multicol}
+% \usepackage[fontsize=18]{pdfpcnotes}
+\usepackage{pgfcalendar,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+\usetikzlibrary{positioning}
+\usepackage[outline]{contour}
+\usepackage[citestyle=authoryear-comp,backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\usepackage[normalem]{ulem}
+\bibliography{references}
+\usetheme[numbering=none]{metropolis}
+
+% \bibliography{references}
+
+\input{colors}
+\input{customizations}
+
+
+\title{Intro to Data Ethics}
+\subtitle{\dots an intro to the intro class}
+\author[Ali Alkhatib]{{Ali Alkhatib}\\
+\href{http://twitter.com/_alialkhatib}{@\_alialkhatib} || \href{mailto:hi@al2.in}{hi@al2.in}}
+\date{March 10, 2022}
+
+% \date{\today}
+
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}[t]\frametitle{Roadmap for today}
+
+\begin{itemize}
+    \visible<+->{\item What is \only<1>{\strong{Data Ethics}}\only<2->{Data Ethics}?}
+    \visible<+->{\item What will \only<2>{\strong{we}}\only<3->{we} cover?}
+    \visible<+->{\item What are \only<3>{\strong{you}}\only<4->{you} hoping to hear about in this class?\hfill {\small\itshape also, small break}}
+    \visible<+->{\item How will this class be \only<4>{\strong{evaluated}}\only<5->{evaluated}?}
+    \visible<+->{\item How can you get \only<5>{\strong{help}}\only<6->{help}?}
+    \visible<+->{\item \only<6>{\strong{Data Collection}}\only<7->{Data Collection}}
+    \visible<+->{\item \strong{Group Activity}}
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{What is data ethics?}
+
+\begin{itemize}
+    \item Legal compliance
+
+    \visible<2->{\hfill{\small{\itshape we won't be talking about this as much}}}
+    \item Harm reduction
+    
+~
+    \item Liberation and feminist theory
+
+    ~
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{good external resources}
+
+\begin{columns}
+\begin{column}{0.33\textwidth}
+% \textit{\small{Data Feminism}}
+\includegraphics[width=\textwidth]{figures/books/Data_Feminism.jpeg}
+\end{column}
+\begin{column}{0.33\textwidth}
+% \textit{\small{Race After Technology}}
+\includegraphics[width=\textwidth]{figures/books/Race_After_Technology.jpeg}
+\end{column}
+\begin{column}{0.33\textwidth}
+% \textit{\small{Algorithms of Oppression}}
+\includegraphics[width=\textwidth]{figures/books/Algorithms_of_Oppression.jpeg}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}[standout]
+
+Bias vs Harm vs Fairness vs\dots
+
+\end{frame}
+
+
+\begin{frame}{why harm?}
+
+\visible<+->{\strong{Bias} has gaps}
+
+\visible<+->{\strong{Fairness} has many different definitions}
+
+\visible<+->{\strong{Harm} is a more direct index}
+
+\end{frame}
+
+
+\begin{frame}[plain,label=questions]
+
+\centering
+Hey Ali, pause for questions here
+
+
+\end{frame}
+
+\begin{frame}[t]{what will we cover?}
+\visible<+->{}
+\scriptsize{
+\begin{columns}[T]
+\begin{column}{0.3\textwidth}
+\strong{Data Collection}
+
+\visible<2->{\vspace{3em}
+
+Consent
+
+\vspace{3em}
+
+Surveillance
+
+\vspace{3em}
+
+Context}
+
+
+\end{column}
+\begin{column}{0.3\textwidth}
+\strong{Promises of Data}
+
+\visible<+->{\vspace{3em}
+
+Objectivity
+
+\vspace{3em}
+
+Accuracy
+
+\vspace{3em}
+
+Scalability
+
+\vspace{3em}}
+
+\end{column}
+\begin{column}{0.3\textwidth}
+\strong{Possible Futures}
+
+\visible<+->{\vspace{3em}
+
+Dystopia
+
+\vspace{3em}
+
+Utopia
+
+\vspace{3em}
+
+Agency
+
+\vspace{3em}}
+
+
+
+
+\end{column}
+\end{columns}
+}
+\end{frame}
+
+\begin{frame}[plain]
+
+\only<+>{\emph{Try not to worry too much about evaluation}}
+
+\only<+>{That being said\dots}
+
+\end{frame}
+
+\begin{frame}{evaluation}
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\only<1>{Each \strong{section} should have a short introduction with \alert{\strong{questions}}}
+
+\only<2>{Pick \strong{2 to 3} readings from each section and read those articles with the questions in mind}
+
+\only<3->{Write some reflections on the questions in Canvas by \strong{11:59pm on Tuesday night}}
+\end{column}
+
+\begin{column}{0.55\textwidth}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/screenshots/consent/questions.png}}
+\only<+-3>{\includegraphics[width=\textwidth]{figures/screenshots/consent/readings.png}}
+
+\only<4>{Can't make it to class?
+
+\vspace{2em}
+
+\small{That's okay. Read at least \strong{1} more article per topic, and submit \strong{provocations} for discussion to Canvas by \strong{11:59pm on Monday night}}}
+
+\end{column}
+\end{columns}
+
+
+\end{frame}
+
+\begin{frame}{need help?}
+
+Please \strong{contact me} if you need help!
+
+email: \texttt{hi@al2.in}
+
+slack? do you all have access to slack?
+
+
+\end{frame}
+
+\againframe{questions}
+
+\begin{frame}[standout]
+
+{Data Collection}
+
+\end{frame}
+
+
+\begin{frame}[standout]
+    
+Group Activity
+
+\end{frame}
+
+\end{document} 
