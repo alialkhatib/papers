@@ -3,6 +3,7 @@
 \usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,multicol}
 % \usepackage[fontsize=18]{pdfpcnotes}
 \usepackage{pgfcalendar,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+\usepackage{marvosym} % \MVRIGHTarrow
 \usepackage{amsmath}
 \usepackage{centernot}
 \usetikzlibrary{positioning}
@@ -66,56 +67,133 @@
     {\small More readings available on Canvas as PDFs}
     \item \strong{Reading time check}
 
-    {\small How long did readings take?}
+    {\small How long did readings take?
+
+    \MVRightarrow{} google docs noisy survey}
     
-    \item \strong{great reflections, everyone}
+    % \item \strong{great reflections, everyone}
 \end{itemize}
+
+\end{frame}
+
+\begin{frame}[plain]
+
+\centering
+\emph{check the zoom chat for a link}
 
 \end{frame}
 
 
 \section{Data Collection (recap)}
 
-\begin{frame}[t]{consent}
+%%%%%%%%%
+
+\begin{frame}{consent}
 \begin{columns}
 \begin{column}{0.4\textwidth}
-\only<1-4>{\alert{\strong{legally ambiguous}} data collection}%
-\only<5->{legislative \alert{\strong{reforms}}}
+
+\only<+->{\alert{\strong{legally ambiguous}} data collection}%
+
 \end{column}
 \begin{column}{0.6\textwidth}
-\only<1>{\includegraphics[width=\textwidth]{figures/consent/CTL.PNG}}
-\only<2>{\includegraphics[width=\textwidth]{figures/consent/rohingya.png}}
-\only<3>{\includegraphics[width=\textwidth]{figures/consent/clearview.png}}
-\only<4>{\includegraphics[width=\textwidth]{figures/consent/google.png}}
-\only<5>{\includegraphics[width=\textwidth]{figures/consent/GDPR.png}}
-\only<6>{\includegraphics[width=\textwidth]{figures/consent/CCPA.png}}
+
+\only<.>{\includegraphics[width=\textwidth]{figures/consent/CTL.PNG}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/consent/rohingya.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/consent/clearview.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/consent/google.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/consent/GDPR.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/consent/CCPA.png}}
+
 \end{column}
 \end{columns}
-
 \end{frame}
+
+%%%%%%%%%%%%%%%%
+
+\begin{frame}{surveillance}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+
+\only<+->{\alert{\strong{coercive}} settings}%
+
+\end{column}
+\begin{column}{0.6\textwidth}
+
+\only<.>{\includegraphics[width=\textwidth]{figures/surveillance/dance.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/surveillance/prison_phones.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/surveillance/ring_privacy.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/surveillance/ring_apartments.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/surveillance/ring_LAPD.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/surveillance/keystroke_tracking.png}}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%%%%%
+
+\begin{frame}{context}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+
+\only<+->{data without \alert{\strong{context}}}%
+
+\end{column}
+\begin{column}{0.6\textwidth}
+
+\only<.>{\includegraphics[width=\textwidth]{figures/context/gaydar.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/context/selfieLGBTQ.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/context/wivi.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/context/datasheets.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/context/fiesler.png}}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%
+
 
 \begin{frame}[plain]
 
 \centering
 
-\visible<+->{{\LARGE\scshape legal $\centernot\implies$ ethical}}
+\visible<+->{{\LARGE\scshape legal $\centernot=$ ethical}}
 
 \visible<+->{\dots but\dots}
 
-\visible<+->{the \textbf<.>{law} can be\\\textbf<+>{narrowly} informative}
+\visible<+->{{law} \strong{can be} informative}
 
 \end{frame}
 
 
-% \begin{frame}[standout]
-% what questions should you be asking?
-% \end{frame}
+\begin{frame}[plain]
+\centering
+{\scshape\large lots of great reflections}
+\end{frame}
 
 
 \begin{frame}[plain]
 
+
+
 {\scshape\small
 \centering
+
 \begin{columns}
 \begin{column}{0.3\textwidth}
 \centering
@@ -163,8 +241,15 @@
 
 \visible<+->{``\dots the laws we have today are from to 1970's?''}
 
+% \visible<+->{{\scshape\hfill great observations, great questions}}
 
 }
+\end{frame}
+
+\begin{frame}[standout]
+
+The issues you encounter will be real
+
 \end{frame}
 
 \begin{frame}{Philosophical frameworks}
@@ -173,35 +258,51 @@
 
 \onslide<+->{Consequentialism}{\small\visible<.->{\onslide<.>{\hfill evaluate by outcomes}}}
 
-\onslide<+->{Deontology}{\small\visible<.->{\onslide<.>{\hfill evaluate by rules}}}
+\onslide<+->{Deontology}{\small\visible<.->{\onslide<.>{\hfill aspire to rules}}}
 
-\onslide<+->{Virtue Ethics}{\small\visible<.->{\onslide<.>{\hfill evaluate by aspirational virtues}}}
+\onslide<+->{Virtue Ethics}{\small\visible<.->{\onslide<.>{\hfill aspire to virtues}}}
+
+\visible<+->{
+how do these philosophies inform\dots
+
+\centering
+CTL? Ring? Gaydar? Google?}
 
 }
 \end{frame}
+
 
 
 \begin{frame}{historical contextualization}
 \centering
 
-\only<1>{\begin{columns}
-\begin{column}{0.6\textwidth}
-\only<1>{Henrietta Lacks}
-\only<2>{Henrietta Lacks}
-\end{column}
+\only<+-3>{\begin{columns}
 \begin{column}{0.4\textwidth}
-\only<2>{\includegraphics[width=\textwidth]{figures/wiki/lacks.jpeg}}
-\only<1>{\includegraphics[width=\textwidth]{figures/wiki/lacks.jpeg}}
+
+\only<1>{Henrietta Lacks}
+
+\only<2>{Quaker Oats}
+
+\only<3>{Tuskegee experiments}
+
+\end{column}
+\begin{column}{0.6\textwidth}
+
+\only<1>{\includegraphics[width=0.6\textwidth]{figures/wiki/lacks.jpeg}}
+
+\only<2>{\includegraphics[width=\textwidth]{figures/news/quaker_oats.jpeg}}
+
+\only<3>{\includegraphics[width=\textwidth]{figures/news/tuskegee.jpg}}
+
 \end{column}
 \end{columns}}
 
-{\scshape
-\only<2->{human dignity and autonomy}
+\only<4->{\scshape
+{human dignity and autonomy}
 
-\only<3->{informed consent}
+\visible<5>{informed consent}
 }
 \end{frame}
-
 
 
 
@@ -235,18 +336,17 @@ a quick caveat about ``provocations''
 
 \vspace{1em}
 
-{Does anyone else feel uncomfortable about statements about suicide prevention efforts using phrases like ``piloting a tailored solution'' and ``evaluating data trends?''}
+{Does anyone else feel uncomfortable about statements about suicide prevention efforts using phrases like ``piloting a tailored solution'' and ``evaluating data trends''?}
 
-\vspace{1em}
-
-{What would it look like if all of the [face] scans of POC came from \emph{marginalized} populations?}
 \end{column}
+
 \begin{column}{0.5\textwidth}
+
 {When do we know that an issue having to do with privacy and surveillance has been adequately addressed?}
 
 \vspace{1em}
 
-{At what point do the negatives of a technology that gathers data outweigh the positives? Likewise, when do the positives outweigh the negatives?}
+{At what point do the negatives of a technology that gathers data outweigh the positives? or vice versa?}
 % \end{column}
 % \begin{column}{0.33\textwidth}
 
@@ -259,5 +359,22 @@ a quick caveat about ``provocations''
 
 % {what are some examples of how data science uses hypotheticals to understand and predict ethical issues? what about using models as a more concrete way to evaluate if a particular kind of data collection will cause harm?}
 %
+
+
+
+
+
+\section{Promises}
+
+
+\begin{frame}{promises of data science}
+
+\begin{itemize}
+    \item AI will \strong{understand} the world better than humans can
+    \item AI can make \strong{more objective} or \strong{fairer} decisions than people can
+\end{itemize}
+
+\end{frame}
+
 
 \end{document}
