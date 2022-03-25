@@ -1,0 +1,381 @@
+\documentclass[aspectratio=169,17pt]{beamer} % or 14 or 17 or 20
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,multicol}
+% \usepackage[fontsize=18]{pdfpcnotes}
+\usepackage{pgfcalendar,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+\usepackage{marvosym} % \MVRIGHTarrow
+\usepackage{amsmath}
+\usepackage{centernot}
+\usetikzlibrary{positioning}
+\usepackage[outline]{contour}
+\usepackage[citestyle=authoryear-comp,backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\usepackage[normalem]{ulem}
+\bibliography{references}
+\usetheme[numbering=none]{metropolis}
+
+% \bibliography{references}
+
+\input{colors}
+\input{customizations}
+
+
+\title{Data Ethics Lecture 2}
+\subtitle{recap {\bfseries Data Collection}\\preview {\bfseries Promises}}
+\author[Ali Alkhatib]{{Ali Alkhatib}\\
+\href{http://twitter.com/_alialkhatib}{@\_alialkhatib} || \href{mailto:hi@al2.in}{hi@al2.in}}
+\date{March 17, 2022}
+
+% \date{\today}
+
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+% \begin{frame}[t]\frametitle{Roadmap for today}
+
+% \begin{itemize}
+%     \item Administrivia
+%     \item Recap Data Collection
+%     \item Preview Promises
+%     % \item Discuss 1 or 2 promises
+%     \item Preview readings for 1-2 topics
+% \end{itemize}
+
+% \end{frame}
+
+
+% \begin{frame}{Admin-y things}
+  
+
+% \begin{itemize}
+%     \item \strong{Canvas}
+    
+%     {\small everyone should have access now, if that's not the case then let me know!}
+%     \item \strong{Readings}
+    
+%     {\small More readings available on Canvas as PDFs}
+%     \item \strong{Reading time check}
+
+%     {\small How long did readings take?
+
+%     \MVRightarrow{} google docs noisy survey}
+    
+%     % \item \strong{great reflections, everyone}
+% \end{itemize}
+
+% \end{frame}
+
+% \begin{frame}[plain]
+
+% \centering
+% \emph{check the zoom chat for a link}
+
+% \end{frame}
+
+
+\section{Data Collection (recap)}
+
+% %%%%%%%%%
+
+% \begin{frame}{consent}
+% \begin{columns}
+% \begin{column}{0.4\textwidth}
+
+% \only<+->{\alert{\strong{legally ambiguous}} data collection}%
+
+% \end{column}
+% \begin{column}{0.6\textwidth}
+
+% \only<.>{\includegraphics[width=\textwidth]{figures/consent/CTL.PNG}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/consent/rohingya.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/consent/clearview.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/consent/google.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/consent/GDPR.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/consent/CCPA.png}}
+
+% \end{column}
+% \end{columns}
+% \end{frame}
+
+% %%%%%%%%%%%%%%%%
+
+% \begin{frame}{surveillance}
+% \begin{columns}
+% \begin{column}{0.4\textwidth}
+
+% \only<+->{\alert{\strong{coercive}} settings}%
+
+% \end{column}
+% \begin{column}{0.6\textwidth}
+
+% \only<.>{\includegraphics[width=\textwidth]{figures/surveillance/dance.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/surveillance/prison_phones.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/surveillance/ring_privacy.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/surveillance/ring_apartments.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/surveillance/ring_LAPD.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/surveillance/keystroke_tracking.png}}
+
+% \end{column}
+% \end{columns}
+% \end{frame}
+
+% %%%%%%%%%%
+
+% \begin{frame}{context}
+% \begin{columns}
+% \begin{column}{0.4\textwidth}
+
+% \only<+->{data without \alert{\strong{context}}}%
+
+% \end{column}
+% \begin{column}{0.6\textwidth}
+
+% \only<.>{\includegraphics[width=\textwidth]{figures/context/gaydar.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/context/selfieLGBTQ.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/context/wivi.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/context/datasheets.png}}
+
+% \only<+>{\includegraphics[width=\textwidth]{figures/context/fiesler.png}}
+
+% \end{column}
+% \end{columns}
+% \end{frame}
+
+% %%%%%%%%%%%%
+
+
+% \begin{frame}[plain]
+
+% \centering
+
+% \visible<+->{{\LARGE\scshape legal $\centernot=$ ethical}}
+
+% \visible<+->{\dots but\dots}
+
+% \visible<+->{{law} \strong{can be} informative}
+
+% \end{frame}
+
+
+% \begin{frame}[plain]
+% \centering
+% {\scshape\large lots of great reflections}
+% \end{frame}
+
+
+% \begin{frame}[plain]
+
+
+
+% {\scshape\small
+% \centering
+
+% \begin{columns}
+% \begin{column}{0.3\textwidth}
+% \centering
+
+% \visible<+->{repugnance}
+
+% \visible<+->{potential for harm}
+
+% \visible<+->{\textbf<+->{misleading}}
+
+% \visible<+->{false pretenses}
+
+
+% \end{column}
+% \begin{column}{0.3\textwidth}
+% \centering
+
+% \visible<+->{exploitation}
+
+% \visible<+->{firing personnel}
+
+
+% \visible<+->{CYA}
+
+% \visible<+->{speed of tech}
+% \end{column}
+% \begin{column}{0.3\textwidth}
+% \centering
+
+% \visible<+->{intent vs outcome}
+
+% \visible<+->{incentives}
+
+% \visible<+->{\textbf<+->{vulnerability}}
+
+% \visible<+->{misuse}
+
+% \visible<+->{apparent plan (or lack of?)}
+
+% \end{column}
+% \end{columns}
+
+
+% \visible<+->{``Shouldn't regulators have gotten involved?''}
+
+% \visible<+->{``\dots the laws we have today are from to 1970's?''}
+
+% % \visible<+->{{\scshape\hfill great observations, great questions}}
+
+% }
+% \end{frame}
+
+% \begin{frame}[standout]
+
+% The issues you encounter will be real
+
+% \end{frame}
+
+% \begin{frame}{Philosophical frameworks}
+
+% {\scshape\onslide<+>{}
+
+% \onslide<+->{Consequentialism}{\small\visible<.->{\onslide<.>{\hfill evaluate by outcomes}}}
+
+% \onslide<+->{Deontology}{\small\visible<.->{\onslide<.>{\hfill aspire to rules}}}
+
+% \onslide<+->{Virtue Ethics}{\small\visible<.->{\onslide<.>{\hfill aspire to virtues}}}
+
+% \visible<+->{
+% how do these philosophies inform\dots
+
+% \centering
+% CTL? Ring? Gaydar? Google?}
+
+% }
+% \end{frame}
+
+
+
+% \begin{frame}{historical contextualization}
+% \centering
+
+% \only<+-3>{\begin{columns}
+% \begin{column}{0.4\textwidth}
+
+% \only<1>{Henrietta Lacks}
+
+% \only<2>{Quaker Oats}
+
+% \only<3>{Tuskegee experiments}
+
+% \end{column}
+% \begin{column}{0.6\textwidth}
+
+% \only<1>{\includegraphics[width=0.6\textwidth]{figures/wiki/lacks.jpeg}}
+
+% \only<2>{\includegraphics[width=\textwidth]{figures/news/quaker_oats.jpeg}}
+
+% \only<3>{\includegraphics[width=\textwidth]{figures/news/tuskegee.jpg}}
+
+% \end{column}
+% \end{columns}}
+
+% \only<4->{\scshape
+% {human dignity and autonomy}
+
+% \visible<5>{informed consent}
+% }
+% \end{frame}
+
+
+
+
+
+
+% \begin{frame}{speculative design}
+% \centering
+% \includegraphics[height=0.9\textheight]{figures/clipart/speculative_design.png}
+% \end{frame}
+
+
+\section{some ``provocations''}
+
+% \begin{frame}{some ``provocations''}
+% \end{frame}
+
+
+% \begin{frame}[plain]
+% \centering
+
+% a quick caveat about ``provocations''
+
+% \end{frame}
+
+% \begin{frame}{some ``provocations''}
+% \vspace{2em}
+% {\footnotesize
+% \begin{columns}
+% \begin{column}{0.5\textwidth}
+% {What are the risks of allowing the private sector to gather so much sensitive data?}
+
+% \vspace{1em}
+
+% {Does anyone else feel uncomfortable about statements about suicide prevention efforts using phrases like ``piloting a tailored solution'' and ``evaluating data trends''?}
+
+% \end{column}
+
+% \begin{column}{0.5\textwidth}
+
+% {When do we know that an issue having to do with privacy and surveillance has been adequately addressed?}
+
+% \vspace{1em}
+
+% {At what point do the negatives of a technology that gathers data outweigh the positives? or vice versa?}
+% % \end{column}
+% % \begin{column}{0.33\textwidth}
+
+
+% \end{column}
+% \end{columns}}
+
+% \end{frame}
+
+
+% % {what are some examples of how data science uses hypotheticals to understand and predict ethical issues? what about using models as a more concrete way to evaluate if a particular kind of data collection will cause harm?}
+% %
+
+
+
+
+
+\section{Promises}
+
+
+% \begin{frame}{promises of data science}
+
+% \begin{itemize}
+%     \item AI will \strong{understand} the world better than humans can
+%     \item AI can make \strong{more objective} or \strong{fairer} decisions than people can
+% \end{itemize}
+
+% \end{frame}
+
+
+\end{document}
