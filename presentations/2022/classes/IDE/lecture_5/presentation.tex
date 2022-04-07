@@ -1,0 +1,133 @@
+\documentclass[aspectratio=43,17pt]{beamer} % or 14 or 17 or 20
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,multicol}
+\usepackage{pgfcalendar,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+\usepackage{enumitem}
+\usepackage{marvosym} % \MVRIGHTarrow
+\usepackage{amsmath}
+\usepackage{centernot}
+\usetikzlibrary{positioning}
+\usepackage[outline]{contour}
+\usepackage[citestyle=authoryear-comp,backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\usepackage[normalem]{ulem}
+\bibliography{references}
+\usetheme[numbering=none]{metropolis}
+
+\setlist[itemize]{label={--}}
+% \setlist[itemize]{leftmargin=*}
+
+% \bibliography{references}
+
+\input{colors}
+\input{customizations}
+
+
+\title{Data Ethics Lecture 5}
+\subtitle{Philosophical foundations}
+\author[Ali Alkhatib]{{Ali Alkhatib}\\
+\href{http://twitter.com/_alialkhatib}{@\_alialkhatib} || \href{mailto:hi@al2.in}{hi@al2.in}}
+\date{March April 7, 2022}
+
+% \date{\today}
+
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Roadmap for today}
+
+
+\visible<+->{\begin{columns}
+\begin{column}{0.5\textwidth}
+This week \hfill \MVRightarrow{}
+\end{column}
+\begin{column}{0.4\textwidth}
+\strong{Philosophical foundations}
+\end{column}
+\end{columns}}
+
+\vspace{2em}
+
+\visible<+->{\begin{columns}
+\begin{column}{0.5\textwidth}
+Next week \hfill \MVRightarrow{}
+\end{column}
+\begin{column}{0.4\textwidth}
+\strong{Organizing and Activism}
+\end{column}
+\end{columns}}
+
+
+
+\end{frame}
+
+\section{Philosophical foundations}
+
+\begin{frame}[t]{foundations}
+    We've talked about a few philosophical approaches before\only<+>{:}
+    
+    \only<.>{\begin{itemize}
+            \item consequentialism
+            \item deontology
+            \item virtue ethics
+        \end{itemize}}
+
+\only<+->{we're going to add a few other frameworks
+
+\begin{itemize}
+    \item colonialism
+    \item restorative justice
+    \item harm reduction
+\end{itemize}
+}
+
+\end{frame}
+
+\begin{frame}{philosophy}
+
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+
+\visible<+->{\small\begin{itemize}[itemsep=0em]
+    
+    \item<alert@+> consequentialism
+    
+    \item<alert@+> deontology
+    
+    \item<alert@+> virtue ethics
+    
+    \item<alert@+> colonialism
+    
+    \item<alert@+> restorative justice
+    
+    \item<alert@+> harm reduction
+
+\end{itemize}}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\only<5>{\includegraphics[width=\textwidth]{figures/papers/algo_colonization_africa2.png}}
+
+\only<6>{\includegraphics[width=\textwidth]{figures/papers/restorative_justice_salehi.png}}
+
+
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\end{document}

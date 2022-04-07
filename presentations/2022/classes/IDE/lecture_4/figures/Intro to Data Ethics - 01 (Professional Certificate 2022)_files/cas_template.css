@@ -1,0 +1,999 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600); /*for footnotes and some callout boxes*****/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed); /*headers******/
+
+
+
+/*to apply style on each page, override vendor **************/
+h2{
+	margin:5px 15px 15px 0px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform:uppercase;
+}
+
+
+
+
+h3 {
+	margin:5px 15px 0px 0px !important;
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 2;
+}
+
+h4 {
+	margin:5px 15px 0px 0px;
+	size: 1.35em;
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 2;
+}
+
+ul, ol{
+	padding:5px 20px 10px 0px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:16px;
+	letter-spacing:.5px;
+}
+
+ul li{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:24px;
+	font-size:16px;
+	font-weight:300;
+	letter-spacing:.5px;
+}
+
+ul#menu li{
+	letter-spacing: 0px;
+}
+
+ol li{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:24px;
+	font-size:16px;
+	font-weight:300;
+	letter-spacing: .5px;
+}
+
+
+
+p{
+	margin:5px 15px 18px 0px;
+	line-height:24px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:16px;
+	font-weight:300;
+	letter-spacing:.5px;
+}
+
+blockquote {
+	 padding: 0 0 0 15px;
+    margin: 0 29px 20px;
+    border-left: 5px solid #eee;
+	line-height:26px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size:16px;
+	font-weight:300;
+}
+
+
+/*table styles******************************************************/
+.CSSTable {
+	margin:0px;padding:0px;
+	border:1px solid #000000;	
+	margin:10px 20px;
+}
+.CSSTable table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+
+}
+
+.CSSTable tr:hover td{
+	
+}
+.CSSTable tr:nth-child(odd){ background-color:#c2bbb2; }
+.CSSTable tr:nth-child(even)    { background-color:#ffffff; }
+.CSSTable td{
+	vertical-align:middle;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:normal;
+}
+.CSSTable tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}
+.CSSTable tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTable tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTable tr:first-child td{
+background:-o-linear-gradient(bottom, #848996 5%, #848996 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #848996), color-stop(1, #848996) );
+	background:-moz-linear-gradient( center top, #848996 5%, #848996 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#848996", endColorstr="#848996");	background: -o-linear-gradient(top,#848996,848996);
+	background-color:#848996;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	color:#ffffff;
+}
+ .CSSTable tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #848996 5%, #848996 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #848996), color-stop(1, #848996) );
+	background:-moz-linear-gradient( center top, #848996 5%, #848996 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#848996", endColorstr="#848996");	background: -o-linear-gradient(top,#848996,848996);
+
+	background-color:#848996;
+}
+ .CSSTable tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+ .CSSTable tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+/*End of Table Styles********************************************************************************/
+
+
+
+
+
+/*table styles2******************************************************/
+.CSSTable2 {
+	margin:0px;padding:0px;
+	border:1px solid #000000;	
+	margin:10px 20px;
+}
+.CSSTable2 table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:7px;
+
+}
+
+.CSSTable2 tr:hover td{
+	
+}
+.CSSTable2 tr:nth-child(odd){ background-color:#c2bbb2; }
+.CSSTable2 tr:nth-child(even)    { background-color:#ffffff; }
+.CSSTable2 td{
+	vertical-align:middle;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:normal;
+}
+.CSSTable2 tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}
+.CSSTable2 tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTable2 tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTable2 tr:first-child td{
+
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-family: 'Open Sans', sans-serif;
+
+}
+.CSSTable2 tr:first-child:hover td{
+	
+}
+.CSSTable2 tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator2 tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+
+/****end of second tablegenerator**********/
+
+
+.caption{
+	color:#888888;
+	font-size:12px;
+	line-height: 18px;
+	margin:-12px 30px 15px;
+}
+.videocaption{
+	width: 640px; 
+	margin-top:-25px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.cite{
+	vertical-align:super;
+	font-size:10px;
+	color:#888888;
+}
+
+.article {
+	padding:20px;
+	margin:10px 20px;
+	background-color:#f6f4de;
+	
+}
+
+
+/*begin reading box**/
+.readingbox {
+	margin-left:auto;
+	margin-right:auto;
+	margin-left:50px;
+	padding-left:25px;
+	border-left:#000 thin solid;
+
+	background-image:url(http://shelby.usfca.edu/canvas/test/patterngraphic1.png);
+	background-repeat:repeat-y;
+}
+
+/**inline video and caption*****/
+/** video and caption*****/
+.inline_video {
+	width:640px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+}
+
+.video_title {
+	width:610px;
+	background-color: #d5e9ef; /* Old browsers */
+	padding:15px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size:16px;
+	margin-top:-50px;
+	letter-spacing:.5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+/********************************Table created with Divs**************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+
+.multimedia_Table{
+    display:table;
+    border-collapse: collapse;
+    }
+	
+.multimedia_heading{
+     font-weight: bold;
+     display:table-row;
+     background-color:#62a3c2;
+     text-align: center;
+     line-height: 25px;
+     font-size: 16px;
+     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing:.5px;
+	padding:10px;  
+}
+
+
+.multimedia_heading_blue{
+     font-weight: bold;
+     display:table-row;
+     background-color:#D5e9ef;
+     text-align: center;
+     line-height: 25px;
+     font-size: 16px;
+     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing:.5px;
+	padding:10px;
+     color:#666;
+    
+}
+
+
+
+
+.multimedia_table-row{  
+     display:table-row;
+}
+
+
+.multimedia_table-row_gray{  
+     display:table-row;
+     text-align: center;
+	 background-color:#f2f0f0;
+	 padding:10px;
+}
+
+
+.multimedia_table-row_blue{  
+     display:table-row;
+     text-align: center;
+	 background-color:#D5e9ef;
+	 padding:10px;
+}
+
+.multimedia_col h4 {
+	padding-left:0px !important;
+}
+
+
+
+
+.multimedia_col{
+    display:table-cell;
+    border: 1px solid #ccc;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:16px;
+	font-weight:300;
+	letter-spacing:.5px;
+	padding:10px;
+	text-align:left;
+}
+
+
+.multimedia_col_no_border{
+    display:table-cell;
+    border: 5px solid #fff;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:16px;
+	font-weight:300;
+	letter-spacing:.5px;
+	padding:10px 20px 10px 20px;
+	text-align:left;
+}
+
+
+
+
+.multimedia_col p {
+	padding:0px !important;
+}
+.multimedia_col ul {
+	margin:0px !important;
+}
+.multimedia_col ol {
+	margin:0px !important;
+}
+.multimedia_col ul li {
+	margin-left:15px;
+}
+.multimedia_col ol li {
+	margin-left:15px;
+}
+/*****For Custom Javascript Video Thumbnail/Expand*****************/
+
+.video_thumb_table, .video_thumb_table_link{
+display: block;
+}
+.video_thumb_holder{
+display: none;
+}
+
+/*******Title inside the multimedia table**********************/
+
+ .multimedia_title{
+  margin: 10px 10px 10px 5px !important;
+  text-transform: uppercase;
+  font-size:17.5px !important;
+ }
+
+a.external.youtubed {
+  display: block;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-top: -10px;
+}
+
+
+
+
+
+/*******end Javascript Video Thumbnail/Expand*********************/
+
+
+
+
+
+/*****Copied from Bootstrap CSS******************
+Make Video Responsive***************************/
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.embed-responsive.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.embed-responsive.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+/********end of video responsive*********************/
+
+
+/***MSFA homepage********************************************/
+
+.homepage_image {
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+
+.homepage_image img {
+	width:100% !important;
+}
+
+/**begin MSFA topnav menus******/
+#gradientborder {
+	height:3px;
+	/* IE10+ */ 
+	background-image: -ms-linear-gradient(left, #959595 0%, #0D0D0D 46%, #010101 50%, #0A0A0A 53%, #85837E 76%, #383838 87%, #1b1b1b 100%);
+	
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(left, #959595 0%, #0D0D0D 46%, #010101 50%, #0A0A0A 53%, #85837E 76%, #383838 87%, #1b1b1b 100%);
+	
+	/* Opera */ 
+	background-image: -o-linear-gradient(left, #959595 0%, #0D0D0D 46%, #010101 50%, #0A0A0A 53%, #85837E 76%, #383838 87%, #1b1b1b 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #959595), color-stop(46, #0D0D0D), color-stop(50, #010101), color-stop(53, #0A0A0A), color-stop(76, #85837E), color-stop(87, #383838), color-stop(100, #1b1b1b));
+	
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(left, #959595 0%, #0D0D0D 46%, #010101 50%, #0A0A0A 53%, #85837E 76%, #383838 87%, #1b1b1b 100%);
+	
+	/* W3C Markup */ 
+	background-image: linear-gradient(to right, #959595 0%, #0D0D0D 46%, #010101 50%, #0A0A0A 53%, #85837E 76%, #383838 87%, #1b1b1b 100%);
+}
+
+#yellowborder {
+	height:3px;
+	background-color: #FDBB30;
+}
+
+
+#topnav{
+height:90px;
+background-color:#000000;
+}
+
+#topnav img{
+	cursor:pointer; /*give mouse pointer for top nav icons********/
+}
+
+#topnav ul{
+	width:100%;
+	min-width:508px;
+	margin:0px !important;
+	list-style:none;
+	float:left;
+	padding:0px !important;
+}
+
+#topnav ul li{
+	width:15.912%;
+	margin:0px !important;
+	list-style:none;
+	float:left;
+	padding:0px !important;
+}
+
+
+/* heading of a collapsed panel */
+.panelcollapsed img 
+{
+	cursor:pointer;
+}
+
+/* panel content - do not set borders or paddings */
+.panelcontent
+{ 
+	width:100%;
+	background: #ccaf74; 
+	overflow: hidden;
+	padding-bottom:13px;
+	padding-top:5px;
+	margin-top:9px !important;
+}
+
+/* collapsed panel content */
+.panelcontent { display: none; }
+
+.panelcontent ul {
+	margin:0px;
+	
+}
+.panelcontent ul li{
+	list-style:none;
+	margin-top:20px;
+	margin-bottom:10px;
+	float:left;
+}
+.panelcontent ul li:first-child {
+	margin-left:15px;
+}
+
+
+.panelcontent a { /*modified to keep the box style in the drop down menu when link is changed -ihe***/
+	font-weight:bold;
+	border:#DED5B4 thin solid;
+	background-color:#DED5B4;
+	padding: 10px 15px;
+	display:inline-block;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:10px;
+	cursor:pointer;
+}
+
+
+/****CAS Homepage******************************/
+#tax_course_title {
+	max-width:1100px;
+	margin:0px;
+	padding:10px;
+	background:#c5c5c2;
+	background-position:right;
+	background-repeat:no-repeat;
+}
+
+#tax_course_title h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-left: 20px !important;
+	width:60%;
+	display:block !important;
+}
+
+
+
+#tax_course_description {
+	background:#c5c5c2;
+	margin:0px 0px 30px;
+	padding:0px 15px 15px;
+}
+#tax_rounded {
+	background-color:#fff;
+	padding:25px;
+}
+
+#tax_rounded p {
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-size:16px;
+	font-weight:300;
+	line-height:24px;
+	margin-left:0px !important;
+	letter-spacing:.5px;
+}
+
+#course_home_content h2:first-child {
+	display:block;
+}
+
+#course_home_content h2 {
+	margin-left:5px;
+}
+
+#course_home_content h3 {
+	margin-left:5px !important;
+}
+#course_home_content h4 {
+	margin-left:5px;
+}
+#course_home_content p {
+	margin-left:5px;
+}
+/*#course_home_content ol li {
+	margin-left:30px;
+}
+#course_home_content ul li {
+	margin-left:30px;
+}*/
+
+
+/********graphic objects***************************/
+.graphic_object{
+	margin-bottom:25px;
+}
+
+div.go_holder {
+	display:block;
+	margin-top:20px;
+	min-height:55px;
+}
+
+.bluecircle {
+  border-radius: 50%;
+  width: 50px;
+  height: 20px;
+  background-color: #c5c5c2; 
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000; 
+  padding-top: 13px;
+  padding-bottom: 18px;
+  float:left;
+  margin-top:-5px;
+  margin-right: 15px;
+}
+/******figures *****************************************/
+.centerframe {
+
+  padding:15px;
+  width:80%;
+  background-color: #c5c5c2;
+  border: thin #000000 solid;
+  margin-top: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:25px;
+  z-index:0;
+  border-radius: 0;
+}
+
+.leftframe {
+
+  padding:15px;
+  width:46%;
+  background-color: #f9fafb;
+  border: thin #000000 solid;
+  margin-top: 20px;
+  margin-right:25px;
+  margin-bottom:25px;
+  float:left;
+  z-index:0;
+  border-radius: 0;
+}
+
+.leftframe_small {
+ 
+  padding:15px;
+  width:265px;
+  background-color: #f9fafb;
+  border: thin #000000 solid;
+  margin-top: 20px;
+  margin-right:25px;
+  margin-bottom:25px;
+  float:left;
+  z-index:0;
+  border-radius: 0;
+}
+
+
+
+.rightframe_small {
+
+  padding:15px;
+  width:265px;
+  background-color: #f9fafb;
+  border: thin #000000 solid;
+  margin-top: 20px;
+  margin-right:25px;
+  margin-bottom:25px;
+  float:right;
+  z-index:0;
+  border-radius: 0;
+}
+
+.rightframe {
+
+  padding:15px;
+  width:46%;
+  background-color: #f9fafb;
+  border: thin #000000 solid;
+  margin-top: 20px;
+  margin-left:25px;
+ float:right;
+  margin-bottom:25px;
+  z-index:0;
+  border-radius: 0;
+}
+
+
+.centerframe img, .leftframe img, .rightframe img, .leftframe_small img, .rightframe_small img {
+	width:100%;
+}
+.sidebyside {
+	min-width:780px;
+}
+
+.sidebyside .leftframe {
+	margin-right:0px;
+	width:42%;
+}
+
+
+.sidebyside .rightframe {
+	margin-left:0px;
+	width:42%;
+	float:left;
+	margin-left:20px;
+}
+
+
+
+/*****call out boxes***********************************/
+/***alignment for center, left and right**************/
+
+.aligncenter{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+.alignleft{
+	width:46%;
+	float:left;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+.alignright{
+	width:46%;
+	float:right;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+.dark {
+	
+padding:25px;
+	background-color: #c5c5c2;
+	border: thin #f9fafb solid;
+	margin-left:20px;
+	margin-top:40px;
+	border-radius: 0;
+}
+
+.light {
+	padding:25px;
+	border: thin #000000 solid;
+	margin-left: 40px;
+	background-color:#f9fafb;
+	border-radius: 0;
+}
+
+/**************icon inside the callout box*******************/
+.icon_left {
+	margin-right:25px;
+	float:left;
+}
+
+
+
+/************step by step boxes***********************************/
+
+.stepbystep_blue {
+	background-color: #e3eef2; 
+	padding: 35px; 
+	margin-bottom: 15px;
+}
+
+.stepbystep_blue h2{
+	color: #32374c;
+	font-size:48px;
+	font-weight: bold;
+}
+
+.stepbystep_gray {
+	background-color:#f0f1f1; 
+	padding: 35px; 
+	margin-bottom: 15px; 
+	border-top: solid #d5d6da medium;
+}
+
+/********callout box****************************************/
+
+.callout_center{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25px;
+	margin-bottom:25px;
+padding:25px;
+	min-height:147px;
+	background-color: #f9fafb;
+	border: thin #030532 solid;
+	border-radius: 0;
+}
+
+
+.callout_title{
+	text-transform:uppercase;
+	margin:5px 15px 10px 0px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color:#000000;
+	font-size:22px;
+}
+
+.callout_icon {
+	width:147px;
+	margin-right:25px;
+	float:left;
+}
+
+.callout_center ol li {
+   margin-left: 155px;
+}
+
+
+
+
+
+/******for contents with graphics, similar to the table format******************/
+
+.bluebox{
+	background-color: #e3eef2; 
+	padding: 35px; 
+	margin-bottom: 15px;
+}
+
+.graybox{
+	background-color: #f0f1f1; 
+	padding: 35px; 
+	margin-bottom: 15px;
+}
+
+
+
+
+/*******right side panel h4 ********************************/
+div#right-side-wrapper h4 {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+#right-side h2{
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/*********speed grader****************************************/
+#gradebook_header {
+   /* font-size: 14px;
+    text-align: center;
+    color: #FFF;
+    line-height: 18px;*/
+}
+
+
+/******The green identity bar on the top right **********************************/
+div#topbar ul li {
+  font-size: inherit;
+}
+
+
+hr {
+	clear:both;
+}
+
+
+
+
+@media screen and (max-width:1200px){
+	.panelcontent{
+		min-width: 408px ! important;
+		height:auto;
+	}
+	/****Peter Update on 3/22/16: to prevent the text on Tip for Success page from being underneath the blue circles****/	
+	.bluecircle_responsive{
+  		margin-bottom: 115px;
+  	}
+	/***Peter update on 3/28/2016: make SONHP logo responsive*****/
+	img#usf_tax_logo{
+		width:35%;
+		}
+	#tax_course_title h2{
+		line-height:27px;
+		font-size:20px;
+		margin-bottom:15px;
+		margin-top:10px;
+		}
+}
+/****Peter update on 3/22/16: Responsive Instructor Picture on Home page ******/
+@media screen and (max-width:1065px){
+	#instructor_pic{
+		width:50%;
+		}
+}
+
+@media screen and (max-width:991px){
+	.panelcontent{
+		min-width: 330px ! important;
+		height:auto;
+
+	}
+}
+/***Peter update on 3/28/2016: make SONHP Course Title responsive*****/
+@media screen and (min-width:1201px){
+	#tax_course_title h2{
+		line-height:27px;
+		margin-bottom:15px;
+		margin-top:10px;
+		}
+}
+/************ links underline ****************************/
+
+a {
+	text-decoration: underline;
+}
+
+.go_holder h2 span {
+	margin: 5px 15px 18px 0px;
+    line-height: 24px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: .5px;
+	display:inline-block;
+	float:none;
+}
+
+span.bluecircle {
+    line-height: 24px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: .5px;
+    display: inline-block;
+}
+
+.stepbystep_gray{
+	margin-top:15px;
+}
+
+.panelcontent li a:link,
+.panelcontent li a:visited{
+	color: #000000 !important;
+}
+.panelcontent li a:hover{
+	color: #666666 !important;
+}
+ 
+ 
+ img#usf_tax_logo{
+	float:right;
+} 
+
+/******Themes Editor Panel************************************/
+.ui-helper-reset {
+	margin: 0 !important;
+}
+
+/********gradebook dropdownmenu***********9/23/2016*************/
+.ui-menu .ui-menu-item {
+    z-index: 3;
+}

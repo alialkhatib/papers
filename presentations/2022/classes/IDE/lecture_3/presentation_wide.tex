@@ -1,8 +1,8 @@
 \documentclass[aspectratio=169,17pt]{beamer} % or 14 or 17 or 20
 
 \usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,multicol}
-% \usepackage[fontsize=18]{pdfpcnotes}
 \usepackage{pgfcalendar,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+\usepackage{enumitem}
 \usepackage{marvosym} % \MVRIGHTarrow
 \usepackage{amsmath}
 \usepackage{centernot}
@@ -15,17 +15,20 @@
 \bibliography{references}
 \usetheme[numbering=none]{metropolis}
 
+\setlist[itemize]{label={--}}
+% \setlist[itemize]{leftmargin=*}
+
 % \bibliography{references}
 
 \input{colors}
 \input{customizations}
 
 
-\title{Data Ethics Lecture 2}
-\subtitle{recap {\bfseries Data Collection}\\preview {\bfseries Promises}}
+\title{Data Ethics Lecture 3}
+\subtitle{recap {\bfseries Promises}\\preview {\bfseries more promises}}
 \author[Ali Alkhatib]{{Ali Alkhatib}\\
 \href{http://twitter.com/_alialkhatib}{@\_alialkhatib} || \href{mailto:hi@al2.in}{hi@al2.in}}
-\date{March 17, 2022}
+\date{March 24, 2022}
 
 % \date{\today}
 
@@ -42,340 +45,217 @@
 \titlepage
 \end{frame}
 
-% \begin{frame}[t]\frametitle{Roadmap for today}
+\begin{frame}[t]\frametitle{Roadmap for today}
 
-% \begin{itemize}
-%     \item Administrivia
-%     \item Recap Data Collection
-%     \item Preview Promises
-%     % \item Discuss 1 or 2 promises
-%     \item Preview readings for 1-2 topics
-% \end{itemize}
+\begin{itemize}
+    \item Admin?
+    \item Recap Promises
+    \item Preview other promises (tedious/dangerous \& social good/token stakeholders)
+\end{itemize}
 
-% \end{frame}
+\end{frame}
 
-
-% \begin{frame}{Admin-y things}
-  
-
-% \begin{itemize}
-%     \item \strong{Canvas}
+\begin{frame}{admin stuff?}
     
-%     {\small everyone should have access now, if that's not the case then let me know!}
-%     \item \strong{Readings}
-    
-%     {\small More readings available on Canvas as PDFs}
-%     \item \strong{Reading time check}
+    \begin{itemize}
+        \visible<1->{\item reading time/reflection}
+        \visible<2->{\item let's do that again \MVRightarrow{}}
+    \end{itemize}
 
-%     {\small How long did readings take?
+\end{frame}
 
-%     \MVRightarrow{} google docs noisy survey}
-    
-%     % \item \strong{great reflections, everyone}
-% \end{itemize}
 
-% \end{frame}
+\begin{frame}[plain]
 
-% \begin{frame}[plain]
+\centering
+\emph{check the zoom chat for a link}
 
-% \centering
-% \emph{check the zoom chat for a link}
-
-% \end{frame}
-
-
-\section{Data Collection (recap)}
-
-% %%%%%%%%%
-
-% \begin{frame}{consent}
-% \begin{columns}
-% \begin{column}{0.4\textwidth}
-
-% \only<+->{\alert{\strong{legally ambiguous}} data collection}%
-
-% \end{column}
-% \begin{column}{0.6\textwidth}
-
-% \only<.>{\includegraphics[width=\textwidth]{figures/consent/CTL.PNG}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/consent/rohingya.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/consent/clearview.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/consent/google.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/consent/GDPR.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/consent/CCPA.png}}
-
-% \end{column}
-% \end{columns}
-% \end{frame}
-
-% %%%%%%%%%%%%%%%%
-
-% \begin{frame}{surveillance}
-% \begin{columns}
-% \begin{column}{0.4\textwidth}
-
-% \only<+->{\alert{\strong{coercive}} settings}%
-
-% \end{column}
-% \begin{column}{0.6\textwidth}
-
-% \only<.>{\includegraphics[width=\textwidth]{figures/surveillance/dance.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/surveillance/prison_phones.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/surveillance/ring_privacy.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/surveillance/ring_apartments.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/surveillance/ring_LAPD.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/surveillance/keystroke_tracking.png}}
-
-% \end{column}
-% \end{columns}
-% \end{frame}
-
-% %%%%%%%%%%
-
-% \begin{frame}{context}
-% \begin{columns}
-% \begin{column}{0.4\textwidth}
-
-% \only<+->{data without \alert{\strong{context}}}%
-
-% \end{column}
-% \begin{column}{0.6\textwidth}
-
-% \only<.>{\includegraphics[width=\textwidth]{figures/context/gaydar.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/context/selfieLGBTQ.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/context/wivi.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/context/datasheets.png}}
-
-% \only<+>{\includegraphics[width=\textwidth]{figures/context/fiesler.png}}
-
-% \end{column}
-% \end{columns}
-% \end{frame}
-
-% %%%%%%%%%%%%
-
-
-% \begin{frame}[plain]
-
-% \centering
-
-% \visible<+->{{\LARGE\scshape legal $\centernot=$ ethical}}
-
-% \visible<+->{\dots but\dots}
-
-% \visible<+->{{law} \strong{can be} informative}
-
-% \end{frame}
-
-
-% \begin{frame}[plain]
-% \centering
-% {\scshape\large lots of great reflections}
-% \end{frame}
-
-
-% \begin{frame}[plain]
-
-
-
-% {\scshape\small
-% \centering
-
-% \begin{columns}
-% \begin{column}{0.3\textwidth}
-% \centering
-
-% \visible<+->{repugnance}
-
-% \visible<+->{potential for harm}
-
-% \visible<+->{\textbf<+->{misleading}}
-
-% \visible<+->{false pretenses}
-
-
-% \end{column}
-% \begin{column}{0.3\textwidth}
-% \centering
-
-% \visible<+->{exploitation}
-
-% \visible<+->{firing personnel}
-
-
-% \visible<+->{CYA}
-
-% \visible<+->{speed of tech}
-% \end{column}
-% \begin{column}{0.3\textwidth}
-% \centering
-
-% \visible<+->{intent vs outcome}
-
-% \visible<+->{incentives}
-
-% \visible<+->{\textbf<+->{vulnerability}}
-
-% \visible<+->{misuse}
-
-% \visible<+->{apparent plan (or lack of?)}
-
-% \end{column}
-% \end{columns}
-
-
-% \visible<+->{``Shouldn't regulators have gotten involved?''}
-
-% \visible<+->{``\dots the laws we have today are from to 1970's?''}
-
-% % \visible<+->{{\scshape\hfill great observations, great questions}}
-
-% }
-% \end{frame}
-
-% \begin{frame}[standout]
-
-% The issues you encounter will be real
-
-% \end{frame}
-
-% \begin{frame}{Philosophical frameworks}
-
-% {\scshape\onslide<+>{}
-
-% \onslide<+->{Consequentialism}{\small\visible<.->{\onslide<.>{\hfill evaluate by outcomes}}}
-
-% \onslide<+->{Deontology}{\small\visible<.->{\onslide<.>{\hfill aspire to rules}}}
-
-% \onslide<+->{Virtue Ethics}{\small\visible<.->{\onslide<.>{\hfill aspire to virtues}}}
-
-% \visible<+->{
-% how do these philosophies inform\dots
-
-% \centering
-% CTL? Ring? Gaydar? Google?}
-
-% }
-% \end{frame}
-
-
-
-% \begin{frame}{historical contextualization}
-% \centering
-
-% \only<+-3>{\begin{columns}
-% \begin{column}{0.4\textwidth}
-
-% \only<1>{Henrietta Lacks}
-
-% \only<2>{Quaker Oats}
-
-% \only<3>{Tuskegee experiments}
-
-% \end{column}
-% \begin{column}{0.6\textwidth}
-
-% \only<1>{\includegraphics[width=0.6\textwidth]{figures/wiki/lacks.jpeg}}
-
-% \only<2>{\includegraphics[width=\textwidth]{figures/news/quaker_oats.jpeg}}
-
-% \only<3>{\includegraphics[width=\textwidth]{figures/news/tuskegee.jpg}}
-
-% \end{column}
-% \end{columns}}
-
-% \only<4->{\scshape
-% {human dignity and autonomy}
-
-% \visible<5>{informed consent}
-% }
-% \end{frame}
-
-
-
-
-
-
-% \begin{frame}{speculative design}
-% \centering
-% \includegraphics[height=0.9\textheight]{figures/clipart/speculative_design.png}
-% \end{frame}
-
-
-\section{some ``provocations''}
-
-% \begin{frame}{some ``provocations''}
-% \end{frame}
-
-
-% \begin{frame}[plain]
-% \centering
-
-% a quick caveat about ``provocations''
-
-% \end{frame}
-
-% \begin{frame}{some ``provocations''}
-% \vspace{2em}
-% {\footnotesize
-% \begin{columns}
-% \begin{column}{0.5\textwidth}
-% {What are the risks of allowing the private sector to gather so much sensitive data?}
-
-% \vspace{1em}
-
-% {Does anyone else feel uncomfortable about statements about suicide prevention efforts using phrases like ``piloting a tailored solution'' and ``evaluating data trends''?}
-
-% \end{column}
-
-% \begin{column}{0.5\textwidth}
-
-% {When do we know that an issue having to do with privacy and surveillance has been adequately addressed?}
-
-% \vspace{1em}
-
-% {At what point do the negatives of a technology that gathers data outweigh the positives? or vice versa?}
-% % \end{column}
-% % \begin{column}{0.33\textwidth}
-
-
-% \end{column}
-% \end{columns}}
-
-% \end{frame}
-
-
-% % {what are some examples of how data science uses hypotheticals to understand and predict ethical issues? what about using models as a more concrete way to evaluate if a particular kind of data collection will cause harm?}
-% %
-
-
-
+\end{frame}
 
 
 \section{Promises}
 
 
-% \begin{frame}{promises of data science}
+\begin{frame}{roadmap}
+\begin{itemize}
+    \item AI can ``understand'' the world better than we can
+    \item AI can make ``fairer'' decisions than we can
+\end{itemize}
 
-% \begin{itemize}
-%     \item AI will \strong{understand} the world better than humans can
-%     \item AI can make \strong{more objective} or \strong{fairer} decisions than people can
-% \end{itemize}
+\end{frame}
 
-% \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Understanding}
+
+\begin{frame}[standout]
+
+AI will ``understand'' better than we can
+
+\end{frame}
+
+\begin{frame}{AI will understand more}
+    \begin{columns}
+    \begin{column}{0.4\textwidth}
+    \begin{itemize}[label=\MVRightarrow{}]
+    \visible<1->{\item labeling}
+    \visible<4->{\item moderation}
+    \visible<5->{\item navigation}
+
+    \end{itemize}
+
+    \end{column}
+    \begin{column}{0.6\textwidth}
+    
+    \only<+>{\includegraphics[width=\textwidth]{figures/news/understand/NYT_facebook_primates.png}}
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/news/understand/wired_google_gorillas.png}}
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/news/understand/MIT_tech_review_criminals.png}}
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/news/understand/BI_tiktok_anorexia.png}}
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/news/understand/NYT_waze.png}}
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/news/understand/NYT_zillow.png}}
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/news/understand/working_with_machines.png}}
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/news/understand/to_live_in_their_utopia.png}}
+    \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}[standout]
+what does it mean to understand something?
+\end{frame}
+
+\begin{frame}{understanding}
+\centering
+\visible<+->{Figuring out what facets you're missing \emph{a priori} is impossible}
+
+\vspace{1em}
+
+\visible<+->{
+
+{\small
+How would you \strong{elicit} this dimension as a designer?
+
+What factors prevent or discourage this kind of approach in corporate settings?
+}
+}
+
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Fairness}
+
+\begin{frame}[standout]
+
+AI will be ``fairer'' or ``more objective'' than we can be
+
+\end{frame}
+
+
+
+\begin{frame}{AI will be fairer than we can be}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+\begin{itemize}[label=\MVRightarrow{}]
+    \visible<1->{\item medicine}
+    \visible<4->{\item education}
+    \visible<5->{\item social}
+
+    \end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\only<+>{\includegraphics[width=\textwidth]{figures/news/fairer/wired_transplants.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/news/fairer/nature_AI_pain_training.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/news/fairer/verge_testing.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/news/fairer/verge_ditched_exams.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/news/fairer/twitter_image_crop.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/news/fairer/propublica_bias.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/news/fairer/NYT_social_credit.png}}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[standout]
+what is fairness?
+\end{frame}
+
+\begin{frame}{fairness}
+
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\only<1>{A Mulching Proposal}
+\only<2->{\strong{The Measure and Mismeasure of Fairness}: A Critical Review of Fair Machine Learning}
+\end{column}
+\begin{column}{0.55\textwidth}
+    \only<+>{\includegraphics[width=\textwidth]{figures/papers/mulching.png}}
+    
+    \only<+>{\includegraphics[width=\textwidth]{figures/papers/limits.png}}
+
+    \only<+>{
+    \centering
+    \begin{itemize}
+            \item literacy tests
+            \item redlining
+        \item proxies, like
+        \begin{itemize}
+        \item zip code
+        \item last name
+        \end{itemize}
+    \end{itemize}}
+
+    \only<+>{
+    \centering
+
+    \emph{``\dots there are important cases where even protected group membership itself should be explicitly taken into account to make equitable decisions.''}}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{fairness}
+\centering
+\visible<+->{To varying degrees, we are \strong{mediators} of ``fair'' or ``equitable'' or ``just'' outcomes.}
+
+\vspace{1em}
+
+\visible<+->{
+
+{\small How can you identify \strong{stakeholders} who might care how the system adjudicates issues?
+
+What is your responsibility regarding a system \strong{after} deployment?}
+}
+
+\end{frame}
+
+
+
+
+
 
 
 \end{document}

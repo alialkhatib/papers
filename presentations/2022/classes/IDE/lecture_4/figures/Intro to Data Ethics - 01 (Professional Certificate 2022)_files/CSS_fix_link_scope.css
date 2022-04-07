@@ -1,0 +1,58 @@
+/*Icon and text configuration for USF Resources link*/
+#custom_nav .menu-item-icon-container {
+    position: relative;
+    left: -4px;
+}
+
+#custom_nav .menu-item__text {
+    margin-top: 15px;
+}
+
+.icon-resources {
+  position: relative;
+  left: -2px;
+}
+
+.icon-resources:before {
+  content: "\f13c";
+}
+
+.icon-resources[class*=icon-]:before, .icon-resources[class^=icon-]:before {
+  font-size: 30px;
+}  
+/*Set Hover Colors on Resource Link*/
+a#global_nav_resources_link:hover {
+    color: white;
+}
+
+/*Icon for USF Resources link*/
+#menu .icon-link {
+  position: relative;
+  left: -2px;
+}
+
+#menu .icon-link:before {
+  font-size: 30px;
+}
+/*Icon for Teacher Effectiveness Surveys*/
+#menu .icon-peer-review {
+  position: relative;
+  left: -2px;
+}
+
+#menu .icon-peer-review:before {
+  font-size: 30px;
+}
+
+/*Icon for SFDC*/
+
+#menu .icon-eye {
+  position: relative;
+  left: -2px;
+}
+
+#menu .icon-eye:before {
+  font-size: 30px;
+}
+
+
