@@ -2,7 +2,7 @@
 
 \usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,multicol}
 \usepackage{pgfcalendar,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
-\usepackage{enumitem}
+\usepackage{enumitem,setspace}
 \usepackage{marvosym} % \MVRIGHTarrow
 \usepackage{amsmath}
 \usepackage{centernot}
@@ -23,6 +23,7 @@
 \input{colors}
 \input{customizations}
 
+\setlist{nosep}
 
 \title{Data Ethics Lecture 5}
 \subtitle{Philosophical foundations}
@@ -74,23 +75,56 @@ Next week \hfill \MVRightarrow{}
 
 \section{Philosophical foundations}
 
-\begin{frame}[t]{foundations}
-    We've talked about a few philosophical approaches before\only<+>{:}
-    
-    \only<.>{\begin{itemize}
+\begin{frame}{foundations}
+    % We've talked about a few philosophical approaches before\only<+>{:}
+    \visible<+->{
+    \begin{columns}
+    \begin{column}{0.6\textwidth}
+    \begin{itemize}
             \item consequentialism
-            \item deontology
+            \item deontology \hfill \visible<+->{\MVRightarrow{}}
             \item virtue ethics
-        \end{itemize}}
+        \end{itemize}
 
-\only<+->{we're going to add a few other frameworks
+    \end{column}
+    \begin{column}{0.4\textwidth}
+    % hello?
+    \begin{itemize}[leftmargin=0em,label={}]
+        \visible<.->{\item brief recap}
+    \end{itemize}
+    \end{column}
+    \end{columns}
+    
+    }
 
-\begin{itemize}
-    \item colonialism
-    \item restorative justice
-    \item harm reduction
-\end{itemize}
-}
+\visible<+->{
+    \begin{columns}
+    \begin{column}{0.6\textwidth}
+    \begin{itemize}
+            \item colonialism
+            \item restorative justice \hfill \visible<+->{\MVRightarrow{}}
+            \item tensions
+        \end{itemize}
+
+    \end{column}
+    \begin{column}{0.4\textwidth}
+    % hello?
+    \begin{itemize}[leftmargin=0em,label={}]
+        \visible<.->{\item new stuff}
+    \end{itemize}
+    \end{column}
+    \end{columns}
+    
+    }
+
+% \only<+->{we're going to add a few other frameworks
+
+% \only<+->{\begin{itemize}
+%     \item colonialism
+%     \item restorative justice
+%     \item tensions
+% \end{itemize}
+% }
 
 \end{frame}
 
@@ -100,7 +134,8 @@ Next week \hfill \MVRightarrow{}
 \begin{columns}
 \begin{column}{0.5\textwidth}
 
-\visible<+->{\small\begin{itemize}[itemsep=0em]
+
+\visible<+->{\small\begin{itemize}
     
     \item<alert@+> consequentialism
     
@@ -112,22 +147,253 @@ Next week \hfill \MVRightarrow{}
     
     \item<alert@+> restorative justice
     
-    \item<alert@+> harm reduction
+    \item<alert@+> tensions
 
 \end{itemize}}
+
+% {\tiny exploitation, membership, disclosure, allyship}
 
 \end{column}
 
 \begin{column}{0.5\textwidth}
 
+\only<1>{\includegraphics[width=\textwidth]{figures/clipart/trolleyalpha.png}}
+
+\only<2>{\includegraphics[width=\textwidth]{figures/clipart/consequsq.png}}
+
+\only<3>{\includegraphics[width=\textwidth]{figures/clipart/deontosq.png}}
+
+\only<4>{\includegraphics[width=\textwidth]{figures/clipart/virtuesq.png}}
+
 \only<5>{\includegraphics[width=\textwidth]{figures/papers/algo_colonization_africa2.png}}
 
 \only<6>{\includegraphics[width=\textwidth]{figures/papers/restorative_justice_salehi.png}}
+
+\only<7>{\includegraphics[width=\textwidth]{figures/papers/tensions.png}}
+
 
 
 \end{column}
 \end{columns}
 
 \end{frame}
+
+
+\section{the trolley problem\\and other abstractions}
+
+
+\begin{frame}[plain]
+    \begin{columns}
+    \begin{column}{0.4\textwidth}
+    philosophical abstractions as foci of debate
+    \end{column}
+    \begin{column}{0.6\textwidth}
+    \includegraphics[width=\textwidth]{figures/news/bogost_trolley.png}
+    \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}[plain]
+    \centering
+
+        \alt<-2>{\onslide<1>{great}}{they are} abstractions
+
+    \visible<4->{\dots but not very relatable}
+    
+    \visible<5->{\dots or applicable}
+    
+    \visible<6->{\dots or contextualized}
+
+    \visible<7->{\dots}
+
+
+\end{frame}
+
+
+\begin{frame}[plain]
+    
+\centering
+
+\visible<2>{abstractions can be harmful}
+
+\end{frame}
+
+\begin{frame}[plain]
+    
+{\scshape\Large\bfseries
+
+\onslide<1,2>{Colonization}
+
+\onslide<1,3>{Restorative Justice}
+
+\onslide<1,4>{Tensions}
+
+}
+
+\end{frame}
+
+
+\section{Colonialism}
+
+\begin{frame}[plain]
+    
+\includegraphics[width=\textwidth]{figures/clipart/colonialism.jpeg}
+
+\end{frame}
+
+
+
+\begin{frame}{Colonialism}
+
+\begin{columns}
+% \begin{column}{0.15\textwidth}
+% \end{column}
+\begin{column}{0.7\textwidth}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/papers/algo_colonization_africa2.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/papers/colonization_2.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/papers/MIT_tech_review_colonization.png}}
+
+\only<+>{\includegraphics[width=\textwidth]{figures/papers/colonization_3.png}}
+
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{takeaways?}
+    
+\centering
+
+\visible<+->{}
+
+\visible<+->{longstanding histories of \alert{oppression}, \alert{exploitation}, and \alert{hegemony} continue to unfold}
+
+\end{frame}
+
+
+
+\begin{frame}{discussion}
+    
+Discuss how some of the readings from this course have hinged on historical dimensions of oppression and violence that otherwise wouldn't have been clear
+
+\end{frame}
+
+
+
+
+
+
+\section{Restorative Justice}
+
+\begin{frame}[plain]
+
+\centering 
+{\Large\scshape Retributive Justice}
+
+
+
+\end{frame}
+
+
+\begin{frame}{restorative justice}
+    \begin{columns}
+    \begin{column}{0.7\textwidth}
+    \only<+>{\includegraphics[width=\textwidth]{figures/papers/restorative_justice_salehi.png}}
+
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/papers/restorative/obligations.png}}
+
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/papers/restorative/lesson1.png}}
+
+
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/papers/restorative/lesson2.png}}
+
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/papers/restorative/lesson3.png}}
+
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/papers/restorative/lesson4.png}}
+
+
+    \only<+>{\includegraphics[width=\textwidth]{figures/papers/restorative/lesson5.png}}
+
+    \end{column}
+    \end{columns}
+
+
+\end{frame}
+
+
+\begin{frame}{lessons}
+    
+\begin{itemize}
+    \item Assign a trained caseworker
+    \item Be trauma-aware
+    \item Support the harmer to take accountability
+    \item Stop the continuation of the harm
+    \item Create structures for continued accountability
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{discussion}
+    
+Imagine and discuss how some of the principles of \alert{restorative justice} would inform responses to the harms and dilemmas from a different article or instance that we read about.
+
+\end{frame}
+
+
+\section{Tensions}
+
+\begin{frame}{Tensions}
+
+\begin{columns}
+\begin{column}{0.7\textwidth}
+\includegraphics[width=\textwidth]{figures/papers/tensions.png}
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{four tensions}
+    
+{\large\scshape\begin{itemize}
+\item exploitation
+\item membership
+\item disclosure
+\item allyship
+\end{itemize}}
+
+\end{frame}
+
+
+\begin{frame}{discussion}
+
+Discuss how values and goals you recognize in the projects we read about over the past few weeks have been in tension, and what went ``wrong'', if anything.
+    
+% \begin{itemize}
+%     \item Critical Reflections when Asking for Labor
+%     \item Balancing Harms and Benefits of Reflexivity and Positionality Statements
+%     \item Technological Solutionism and Expectations
+%     \item Impacts on Marginalized Researchers in HCI
+% \end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+
 
 \end{document}

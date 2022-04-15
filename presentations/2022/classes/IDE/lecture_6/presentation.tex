@@ -1,0 +1,382 @@
+\documentclass[aspectratio=43,17pt]{beamer} % or 14 or 17 or 20
+
+\usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,cleveref,fancybox,multicol}
+\usepackage{pgfcalendar,svg,subfiles,chronosys,cancel,xcolor,color,nth,datenumber,xparse,fp,stackengine,makecell}
+\usepackage{enumitem,setspace}
+\usepackage{marvosym} % \MVRIGHTarrow
+\usepackage{amsmath}
+\usepackage{centernot}
+\usetikzlibrary{positioning}
+\usepackage[outline]{contour}
+\usepackage[citestyle=authoryear-comp,backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\usepackage[normalem]{ulem}
+\bibliography{references}
+\usetheme[numbering=none]{metropolis}
+
+\setlist[itemize]{label={--}}
+% \setlist[itemize]{leftmargin=*}
+
+% \bibliography{references}
+
+\input{colors}
+\input{customizations}
+
+\setlist{nosep}
+
+\title{Data Ethics Lecture 6}
+\subtitle{Organizing and Activism}
+\author[Ali Alkhatib]{{Ali Alkhatib}\\
+\href{http://twitter.com/_alialkhatib}{@\_alialkhatib} || \href{mailto:hi@al2.in}{hi@al2.in}}
+\date{March April 14, 2022}
+
+% \date{\today}
+
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Roadmap for today}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+Lectures 3-4(/5) \hfill \MVRightarrow{}
+
+\vspace{2em}
+
+Course survey \hfill \MVRightarrow{}
+\end{column}
+\begin{column}{0.4\textwidth}
+{\small ~ \vspace{0.5em} links on canvas(?)}
+
+\vspace{2em}
+
+{\small links here \& on canvas(?)}
+\end{column}
+\end{columns}
+
+\vspace{2em}
+
+\strong{Organizing and Activism}
+
+
+\end{frame}
+
+
+\begin{frame}{class survey}
+\begin{columns}
+\begin{column}{0.3\textwidth}
+{Please fill this out if you can! \MVRightarrow{}}
+\end{column}
+\begin{column}{0.4\textwidth}
+\hspace*{-3em}\includegraphics[width=1.5\textwidth]{figures/survey.png}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\section{Organizing}
+
+\begin{frame}[standout]
+    
+A dilemma!
+
+\end{frame}
+
+
+\begin{frame}[plain]
+    
+    \centering
+
+\visible<+->{You're working with a dataset that\alt<-5>{\dots}{}}
+
+\only<-5>{\begin{columns}
+\begin{column}{0.33\textwidth}
+
+\temporal<+-4>{\visible<0>{\includegraphics[width=\textwidth]{figures/news/worldcoin.png}}}{\includegraphics[width=\textwidth]{figures/news/worldcoin.png}}{\includegraphics[width=\textwidth]{figures/news/worldcoin_grayed.png}}
+
+\end{column}
+\begin{column}{0.33\textwidth}
+
+\temporal<+-4>{}{\includegraphics[width=\textwidth]{figures/news/tracker3.png}}{\includegraphics[width=\textwidth]{figures/news/tracker3_grayed.png}}
+
+\end{column}
+\begin{column}{0.33\textwidth}
+
+\temporal<+-4>{}{\includegraphics[width=\textwidth]{figures/news/nytMentalHealth.png}}{\includegraphics[width=\textwidth]{figures/news/nytMentalHealth_grayed.png}}
+
+
+\end{column}
+\end{columns}}
+
+\only<6>{
+
+was collected \strong{deceptively} or dishonestly
+
+\strong{disempowers} people
+
+\strong{marginalizes} or oppresses people
+}
+
+\end{frame}
+
+
+
+
+\begin{frame}{what to do?}
+    
+should you\dots
+
+  \begin{itemize}
+    \item<+-> talk to your manager?
+    \item<+-> leave?
+    \item<+-> organize with others?
+  \end{itemize}
+
+
+\centering
+\visible<+->{there are good reasons for any of these}
+
+
+\end{frame}
+
+\section{working with management}
+
+\begin{frame}[plain]
+
+\only<+>{If you can find ways to align \strong{ethical values}
+with
+\strong{business incentives} (including {regulatory incentives}),
+this might work!}
+
+\only<+>{}
+
+\end{frame}
+
+
+\section{leave?}
+
+\begin{frame}[plain]
+
+Can you meaningfully \strong{reduce harm}?
+
+\hfill\dots or are you \strong{perpetuating harm}?
+
+\vspace{2em}
+
+Do you have a \strong{theory of change}?
+
+
+\end{frame}
+
+
+
+
+\section{organizing with others}
+
+\begin{frame}{success stories}
+    
+There are plenty of success stories to draw inspiration and lessons from
+
+\begin{itemize}
+  \item community organizing
+  \item workplace organizing
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{community organizing}
+
+\begin{columns}
+\begin{column}{0.33\textwidth}
+
+\visible<+->{
+\hspace*{-1.5em}
+\includegraphics[width=2\textwidth]{figures/news/SD.png}}
+
+\end{column}
+\begin{column}{0.33\textwidth}
+
+\visible<+->{
+\hspace*{-2.5em}
+\includegraphics[width=2\textwidth]{figures/news/OAK.png}}
+
+\end{column}
+\begin{column}{0.33\textwidth}
+
+
+\visible<+->{
+\hspace*{-2.5em}
+\includegraphics[width=2\textwidth]{figures/news/BOS.png}}
+
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+
+\begin{frame}{what can we learn?}
+    
+\begin{itemize}
+  \item<+-> \alt<.>{\strong{listen}}{listen} to people living there
+  \item<+-> identify when it's best to \alt<.>{\strong{speak}}{speak} vs \alt<.>{\strong{boost}}{boost} others' voices
+  \item<+-> \alt<.>{\strong{amplify}}{amplify} and \alt<.>{\strong{support}}{support} their voices
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}[plain,label=newsythings]
+    \centering
+
+
+\begin{figure}
+\vspace*{-2.25em}
+
+\only<+>{\hspace*{-2.75em}\includegraphics[width=1.3\textwidth]{figures/news/twc_2.png}}
+
+\only<+>{\hspace*{-2.75em}\includegraphics[width=1.3\textwidth]{figures/news/balance_2.png}}
+
+\only<+>{\hspace*{-2.75em}\includegraphics[width=1.3\textwidth]{figures/news/twh_2.png}}
+
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[plain]
+
+\begin{columns}
+\begin{column}{0.33\textwidth}
+
+\hspace*{-1.5em}
+\includegraphics[width=1.5\textwidth]{figures/news/twc_2.png}
+
+\end{column}
+\begin{column}{0.33\textwidth}
+
+\hspace*{-1.5em}
+\includegraphics[width=1.5\textwidth]{figures/news/balance_2.png}
+
+\end{column}
+\begin{column}{0.33\textwidth}
+
+\hspace*{-1.5em}
+\includegraphics[width=1.5\textwidth]{figures/news/twh_2.png}
+
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+
+
+\begin{frame}[standout]
+
+{why are we talking about non-disclosure agreements?}
+
+\end{frame}
+
+\begin{frame}[plain]
+\centering
+
+\only<+>{NDAs have routinely been used \\- \strong{especially in Silicon Valley} -\\ to prevent historically marginalized groups from discussing trauma they've experienced}
+
+\only<+>{NDAs have also made it confusingly ambiguous what protections \\- \emph{if any} -\\ \strong{whistleblowers} have when they step forward with evidence of intentional or negligent harms}
+
+\end{frame}
+
+\begin{frame}{why does that matter?}
+
+\visible<+->{We've discussed the importance of diverse teams.}
+
+\visible<+->{We also need to understand the structural forces that make it difficult or impossible for people from historically marginalized backgrounds to continue to \emph{exist} in workplaces}
+
+
+\end{frame}
+
+
+
+
+
+\againframe<2>[plain]{newsythings}
+
+
+
+
+
+\begin{frame}{Amazon Labor Union}
+  
+\begin{columns}
+\begin{column}{0.7\textwidth}
+\includegraphics[width=\textwidth]{figures/news/ALU.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Starbucks Labor Union}
+  
+\begin{columns}
+\begin{column}{0.7\textwidth}
+\includegraphics[width=\textwidth]{figures/news/SLU.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{what can we learn?}
+    
+\begin{itemize}
+  \item<+-> Open discussions about workplace conditions are good
+  \item<+-> No corporation is too big to organize against
+  \item<+-> You don't have to start big
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{organizing}
+    
+\begin{itemize}
+  \item community organizing
+  \item workplace organizing
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{questions?}
+    This is probably the last chance to ask major content questions.
+
+    Let's chat about whatever you want?
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
